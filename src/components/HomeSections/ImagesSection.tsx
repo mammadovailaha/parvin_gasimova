@@ -31,15 +31,16 @@ const ImagesSection = () => {
   const column3 = images.slice(8, 12);
 
   return (
-    <div className="w-[95%] h-screen flex justify-center items-center gap-5 px-2 rounded-[40px] bg-black overflow-y-srcoll scrollbar-hide ">
+    <div className="w-[95%] h-auto flex justify-center items-center gap-5 px-2 rounded-[40px] bg-black overflow-y-srcoll scrollbar-hide  ">
       {/* Column 1 */}
-      <div
+    <div className="w-full h-full flex flex-wrap justify-center items-center  gap-3 md:gap-5 overflow-hidden py-2 rounded-[40px]">
+          <div
         style={{
           overflowY: "scroll",
           msOverflowStyle: "none", // IE və Edge üçün
           scrollbarWidth: "none", // Firefox üçün
         }}
-        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4"
+        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4 md:px-2 rounded-[40px]"
       >
         {column1.map((imgSrc, index) => (
           <div key={index} className="w-[100%] h-[400px] rounded-[20px]">
@@ -59,7 +60,7 @@ const ImagesSection = () => {
           msOverflowStyle: "none", // IE və Edge üçün
           scrollbarWidth: "none", // Firefox üçün
         }}
-        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4 p-5 bg-black"
+        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4  bg-black  rounded-[40px]"
       >
         {column2.map((imgSrc, index) => (
           <div key={index} className="w-[100%] h-[400px] rounded-[20px]">
@@ -79,7 +80,7 @@ const ImagesSection = () => {
           msOverflowStyle: "none", // IE və Edge üçün
           scrollbarWidth: "none", // Firefox üçün
         }}
-        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4"
+        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4  rounded-[40px]"
       >
         {column3.map((imgSrc, index) => (
           <div key={index} className="w-[100%] h-[400px] rounded-[20px]">
@@ -91,6 +92,7 @@ const ImagesSection = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

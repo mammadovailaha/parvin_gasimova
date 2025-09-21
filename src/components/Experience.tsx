@@ -45,19 +45,39 @@ const experience=[
 
 
 const Experience = () => {
-     const settings = {
-    dots: true,          // alt nöqtələr
-    infinite: true,      // limitsiz dövr etsin
-    speed: 500,          // keçid sürəti (ms)
-    slidesToShow: 3,     // eyni anda neçə element göstərsin
-    slidesToScroll: 1,   // hər dəfə neçə element sürüşsün
-    autoplay: true,      // avtomatik sürüşsün
-    autoplaySpeed: 2000, // avtomatik keçid sürəti
-  };
+ const settings = {
+  dots: true,          // alt nöqtələr
+  infinite: true,      // limitsiz dövr etsin
+  speed: 500,          // keçid sürəti (ms)
+  slidesToShow: 3,     // eyni anda neçə element göstərsin
+  slidesToScroll: 1,   // hər dəfə neçə element sürüşsün
+  autoplay: true,      // avtomatik sürüşsün
+  autoplaySpeed: 2000, // avtomatik keçid sürəti
+
+  responsive: [
+    {
+      breakpoint: 1024, // ekran <= 1024px (planşet və kiçik laptop)
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 640, // ekran <= 640px (telefon)
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
 
   return (
     <div className='w-[95%] h-screen flex justify-center items-center gap-5'>
-        <Slider {...settings} className='overflow-hidden'>
+        <Slider {...settings} className='overflow-hidden '>
               {experience.map((item)=>(
         <ExperienceCard
          startDate={item.startDate}

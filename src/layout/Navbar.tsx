@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
             <img
               src={dark ? logoWhite : logoBlack}
               alt="Logo"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover scale-1.2"
             />
           </div>
 
