@@ -7,10 +7,15 @@ const data=[
   "PƏRVİN QASIMOVA",
   "PƏRVİN QASIMOVA"
 ]
+const data2=[
+  "PƏRVİN QASIMOVA",
+  "PƏRVİN QASIMOVA",
+  "PƏRVİN QASIMOVA"
+]
 const NameSlide = () => {
   return (
      <div className="w-full ">
-      <SliderComponent data={data}  className='bg-none ' textStyle='text-4xl font-bold text-gray-300 dark:text-white'/>
+      <SliderComponent data={data2}  className='bg-none ' textStyle='text-4xl font-bold text-gray-300 dark:text-white'/>
     <SliderComponent data={data}  className='bg-none ' textStyle='text-4xl font-bold text-black dark:text-white'/>
     </div>
   )
