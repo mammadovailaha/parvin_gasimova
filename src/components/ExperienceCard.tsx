@@ -1,4 +1,4 @@
-import React, { type FC } from 'react'
+import  { type FC } from 'react'
 import { RiBuilding2Line } from 'react-icons/ri';
 interface ExperienceCardProps{
     startDate:string;

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import img1 from "../../assets/images/POSTLAR/23 ECONOM suv/toyota.png";
 import img2 from "../../assets/images/POSTLAR/MERCEDES/21/MERCEDES COVER.png";
 import img3 from "../../assets/images/POSTLAR/mckp1.png";

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ExperienceCard from './ExperienceCard'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
