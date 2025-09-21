@@ -1,16 +1,6 @@
+// src/pages/Portfolio.tsx
 import ProtfolioCard from '../components/ProtfolioCard';
-import brandBook from "../assets/protfolio/brandbook/brandbook/emeyveli bb1900x900/emeyveli bb-25.png"
-import smmPost from "../assets/protfolio/sanan-asadzade-mmc/sanan asadzade mmc/13.png"
-import banner from "../assets/protfolio/esederek/banners/esas banner.png"
-import banner1 from "../assets/protfolio/brandbook/brandbook/karibu brandbook/brand guidline -01.png"
-
- const portfolioData = [
-  { serviceName: "Brandbook", serviceImage: brandBook, company: "Emeyveli" },
-  { serviceName: "SMM post", serviceImage: smmPost, company: "Sanan Asadzade MMC" },
-  { serviceName: "Banner", serviceImage: banner, company: "Esederek" },
-  { serviceName: "Banner", serviceImage: banner1, company: "Karibu" },
-
-];
+import { portfolioData } from '../data/portfolioData';
 
 const Portfolio = () => {
   return (
@@ -18,16 +8,17 @@ const Portfolio = () => {
       <h1 className="text-2xl md:text-4xl font-bold text-black dark:text-white">Featured work</h1>
       <div className='flex flex-wrap justify-center gap-10'>
         {portfolioData.map((item, idx) => (
-        <ProtfolioCard
-          key={idx}
-          serviceName={item.serviceName}
-          serviceImage={item.serviceImage}
-          company={item.company}
-        />
-      ))}
+          <ProtfolioCard
+            key={idx}
+            serviceName={item.serviceName}
+            serviceImage={item.serviceImage}
+            serviceId={item.id}
+            workId={item.works[0]?.id || 1}
+          />
+        ))}
       </div>
     </div>
   )
-}
+};
 
-export default Portfolio
+export default Portfolio;

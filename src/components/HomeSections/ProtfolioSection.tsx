@@ -1,45 +1,72 @@
+import { useRef, useState, type FC } from "react";
+import { useNavigate } from "react-router-dom";
 
-// data/portfolioData.ts
-import ProtfolioCard from '../ProtfolioCard';
-import MainButton from '../MainButton';
-import { useNavigate } from 'react-router-dom';
-import brandBook from "../../assets/protfolio/brandbook/brandbook/emeyveli bb1900x900/emeyveli bb-25.png"
-import smmPost from "../../assets/protfolio/sanan-asadzade-mmc/sanan asadzade mmc/13.png"
-import banner from "../../assets/protfolio/esederek/banners/esas banner.png"
-import banner1 from "../../assets/protfolio/brandbook/brandbook/karibu brandbook/brand guidline -01.png"
-
- const portfolioData = [
-  { serviceName: "Brandbook", serviceImage: brandBook, company: "Emeyveli" },
-  { serviceName: "SMM post", serviceImage: smmPost, company: "Sanan Asadzade MMC" },
-  { serviceName: "Banner", serviceImage: banner, company: "Esederek" },
-  { serviceName: "Banner", serviceImage: banner1, company: "Karibu" },
-
-];
-const PortfolioSection = () => {
-    const portfolio = portfolioData.slice(0, 4)
-    const navigate=useNavigate();
-   const handleClick=()=>{
-navigate("/Portfolio");
-   }
-  return (
-<div className='w-full h-auto flex flex-col items-center gap-10 py-10' >
-    <h2 className='text-6xl font-bold text-black '>worksss</h2>
-    <div className=' w-full flex flex-wrap justify-center gap-10'>
-        {portfolio.map((item, idx) => (
-        <ProtfolioCard
-          key={idx}
-          serviceName={item.serviceName}
-          serviceImage={item.serviceImage}
-          company={item.company}
-        />
-      ))}
-      </div>
-<MainButton text='Daha çox' onClick={handleClick} />
-</div>
-      
-  )
+interface Props {
+  serviceName: string;
+  serviceImage: string;
+  company?: string;
+   serviceId: number;
+  workId: number;
 }
+const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company, serviceId, workId }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const cardRef = useRef<HTMLDivElement>(null);
+ const navigate = useNavigate();
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (cardRef.current) {
+      const rect = cardRef.current.getBoundingClientRect();
+      setMousePosition({
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top,
+      });
+    }
+  };
+    const handleCardClick = () => {
+    navigate(`/portfolio/${serviceId}/${workId}`);
+  };
+  return (
+    <div
+    onClick={handleCardClick}
+      ref={cardRef}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      onMouseMove={handleMouseMove}
+      className="w-[80%] lg:w-[40%] h-[350px]  md:h-[450px] flex flex-col items-center gap-2.5 rounded-[20px] relative rounded-[20px]"
+    >
+      <div
+        className={`w-full flex py-4 justify-center items-center bg-white absolute top-[40%] overflow-hidden transition-all duration-700 ${
+          isHovered ? "max-h-12 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <p className="text-2xl font-semibold text-black">{serviceName}</p>
+      </div>
+      <div className="w-full h-[400px] rounded-[20px]  ">
+        <img
+          className="w-full h-full object-cover rounded-[20px]"
+          src={serviceImage}
+          alt={`${serviceName} sekli`}
+        />
+      </div>
+      <div className="w-full flex justify-between items-center">
+        <p className="text-lg md:text-2xl font-semibold text-black ">{serviceName}</p>
+        <p className="text-lg md:text-2xl font-semibold text-black ">{company}</p>
+      </div>
 
-export default PortfolioSection
+      {isHovered && (
+        <div
+          className="absolute w-[100px] h-[100px] bg-white rounded-full flex items-center justify-center pointer-events-none z-30 transition-opacity duration-200"
+          style={{
+            left: mousePosition.x - 50,
+            top: mousePosition.y - 50,
+            opacity: isHovered ? 1 : 0,
+          }}
+        >
+          <span className="text-black font-semibold text-sm">explore</span>
+        </div>
+      )}
+    </div>
+  );
+};
 
-
+export default ProtfolioCard;

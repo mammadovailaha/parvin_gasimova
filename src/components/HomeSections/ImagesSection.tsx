@@ -40,10 +40,10 @@ const ImagesSection = () => {
           msOverflowStyle: "none", // IE və Edge üçün
           scrollbarWidth: "none", // Firefox üçün
         }}
-        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4 md:px-2 rounded-[40px]"
+        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4  md:px-2 md:mt-4 md:pt-28 rounded-[40px]"
       >
         {column1.map((imgSrc, index) => (
-          <div key={index} className="w-[100%] h-[400px] rounded-[20px]">
+          <div key={index} className="w-[100%] h-[420px] rounded-[20px]">
             <img
               className="w-full h-full object-cover rounded-[20px]"
               src={imgSrc}
@@ -60,10 +60,10 @@ const ImagesSection = () => {
           msOverflowStyle: "none", // IE və Edge üçün
           scrollbarWidth: "none", // Firefox üçün
         }}
-        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4  bg-black  rounded-[40px]"
+        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4  bg-black md:mt-4 md:pt-28 rounded-[40px]"
       >
         {column2.map((imgSrc, index) => (
-          <div key={index} className="w-[100%] h-[400px] rounded-[20px]">
+          <div key={index} className="w-[100%] h-[420px] rounded-[20px]">
             <img
               className="w-full h-full object-cover rounded-[20px]"
               src={imgSrc}
@@ -80,10 +80,10 @@ const ImagesSection = () => {
           msOverflowStyle: "none", // IE və Edge üçün
           scrollbarWidth: "none", // Firefox üçün
         }}
-        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4  rounded-[40px]"
+        className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4 md:mt-4 md:pt-28 rounded-[40px]"
       >
         {column3.map((imgSrc, index) => (
-          <div key={index} className="w-[100%] h-[400px] rounded-[20px]">
+          <div key={index} className="w-[100%] h-[440px] rounded-[20px]">
             <img
               className="w-full h-full object-cover rounded-[20px]"
               src={imgSrc}

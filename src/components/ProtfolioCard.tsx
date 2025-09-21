@@ -1,15 +1,18 @@
 import { useRef, useState, type FC } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   serviceName: string;
   serviceImage: string;
   company?: string;
+   serviceId: number;
+  workId: number;
 }
-const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company }) => {
+const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company, serviceId, workId }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const cardRef = useRef<HTMLDivElement>(null);
-
+ const navigate = useNavigate();
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect();
@@ -19,13 +22,17 @@ const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company }) => {
       });
     }
   };
+    const handleCardClick = () => {
+    navigate(`/portfolio/${serviceId}/${workId}`);
+  };
   return (
     <div
+    onClick={handleCardClick}
       ref={cardRef}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onMouseMove={handleMouseMove}
-      className="w-[80%] lg:w-[40%] h-[350px]  md:h-[450px] flex flex-col items-center rounded-[20px] relative rounded-[20px]"
+      className="w-[80%] lg:w-[40%] h-[350px]  md:h-[450px] flex flex-col items-center gap-2.5 rounded-[20px] relative rounded-[20px]"
     >
       <div
         className={`w-full flex py-4 justify-center items-center bg-white absolute top-[40%] overflow-hidden transition-all duration-700 ${
