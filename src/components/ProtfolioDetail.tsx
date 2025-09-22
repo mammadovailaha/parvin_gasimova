@@ -12,7 +12,7 @@ interface Props {
 }
 
 // Ayrıca komponent hər şəkil üçün
-const ImageWithScroll: FC<{ image: string; alt: string; index: number }> = ({ image, alt, index }) => {
+const ImageWithScroll: FC<{ image: string; alt: string; index: number }> = ({ image, alt}) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const imageRef = useRef<HTMLDivElement>(null);
 
@@ -47,25 +47,25 @@ const ImageWithScroll: FC<{ image: string; alt: string; index: number }> = ({ im
   // Y oxu hərəkəti: şəkil aşağıdan yuxarı gəlir
   const translateY = (1 - scrollProgress) * 80 - 30; // 50px → -30px
   
-  // Rotation: kiçik fırlanma
-  const rotation = scrollProgress * 275 * (index + 1);
+  // // Rotation: kiçik fırlanma
+  // const rotation = scrollProgress * 275 * (index + 1);
 
   return (
-    <div ref={imageRef} className="w-full  flex justify-center mb-20">
+    <div ref={imageRef} className="w-full  flex justify-center mb-20 rounded-[35deg] ">
       <div 
-        className="w-full max-w-4xl rounded-[45px] p-2"
+        className="w-[300px] md:w-[500px] lg:w-[1000px] rounded-[45px] py-3 px-8 shadow-lg"
         style={{
-          transform: `translateY(${translateY}px) scale(${scale}) rotate(${-rotation}deg)`,
+          transform: `translateY(${translateY}px) scale(${scale})`,
           transition: 'transform 0.1s ease-out',
           opacity: Math.max(0.4, scrollProgress + 0.2)
         }}
       >
         <img 
-          className="w-full h-auto object-cover rounded-lg shadow-lg rounded-[45px]" 
+          className="w-full h-auto object-cover rounded-lg " 
           src={image} 
           alt={alt}
           style={{
-            transform: `rotate(${rotation}deg)  `,
+            // transform: `rotate(${rotation}deg)  `,
             transition: 'transform 0.1s ease-out'
           }}
         />
@@ -103,8 +103,8 @@ const PortfolioDetail: FC<Props> = ({ project, category, year, about }) => {
   return (
     <div className="w-full min-h-screen flex flex-col justify-start items-center gap-10 my-10 pt-24 px-4">
       {/* info */}
-      <div className="w-full h-[calc(100vh-50vh)] max-w-6xl flex flex-col lg:flex-row justify-start items-start gap-10">
-        <div className="flex flex-col items-start justify-start gap-2.5 min-w-0 flex-shrink-0">
+      <div className="w-full h-[calc(100vh-30vh)]  lg:h-[calc(100vh-50vh)] max-w-6xl flex flex-col lg:flex-row justify-start items-start gap-5 md:gap-10">
+        <div className=" flex flex-row lg:flex-col items-start justify-center lg:justify-start gap-10 md:gap-2.5 min-w-0 flex-shrink-0 px-10 lg:px-0">
           <div className="flex flex-col items-start justify-start gap-2">
             <h5 className="text-lg font-medium font-semibold text-black">Layihə</h5>
             <p className="text-base text-normal text-gray-600">{displayProject}</p>
@@ -114,7 +114,7 @@ const PortfolioDetail: FC<Props> = ({ project, category, year, about }) => {
             <p className="text-base text-normal text-gray-600">{displayCategory}</p>
           </div>
         </div>
-        <div className="w-[80%] flex flex-col gap-5 flex-1 min-w-0 px-10">
+        <div className="w-full lg:w-[80%] flex flex-col gap-5 flex-1 min-w-0 px-10">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
             <p className="text-lg font-medium font-semibold text-black">Layihə haqqında</p>
             <p className="text-base text-normal text-gray-600">{displayYear}</p>
@@ -125,7 +125,7 @@ const PortfolioDetail: FC<Props> = ({ project, category, year, about }) => {
         </div>
       </div>
       
-      <div className="w-full max-w-6xl flex flex-col gap-8 overflow-hidden">
+      <div className="w-full  max-w-6xl flex flex-col gap-5 md:gap-8 overflow-hidden">
         {currentWork?.type === 'video' && currentWork.video ? (
           <div className="flex justify-center">
             <div className="w-full">
