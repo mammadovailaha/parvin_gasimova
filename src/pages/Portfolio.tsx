@@ -1,5 +1,5 @@
 // src/pages/Portfolio.tsx
-import ProtfolioCard from '../components/ProtfolioCard';
+import ProtfolioCard from '../components/PortfolioCard';
 import { portfolioData } from '../data/portfolioData';
 
 const Portfolio = () => {

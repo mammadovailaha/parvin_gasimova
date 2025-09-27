@@ -4,7 +4,7 @@ import Home from '../pages/Home'
 import Portfolio from '../pages/Portfolio'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
-import ProtfolioDetail from '../components/ProtfolioDetail'
+import ProtfolioDetail from '../components/PortfolioDetail'
 
 const AppRouter: React.FC = () => {
   return (
