@@ -56,7 +56,7 @@ const Experience = () => {
 
   responsive: [
     {
-      breakpoint: 1024, // ekran <= 1024px (planşet və kiçik laptop)
+      breakpoint: 768, // ekran <= 760px (planşet və kiçik laptop)
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -77,14 +77,14 @@ const Experience = () => {
 
   return (
     <div className='w-[95%] h-screen flex justify-center items-center gap-5'>
-        <Slider {...settings} className='overflow-hidden '>
-              {experience.map((item)=>(
-        <ExperienceCard
-         startDate={item.startDate}
-         endDate={item.endDate}
-         company={item.company}
-         position={item.position}
-         />
+        <Slider {...settings} className='overflow-hidden flex justify-center items-center w-full md:gap-10'>
+        {experience.map((item)=>(
+          <ExperienceCard
+           startDate={item.startDate}
+           endDate={item.endDate}
+           company={item.company}
+           position={item.position}
+          />
       ))}
         </Slider>
     

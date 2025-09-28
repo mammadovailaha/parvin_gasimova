@@ -4,7 +4,7 @@ import SecondryBtn from "../SecondryBtn";
 
 const InfoSection = () => {
   return (
-    <div className="w-full h-[50%] flex justify-around items-center px-10">
+    <div className="w-full h-[50%] flex flex-col md:flex-row justify-around items-center px-10 gap-4">
       <div className="w-[185px] h-[185px]">
         <img
         className="w-full h-full object-contain animate-slow-spin"
@@ -12,7 +12,7 @@ const InfoSection = () => {
           alt="loqo"
         />
       </div>
-      <div className="w-[50%] h-full flex flex-col justify-center items-start gap-2">
+      <div className="w-[90%] md:w-[50%] h-full flex flex-col justify-center items-start gap-2">
         <p className="poppins-bold font-bold text-3xl md:text-5xl text-black z-40 relative bg-gradient-to-r from-black to-gray-200 bg-clip-text text-transparent inline-block animate-gradient-text">
           Brendlərə yaradıcı innovasiya və strateji planlama ilə rəqəmsal
           ustalığa çatmaqda kömək edirəm

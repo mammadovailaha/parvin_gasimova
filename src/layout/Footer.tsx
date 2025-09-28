@@ -17,7 +17,10 @@ const Footer: React.FC = () => {
   <h1 className='text-2xl md:text-5xl font-bold text-white mt-4'>Brendləri <span className='text-2xl md:text-5xl  text-gray-400'> dizayn</span> vasitəsilə  gücləndiririk</h1>
    <div className='flex gap-5 '>
    {sosialLinks.map(link => (
-     <Link key={link.id} className='w-10 h-10 border border-gray-300/60 rounded-full flex justify-center items-center  hover:bg-white hover:border-white transition-all ease-in-out delay-200 text-white hover:text-black text-xl' to={link.link}>
+     <Link 
+     target="_blank"
+     key={link.id} 
+     className='w-10 h-10 border border-gray-300/60 rounded-full flex justify-center items-center  hover:bg-white hover:border-white transition-all ease-in-out delay-200 text-white hover:text-black text-xl' to={link.link}>
        {link.icon}
      </Link>
    ))}
