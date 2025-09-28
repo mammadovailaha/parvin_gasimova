@@ -62,7 +62,7 @@ const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company, serviceI
             opacity: isHovered ? 1 : 0,
           }}
         >
-          <span className="text-black font-semibold text-sm">explore</span>
+          <span className="text-black font-semibold text-sm">Ətraflı</span>
         </div>
       )}
     </div>

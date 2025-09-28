@@ -7,7 +7,7 @@ import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
-    <div className="overflow-x-hidden ">
+    <div className="overflow-x-hidden">
       <ThemeProvider>
         <Navbar />
         <AppRouter />
