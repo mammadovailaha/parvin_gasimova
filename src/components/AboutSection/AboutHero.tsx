@@ -15,10 +15,6 @@ const AboutHero = () => {
             məhsulları və brend kimliyini yaradıram. Hər layihədə məqsədim
             brendlərin vizual dilini gücləndirmək, mesajını düzgün çatdırmaq və
             estetik, yadda qalan nəticələr yaratmaqdır. 
-            <span className="font-semibold text-base md:text-2xl text-gray-400">
-              Əgər işlərim sənin zövqünə uyğundursa, zövqlərimiz üst-üstə
-              düşürsə, bu fürsəti birgə dəyərləndirək!
-            </span>
           </p>
         </div>
         <div className="w-[250px] md:w-[55%] lg:w-[30%] h-[250px] lg:h-[440px] rounded-lg overflow-hidden">

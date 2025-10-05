@@ -1,16 +1,18 @@
-import  { useRef, useEffect, useState } from 'react'
-import MainButton from '../MainButton'
-import SecondryBtn from '../SecondryBtn';
+import { useRef, useEffect, useState } from "react";
+import MainButton from "../MainButton";
+import SecondryBtn from "../SecondryBtn";
+import { HiPencil } from "react-icons/hi";
+import whatsapp from '../../assets/logo/whatsapp-svgrepo-com.svg'
 
 const services = [
   "Brendinq",
-  "Sosial media dizaynı", 
+  "Sosial media dizaynı",
   "Çap məhsulları dizaynı",
   "Loqo dizaynı",
   "Reklam materiallarının dizaynı",
   "Paketləmə dizaynı",
   "Motion dizaynı",
-]
+];
 
 const AboutBtns = () => {
   const mainBtnData = services.slice(0, 3);
@@ -24,16 +26,16 @@ const AboutBtns = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   // Desktop pozisiyalar
   const desktopPositions = [
-    { x: -110, y: 95, rotation: -20},
+    { x: -110, y: 95, rotation: -20 },
     { x: -100, y: 244, rotation: 0 },
     { x: 110, y: 92, rotation: 10 },
     { x: 70, y: 248, rotation: 2 },
@@ -44,7 +46,7 @@ const AboutBtns = () => {
 
   // Mobile pozisiyalar (daha kiçik və sıx)
   const mobilePositions = [
-    { x: -80, y: 20, rotation: -15},
+    { x: -80, y: 20, rotation: -15 },
     { x: -30, y: 50, rotation: 0 },
     { x: 45, y: 35, rotation: 8 },
     { x: 35, y: 33, rotation: 2 },
@@ -57,21 +59,28 @@ const AboutBtns = () => {
 
   const getRandomAnimation = (index: number) => {
     const position = positions[index];
-    
+
     return {
       startX: Math.random() * (isMobile ? 100 : 200) - (isMobile ? 50 : 100),
-      startY: -(Math.random() * (isMobile ? 300 : 500) + (isMobile ? 200 : 400)),
+      startY: -(
+        Math.random() * (isMobile ? 300 : 500) +
+        (isMobile ? 200 : 400)
+      ),
       duration: Math.random() * 0.6 + 0.6,
       delay: Math.random() * 1.5,
       rotation: Math.random() * 720 - 360,
-      finalX: position.x + (Math.random() * (isMobile ? 10 : 15) - (isMobile ? 5 : 7.5)),
-      finalY: position.y + (Math.random() * (isMobile ? 10 : 15) - (isMobile ? 5 : 7.5)),
+      finalX:
+        position.x +
+        (Math.random() * (isMobile ? 10 : 15) - (isMobile ? 5 : 7.5)),
+      finalY:
+        position.y +
+        (Math.random() * (isMobile ? 10 : 15) - (isMobile ? 5 : 7.5)),
       finalRotation: position.rotation + (Math.random() * 4 - 2),
       zIndex: Math.floor(Math.random() * 7) + 1,
     };
   };
 
-  const [animations, setAnimations] = useState(() => 
+  const [animations, setAnimations] = useState(() =>
     services.map((_, index) => getRandomAnimation(index))
   );
 
@@ -106,61 +115,70 @@ const AboutBtns = () => {
   }, []);
 
   return (
-    <div 
-      ref={containerRef} 
-      className='w-[95%] md:w-[90%] lg:w-[45%] h-full p-3 md:p-5 relative min-h-[350px] md:min-h-[550px] flex items-end justify-center overflow-hidden'
+    <div
+      ref={containerRef}
+      className="w-[95%] md:w-[90%] lg:w-[45%] h-full p-3 md:p-5 relative h-screen flex items-end justify-center overflow-hidden"
     >
-      {mainBtnData.map((service, index) => (
-        <div
-          key={index}
-          className={`absolute transition-all ${
-            isVisible 
-              ? 'opacity-100' 
-              : 'opacity-0'
-          }`}
-          style={{
-            left: '50%',
-            top: '50%',
-            transform: isVisible 
-              ? `translate(calc(-50% + ${animations[index].finalX}px), calc(-50% + ${animations[index].finalY}px)) rotate(${animations[index].finalRotation}deg)` 
-              : `translate(calc(-50% + ${animations[index].startX}px), calc(-50% + ${animations[index].startY}px)) rotate(${animations[index].rotation}deg)`,
-            transitionDuration: `${animations[index].duration}s`,
-            transitionDelay: `${animations[index].delay}s`,
-            transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
-            zIndex: animations[index].zIndex,
-          }}
-        >
-          <MainButton text={service} onClick={() => ("")} />
-        </div>
-      ))}
-      {secondaryBtnData.map((service, index) => {
-        const animIndex = mainBtnData.length + index;
-        return (
+      <div className="absolute top-5 md:top-10 left-1/2 -translate-x-1/2 text-center z-50">
+       <div className="flex items-center gap-2"><HiPencil  className="text-3xl text-[#1e1e1e]"/> <h2 className="text-2xl md:text-4xl font-bold text-black">
+          Əlaqə üçün
+        </h2></div>
+        <p className="text-sm md:text-base text-gray-500 mt-2 text-left">
+              Əgər işlərim sənin zövqünə uyğundursa, zövqlərimiz üst-üstə
+              düşürsə, bu fürsəti birgə dəyərləndirək!
+        </p>
+        <p className="text-base md:text-lg text-gray-600 mt-2 text-left font-semibold">parvin.gasimova@inbox.ru </p>
+        <p className="text-sm md:text-base text-gray-600 mt-2 text-left flex gap-2"><img src={whatsapp} alt="WhatsApp" className="w-6 h-6" /> (+994)50 554 75 68</p>
+      </div>
+      <div className="relative w-full min-h-[350px] md:min-h-[550px]">
+        {mainBtnData.map((service, index) => (
           <div
             key={index}
             className={`absolute transition-all ${
-              isVisible 
-                ? 'opacity-100' 
-                : 'opacity-0'
+              isVisible ? "opacity-100" : "opacity-0"
             }`}
             style={{
-              left: '50%',
-              top: '50%',
-              transform: isVisible 
-                ? `translate(calc(-50% + ${animations[animIndex].finalX}px), calc(-50% + ${animations[animIndex].finalY}px)) rotate(${animations[animIndex].finalRotation}deg)` 
-                : `translate(calc(-50% + ${animations[animIndex].startX}px), calc(-50% + ${animations[animIndex].startY}px)) rotate(${animations[animIndex].rotation}deg)`,
-              transitionDuration: `${animations[animIndex].duration}s`,
-              transitionDelay: `${animations[animIndex].delay}s`,
-              transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
-              zIndex: animations[animIndex].zIndex,
+              left: "50%",
+              top: "50%",
+              transform: isVisible
+                ? `translate(calc(-50% + ${animations[index].finalX}px), calc(-50% + ${animations[index].finalY}px)) rotate(${animations[index].finalRotation}deg)`
+                : `translate(calc(-50% + ${animations[index].startX}px), calc(-50% + ${animations[index].startY}px)) rotate(${animations[index].rotation}deg)`,
+              transitionDuration: `${animations[index].duration}s`,
+              transitionDelay: `${animations[index].delay}s`,
+              transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)",
+              zIndex: animations[index].zIndex,
             }}
           >
-            <SecondryBtn text={service} onClick={() => ("")} />
+            <MainButton text={service} onClick={() => ""} />
           </div>
-        );
-      })}
+        ))}
+        {secondaryBtnData.map((service, index) => {
+          const animIndex = mainBtnData.length + index;
+          return (
+            <div
+              key={index}
+              className={`absolute transition-all ${
+                isVisible ? "opacity-100" : "opacity-0"
+              }`}
+              style={{
+                left: "50%",
+                top: "50%",
+                transform: isVisible
+                  ? `translate(calc(-50% + ${animations[animIndex].finalX}px), calc(-50% + ${animations[animIndex].finalY}px)) rotate(${animations[animIndex].finalRotation}deg)`
+                  : `translate(calc(-50% + ${animations[animIndex].startX}px), calc(-50% + ${animations[animIndex].startY}px)) rotate(${animations[animIndex].rotation}deg)`,
+                transitionDuration: `${animations[animIndex].duration}s`,
+                transitionDelay: `${animations[animIndex].delay}s`,
+                transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)",
+                zIndex: animations[animIndex].zIndex,
+              }}
+            >
+              <SecondryBtn text={service} onClick={() => ""} />
+            </div>
+          );
+        })}
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default AboutBtns;

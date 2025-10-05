@@ -43,7 +43,7 @@ const SliderComponent:FC<slideProps> = ({className, data, textStyle}) => {
         }
         
         .animate-slide {
-          animation: slide 20s linear infinite;
+          animation: slide 13s linear infinite;
         }
         
         .animate-slide:hover {

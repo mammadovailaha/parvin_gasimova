@@ -32,7 +32,7 @@ const Collaboration = () => {
         slidesToShow: 5,     // eyni anda neçə element göstərsin
         slidesToScroll: 1,   // hər dəfə neçə element sürüşsün
         autoplay: true,      // avtomatik sürüşsün
-        autoplaySpeed: 2000, // avtomatik keçid sürəti
+        autoplaySpeed: 1300, // avtomatik keçid sürəti
 
         responsive: [
             {
