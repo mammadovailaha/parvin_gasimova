@@ -1,10 +1,10 @@
 import type React from "react";
-import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
-import { useTheme } from "../components/hook/useTheme";
+// import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+// import { useTheme } from "../components/hook/useTheme";
 import { RiMenu5Fill } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
 import logoBlack from ".././assets/logo/parvixel.png";
-import logoWhite from ".././assets/logo/logo parvixel white.png";
+// import logoWhite from ".././assets/logo/logo parvixel white.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import heroBg1 from "../assets/images/hero-bg-1.svg"
@@ -18,7 +18,7 @@ const navLinks = [
 ];
 
 const Navbar: React.FC = () => {
-  const { dark, toggleTheme } = useTheme();
+  // const { dark, toggleTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
         <div className="w-[95%] flex justify-between items-center h-full">
           <div className="w-40 h-22 cursor-pointer" onClick={() => navigate("/")}>
             <img
-              src={dark ? logoWhite : logoBlack}
+              src={logoBlack}
               alt="Logo"
               className="w-full h-full object-cover scale-1.3"
             />
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <div className="flex justify-center items-center gap-2.5">
-            <button
+            {/* <button
               onClick={toggleTheme}
               className="px-4 py-2 outline-none border-none cursor-pointer"
             >
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
               ) : (
                 <IoMoonOutline className="text-xl dark:text-white text-gray-800" />
               )}
-            </button>
+            </button> */}
             <button
               onClick={handleClickContact}
               className="hidden md:block outline-none border-none bg-black dark:bg-gray-800 text-white dark:text-white rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-medium cursor-pointer"

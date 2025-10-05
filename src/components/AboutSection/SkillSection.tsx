@@ -22,7 +22,7 @@ const skillLogos = [
 
 const SkillSection = () => {
     const settings = {
-        dots: true,          // alt nöqtələr
+        dots: false,          // alt nöqtələr
         infinite: true,      // limitsiz dövr etsin
         speed: 500,          // keçid sürəti (ms)
         slidesToShow: 5,     // eyni anda neçə element göstərsin

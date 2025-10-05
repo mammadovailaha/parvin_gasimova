@@ -39,7 +39,7 @@ const MouseFollowerDot: React.FC = () => {
       />
 
       {/* İkinci nöqtə - daha yavaş */}
-      <div
+      {/* <div
         className="fixed w-3.5 h-3.5 bg-[#3f3f3f] rounded-full pointer-events-none z-40 opacity-70"
         style={{
           left: `${position.x - 6}px`,
@@ -54,7 +54,7 @@ const MouseFollowerDot: React.FC = () => {
           top: `${position.y - 4}px`,
           transition: 'all 0.9s ease-out', // Ən yavaş animasiya
         }}
-      />
+      /> */}
     </div>
   );
 };
