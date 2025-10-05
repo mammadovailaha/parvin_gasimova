@@ -27,8 +27,7 @@ const ImageWithScroll: FC<{ image: string; alt: string; index: number }> = ({ im
       // Şəkil viewport-a girəndə 0, çıxanda 1 olur
       const elementTop = rect.top;
       const elementHeight = rect.height;
-      
-      // Daha yaxşı hesablama
+    
       const visiblePercent = Math.max(0, Math.min(1, 
         (windowHeight - elementTop + elementHeight) / (windowHeight + elementHeight)
       ));
@@ -47,7 +46,6 @@ const ImageWithScroll: FC<{ image: string; alt: string; index: number }> = ({ im
   // Y oxu hərəkəti: şəkil aşağıdan yuxarı gəlir
   const translateY = (1 - scrollProgress) * 80 - 30; // 50px → -30px
   
-  // // Rotation: kiçik fırlanma
   // const rotation = scrollProgress * 275 * (index + 1);
 
   return (
