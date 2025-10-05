@@ -1,10 +1,10 @@
 import { FaLocationDot } from "react-icons/fa6"
-import mainPhoto from "../../assets/images/MainPhoto.png"
+import mainPhoto from "../../assets/images/pp about.png"
 import SecondryBtn from "../SecondryBtn"
 
 const AboutHero = () => {
     return (
-       <div className="flex flex-col justify-center items-center gap-8 w-full p-10 mt-16">
+       <div className="flex flex-col justify-center items-center gap-8 w-full p-10 ">
          <div className="flex flex-col-reverse md:flex-row justify-around items-center gap-5">
             <div className="w-full md:[40%] lg:w-[45%] flex flex-col gap-4">
                 <p className="font-bold text-base md:text-xl text-[#1E1E1E]"> Detallara önəm verən sosial media, çap və hərəkətli dizayn
@@ -17,7 +17,7 @@ const AboutHero = () => {
                     animasiyalı və statik dizaynlara qədər fərqli formatlarda müxtəlif işlər
                     təqdim edirəm. Daim öyrənməyə və inkişaf etməyə açığam.</span></p>
             </div>
-            <div className="w-full md:w-[55%] lg:w-[30%] h-[300px] lg:h-[400px] rounded-lg overflow-hidden">
+            <div className="w-[250px] md:w-[55%] lg:w-[30%] h-[250px] lg:h-[440px] rounded-lg overflow-hidden">
                 <img 
                 className="w-full h-full object-cover rounded-lg"
                 src={mainPhoto}

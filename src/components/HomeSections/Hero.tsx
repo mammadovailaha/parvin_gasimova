@@ -5,16 +5,19 @@ import type { FC } from 'react'
 import TypingText from "../TypingText"
 import ServicesSlider from "../SliderComponent"
 const services = [
-  "Brending",
-  "Sosial media dizayn", 
-  "Motion dizayn",
-  "Loqo dizayn",
+  "Brendinq",
+  "Sosial media dizaynı", 
+  "Çap məhsulları dizaynı",
+  "Loqo dizaynı",
+  "Reklam materiallarının dizaynı",
+  "Paketləmə dizaynı",
+  "Motion dizaynı",
 
 ]
 
 const Hero:FC = () => {
   return (
-    <div className='w-full h-screen flex flex-col justify-center items-center relative overflow-hidden gap-10'>
+    <div className='w-full h-[250px] md:h-screen flex flex-col justify-center items-center relative overflow-hidden gap-10'>
          <style>
         {`
           @keyframes float {
@@ -29,7 +32,7 @@ const Hero:FC = () => {
       </style>
       <div className="w-full h-[50%] absolute top-0 left-0 z-0 float"><img className="object-cover w-full h-full" src={heroBg2} alt="" /></div>
       <div className="w-full h-[50%] absolute bottom-0 left-0 z-0 float"><img className="object-cover w-full h-full" src={heroBg1} alt="" /></div>
-     <TypingText text="Qrafik & Motion dizayner" className="poppins-semibold text-3xl md:text-5xl text-black z-40 relative bg-gradient-to-r from-black to-gray-400 bg-clip-text text-transparent inline-block" />
+     <TypingText text="Qrafik & Motion dizayner" className="poppins-bold text-3xl md:text-5xl text-black z-40 relative bg-gradient-to-r from-black to-gray-400 bg-clip-text text-transparent inline-block" />
     <ServicesSlider className="bg-[#f8f8f8]" textStyle="text-lg font-normal text-black dark:text-white" data={services} />
     </div>
   )

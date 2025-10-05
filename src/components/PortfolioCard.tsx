@@ -32,7 +32,7 @@ const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company, serviceI
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onMouseMove={handleMouseMove}
-      className="w-[80%] lg:w-[40%] h-[350px]  md:h-[450px] flex flex-col items-center gap-2.5 rounded-[20px] relative rounded-[20px]"
+      className="w-[80%] lg:w-[40%] h-[200px]  md:h-[450px] flex flex-col items-center gap-2.5 rounded-[20px] relative rounded-[20px]"
     >
       <div
         className={`w-full flex py-4 justify-center items-center bg-white absolute top-[40%] overflow-hidden transition-all duration-700 ${
@@ -49,8 +49,8 @@ const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company, serviceI
         />
       </div>
       <div className="w-full flex justify-between items-center">
-        <p className="text-lg md:text-2xl font-semibold text-black ">{serviceName}</p>
-        <p className="text-lg md:text-2xl font-semibold text-black ">{company}</p>
+        <p className="text-base md:text-2xl font-semibold text-black ">{serviceName}</p>
+        <p className="text-base md:text-2xl font-semibold text-black ">{company}</p>
       </div>
 
       {isHovered && (

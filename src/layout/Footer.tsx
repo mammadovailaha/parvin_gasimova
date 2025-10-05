@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
 
  </div>
 
-<div className='w-full md:w-[70%] xl:w-[50%] flex justify-between items-center text-white pt-5'>
+<div className='w-full md:w-[70%] xl:w-[50%] flex justify-between text-white pt-5'>
   <div className='flex flex-col gap-2.5 '>
-    <p className='text-xl md:text-3xl text-white '>Azərbaycan, <span className='text-xl md:text-3xl text-gray-400'>Bakı</span></p>
-
+    <h2 className='text-xl md:text-3xl text-white'>Ünvan</h2>
+    <span className='text-sm md:text-xl text-gray-400'>Azərbaycan, Bakı</span>
     </div>
           <div className='flex flex-col gap-2.5 '>
-            <h2 className='text-xl md:text-3xl text-white'>Əlaqə</h2>
+              <h2 className='text-xl md:text-3xl text-white'>Əlaqə</h2>
       <p className='text-sm md:text-xl text-gray-400'>+994 50 554 75 68</p>
       <p className='text-sm md:text-xl text-gray-400'>parvin.gasimova@inbox.ru</p>
     </div>
