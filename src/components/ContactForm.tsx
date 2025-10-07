@@ -1,7 +1,7 @@
 // src/components/ContactForm.tsx
 import React from "react";
 import { useFormik } from "formik";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import { contactValidationSchema } from "../validations/contactScehma";
 import MainButton from "./MainButton";
