@@ -1,11 +1,16 @@
 // src/data/portfolioData.ts
 import type { PortfolioItem } from '../types/portfolio';
+import brandbook from "../assets/images/branding.png"
+import sm from "../assets/images/sosial media.png"
+import motion from "../assets/images/motion.png"
+import print from "../assets/images/cap.png"
+
 
 export const portfolioData: PortfolioItem[] = [
   {
     id: 1,
     serviceName: "Brendbook",
-    serviceImage: "https://i.postimg.cc/pXJ2bVbv/e-sederek-bb-21.png",
+    serviceImage: brandbook,
     works: [
       {
         id: 1,
@@ -98,7 +103,7 @@ export const portfolioData: PortfolioItem[] = [
   {
     id: 2,
     serviceName: "Sosial medya dizayni",
-    serviceImage: "https://i.postimg.cc/sg0xqf7X/sanan-asadzade-brandbook-14.png",
+    serviceImage: sm,
     works: [
       {
         id: 2,
@@ -127,7 +132,7 @@ export const portfolioData: PortfolioItem[] = [
   {
     id: 3,
     serviceName: "Motion Dizayn",
-    serviceImage: "https://i.postimg.cc/Y07JbgSW/e-sederek-bb-18.png",
+    serviceImage: motion,
     works: [
       {
         id: 1,
@@ -150,7 +155,7 @@ export const portfolioData: PortfolioItem[] = [
   {
     id: 4,
     serviceName: "Çap Məhsulları",
-    serviceImage: "https://i.postimg.cc/qq7GJMbF/brand-guidline-02.png",
+    serviceImage: print,
     works: [
       {
         id: 1,
