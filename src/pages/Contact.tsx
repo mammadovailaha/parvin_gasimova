@@ -2,7 +2,7 @@ import ContactForm from "../components/ContactForm"
 import { FaBehance, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { TbBrandLinkedin } from 'react-icons/tb'
 import { Link } from 'react-router-dom'
-import emoji from "../assets/images/STK-20251007-WA0006.webp"
+import emoji from "../assets/images/woman-technologist-light-skin-tone_1f469-1f3fb-200d-1f4bb.png"
 
 const sosialLinks = [
   {id:1, icon:<FaInstagram/>, link:"https://www.instagram.com/", label:"Instagram"},
@@ -110,7 +110,7 @@ const Contact = () => {
           <img 
             src={emoji} 
             alt="Emoji" 
-            className="relative w-full h-full object-cover rounded-full shadow-2xl 
+            className="relative w-64 h-full object-cover rounded-full shadow-2xl 
                      transform group-hover:scale-105 transition-all duration-500 cursor-pointer
                      border-8 border-white animate-float" 
           />
@@ -120,107 +120,6 @@ const Contact = () => {
           <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gray-400 rounded-full animate-pulse"></div>
         </div>
       </div>
-
-      <style>{`
-        @keyframes fadeInLeft {
-          from {
-            opacity: 0;
-            transform: translateX(-60px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-
-        @keyframes fadeInRight {
-          from {
-            opacity: 0;
-            transform: translateX(60px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(40px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes slideIn {
-          from {
-            opacity: 0;
-            transform: translateX(-20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-20px);
-          }
-        }
-
-        @keyframes spinSlow {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
-
-        .animate-fadeInLeft {
-          animation: fadeInLeft 1s ease-out;
-        }
-
-        .animate-fadeInRight {
-          animation: fadeInRight 1s ease-out;
-        }
-
-        .animate-fadeInUp {
-          animation: fadeInUp 0.8s ease-out;
-        }
-
-        .animate-slideIn {
-          animation: slideIn 0.6s ease-out forwards;
-          opacity: 0;
-        }
-
-        .animate-float {
-          animation: float 4s ease-in-out infinite;
-        }
-
-        .animate-spinSlow {
-          animation: spinSlow 30s linear infinite;
-        }
-
-        .animation-delay-200 {
-          animation-delay: 0.2s;
-        }
-
-        .animation-delay-400 {
-          animation-delay: 0.4s;
-        }
-
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-      `}</style>
     </div>
   )
 }

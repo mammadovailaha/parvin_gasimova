@@ -1,10 +1,10 @@
-import { FaLocationDot } from "react-icons/fa6";
+// import { FaLocationDot } from "react-icons/fa6";
 import mainPhoto from "../../assets/images/pp about.png";
-import SecondryBtn from "../SecondryBtn";
+// import SecondryBtn from "../SecondryBtn";
 
 const AboutHero = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-8 w-full p-10 ">
+    <div className="flex flex-col justify-center items-center gap-8 w-full p-10 mt-15 ">
       <div className="flex flex-col-reverse md:flex-row justify-around items-center gap-5">
         <div className="w-full md:[40%] lg:w-[45%] flex flex-col gap-4">
           <p className="font-semibold text-base md:text-2xl text-[#1E1E1E]">
@@ -25,7 +25,7 @@ const AboutHero = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center items-center w-full gap-10">
+      {/* <div className="flex justify-center items-center w-full gap-10">
         <SecondryBtn text="Mənimlə əlaqə" onClick={() => {}} />
         <div className="h-[1px] w-[65%] bg-gray-200 hidden md:block" />
         <div className="flex justify-center items-center gap-2">
@@ -34,7 +34,7 @@ const AboutHero = () => {
             Bakı, Azərbaycan
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -46,13 +46,13 @@ const AboutBtns = () => {
 
   // Mobile pozisiyalar (daha kiçik və sıx)
   const mobilePositions = [
-    { x: -80, y: 20, rotation: -15 },
-    { x: -30, y: 50, rotation: 0 },
-    { x: 45, y: 35, rotation: 8 },
-    { x: 35, y: 33, rotation: 2 },
-    { x: 15, y: 65, rotation: 0 },
-    { x: 18, y: 25, rotation: -3 },
-    { x: 0, y: 75, rotation: -2 },
+    { x: -20, y: 12, rotation: -15 },
+    { x: -20, y: 30, rotation: 0 },
+    { x: 28, y: 25, rotation: 8 },
+    { x: 22, y: 23, rotation: 2 },
+    { x: 15, y: 36, rotation: 0 },
+    { x: 12, y: 25, rotation: -3 },
+    { x: 0, y: 35, rotation: -2 },
   ];
 
   const positions = isMobile ? mobilePositions : desktopPositions;
@@ -117,10 +117,10 @@ const AboutBtns = () => {
   return (
     <div
       ref={containerRef}
-      className="w-[95%] md:w-[90%] lg:w-[45%] h-full p-3 md:p-5 relative h-screen flex items-end justify-center overflow-hidden"
+      className="w-[95%] md:w-[90%] lg:w-[45%] h-full p-3 md:p-5 relative h-screen flex items-end md:items-start justify-center overflow-hidden"
     >
       <div className="absolute top-5 md:top-10 left-1/2 -translate-x-1/2 text-center z-50">
-       <div className="flex items-center gap-2"><HiPencil  className="text-3xl text-[#1e1e1e]"/> <h2 className="text-2xl md:text-4xl font-bold text-black">
+       <div className="flex items-center gap-2"><HiPencil  className="text-xl md:text-3xl font-semibold text-[#1e1e1e]"/> <h2 className="text-xl md:text-3xl font-semibold text-black">
           Əlaqə üçün
         </h2></div>
         <p className="text-sm md:text-base text-gray-500 mt-2 text-left">
@@ -130,7 +130,7 @@ const AboutBtns = () => {
         <p className="text-base md:text-lg text-gray-600 mt-2 text-left font-semibold">parvin.gasimova@inbox.ru </p>
         <p className="text-sm md:text-base text-gray-600 mt-2 text-left flex gap-2"><img src={whatsapp} alt="WhatsApp" className="w-6 h-6" /> (+994)50 554 75 68</p>
       </div>
-      <div className="relative w-full min-h-[350px] md:min-h-[550px]">
+      <div className="relative w-full min-h-[635px] md:min-h-[550px] flex items-end justify-center">
         {mainBtnData.map((service, index) => (
           <div
             key={index}
@@ -149,7 +149,7 @@ const AboutBtns = () => {
               zIndex: animations[index].zIndex,
             }}
           >
-            <MainButton text={service} onClick={() => ""} />
+            <MainButton text={service} onClick={() => ""} className="!w-28  !text-[10px] md:text-sm" />
           </div>
         ))}
         {secondaryBtnData.map((service, index) => {
@@ -172,7 +172,7 @@ const AboutBtns = () => {
                 zIndex: animations[animIndex].zIndex,
               }}
             >
-              <SecondryBtn text={service} onClick={() => ""} />
+              <SecondryBtn text={service} onClick={() => ""}   className="!w-28  !text-[10px] md:text-sm"/>
             </div>
           );
         })}

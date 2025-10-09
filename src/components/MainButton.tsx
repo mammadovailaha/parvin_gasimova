@@ -4,14 +4,15 @@ interface btnProps {
   text: string;
   onClick?: () => void;
   disabled?: boolean;
+  className?: string;
 }
 
-const MainButton: FC<btnProps> = ({ text, onClick, disabled }) => {
+const MainButton: FC<btnProps> = ({ text, onClick, disabled, className }) => {
   return (
     <button
       onClick={onClick}
       disabled={disabled}
-      className="relative inline-block bg-black border-none outline-none rounded-[30px] tracking-normal overflow-hidden group h-12 px-6"
+      className={`${className} relative inline-block bg-black border-none outline-none rounded-[30px] tracking-normal overflow-hidden group h-12 px-6`}
     >
       {/* Ön tərəf */}
       <span className="block transition-all duration-500 group-hover:-translate-y-full text-white text-sm md:text-base font-normal leading-[48px] text-center w-full">

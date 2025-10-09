@@ -47,8 +47,8 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="w-full h-15 md:h-20 bg-white dark:bg-gray-900 md:px-4 py-2 fixed top-0 left-0 z-50 shadow-md relative">
-        <div className="w-[95%] flex justify-between items-center h-full">
+      <div className="w-full h-15 md:h-20 bg-white dark:bg-gray-900 px-4 md:px-8 py-2 fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div className="max-w-[1400px] mx-auto flex justify-between items-center h-full">
           <div className="w-40 h-22 cursor-pointer" onClick={() => navigate("/")}>
             <img
               src={logoBlack}
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className="relative inline-block text-black dark:text-white font-medium text-sm lg:text-[17px] tracking-normal overflow-hidden group h-[24px]  relative z-50"
+                    className="relative inline-block text-black dark:text-white font-medium text-sm lg:text-[17px] tracking-normal overflow-hidden group h-[24px] relative z-50"
                   >
                     {/* Ön tərəf */}
                     <span className="block transition-all duration-500 group-hover:-translate-y-full">

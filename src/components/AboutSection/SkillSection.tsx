@@ -1,5 +1,4 @@
 import { HiOutlineLightBulb } from "react-icons/hi"
-import capcut from "../../assets/logo/capcutLogo.svg"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -9,6 +8,7 @@ import skilpng3 from "../../assets/logo/pngwing.com - 2024-10-09T223858.431.png"
 import skilpng4 from "../../assets/logo/pngwing.com - 2024-10-09T223908.067.png"
 import skilpng5 from "../../assets/logo/pngwing.com - 2024-10-09T223918.000.png"
 import skilpng6 from "../../assets/logo/pngwing.com.png"
+import skilpng7 from "../../assets/logo/vecteezy_capcut-transparent-icon_48759325 (1).png"
 
 const skillLogos = [
        {icon: <img src={skilpng1} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
@@ -17,7 +17,7 @@ const skillLogos = [
        {icon: <img src={skilpng4} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
        {icon: <img src={skilpng5} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
        {icon: <img src={skilpng6} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
-       {icon: <img src={capcut} alt="CapCut Logo" className="w-12 md:w-20 h-12 md:h-20" />},
+       {icon: <img src={skilpng7} alt="CapCut Logo" className="w-12 md:w-20 h-12 md:h-20" />},
 ]
 
 const SkillSection = () => {
@@ -50,9 +50,9 @@ const SkillSection = () => {
         ],
     };
     return (
-        <div className="w-full flex flex-col gap-8 md:gap-16 items-center">
+        <div className="w-full flex flex-col gap-8 md:gap-16 items-center mt-5">
             <div className="flex items-center gap-2 w-full justify-center"><HiOutlineLightBulb className="text-4xl text-[#1e1e1e]" />
-                <h2 className="text-2xl md:text-4xl font-bold text-[#1e1e1e]">Yaradıcılıq Bacarıqları</h2></div>
+                <h2 className="text-xl md:text-2xl font-semibold text-[#1e1e1e]">Yaradıcılıq Bacarıqları</h2></div>
             <Slider {...settings} className="w-[90%] flex justify-center items-center md:gap-10">
                 {skillLogos.map((logo, index) => (
                     <div key={index} className="flex justify-center items-center gap-2 mb-8 relative">
