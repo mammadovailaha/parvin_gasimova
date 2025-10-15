@@ -1,24 +1,27 @@
-// src/pages/Portfolio.tsx
-import ProtfolioCard from '../components/PortfolioCard';
-import { portfolioData } from '../data/portfolioData';
+import { type FC } from "react";
+import { portfolioData } from "../data/portfolioData";
+import PortfolioSection from "../components/HomeSections/ProtfolioSection";
 
-const Portfolio = () => {
+const Portfolio: FC = () => {
+  // Debug console log
+  console.log("=== PORTFOLIO DATA DEBUG ===");
+  console.log("portfolioData:", portfolioData);
+  portfolioData.forEach((item, idx) => {
+    console.log(`Item ${idx}:`, {
+      id: item.id,
+      name: item.serviceName,
+      isBranding: item.isBranding,
+      hasWorks: item.works?.length,
+      hasBrandings: item.brandings?.length,
+      serviceImage: item.serviceImage,
+    });
+  });
+
   return (
-    <div className='w-full flex flex-col items-center gap-6 md:gap-10 my-6 md:my-10 overflow-hidden py-18 md:pt-24'>
-      <h1 className="text-2xl md:text-4xl font-bold text-black dark:text-white">Featured work</h1>
-      <div className='flex flex-wrap justify-center gap-10'>
-        {portfolioData.map((item, idx) => (
-          <ProtfolioCard
-            key={idx}
-            serviceName={item.serviceName}
-            serviceImage={item.serviceImage}
-            serviceId={item.id}
-            workId={item.works[0]?.id || 1}
-          />
-        ))}
-      </div>
+    <div className="w-full min-h-screen bg-white pt-24">
+      <PortfolioSection />
     </div>
-  )
+  );
 };
 
 export default Portfolio;

@@ -1,13 +1,17 @@
-// src/types/portfolio.ts
+export interface BrandingWork {
+  id: number;
+  name: string;
+  slug: string;
+  images: string[];
+}
 
 export interface Work {
   id: number;
-  type: string;
+  type: "carousel" | "video" | "single";
   ProjectName: string;
   year: string;
   about: string;
   images?: string[];
-  image?: string[];
   video?: string;
 }
 
@@ -15,5 +19,7 @@ export interface PortfolioItem {
   id: number;
   serviceName: string;
   serviceImage: string;
-  works: Work[];
+  isBranding?: boolean;
+  brandings?: BrandingWork[];
+  works?: Work[];
 }

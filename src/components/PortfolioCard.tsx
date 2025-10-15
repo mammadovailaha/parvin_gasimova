@@ -1,18 +1,17 @@
 import { useRef, useState, type FC } from "react";
 import { useNavigate } from "react-router-dom";
+import type { PortfolioItem } from "../types/portfolio";
 
 interface Props {
-  serviceName: string;
-  serviceImage: string;
-  company?: string;
-   serviceId: number;
-  workId: number;
+  item: PortfolioItem;
 }
-const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company, serviceId, workId }) => {
+
+const PortfolioCard: FC<Props> = ({ item }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const cardRef = useRef<HTMLDivElement>(null);
- const navigate = useNavigate();
+  const navigate = useNavigate();
+
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (cardRef.current) {
       const rect = cardRef.current.getBoundingClientRect();
@@ -22,40 +21,57 @@ const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company, serviceI
       });
     }
   };
-    const handleCardClick = () => {
-    navigate(`/portfolio/${serviceId}/${workId}`);
+
+  const handleCardClick = () => {
+    if (item.isBranding) {
+      // Brendingdirse scroll animation ilə detail-ə get
+      const firstBranding = item.brandings?.[0];
+      if (firstBranding) {
+        navigate(`/portfolio/branding/${firstBranding.slug}`);
+      }
+    } else {
+      // Digər kategoriyalar - carousel detail-ə get
+      const firstWork = item.works?.[0];
+      if (firstWork) {
+        navigate(`/portfolio/${item.id}/${firstWork.id}`);
+      }
+    }
   };
+
   return (
     <div
-    onClick={handleCardClick}
+      onClick={handleCardClick}
       ref={cardRef}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onMouseMove={handleMouseMove}
-      className="w-[80%] lg:w-[40%] h-[200px]  md:h-[450px] flex flex-col items-center gap-2.5 rounded-[20px] relative rounded-[20px]"
+      className="w-[80%] lg:w-[40%] h-[200px] md:h-[450px] flex flex-col items-center gap-2.5 rounded-[20px] relative cursor-pointer"
     >
       <div
-        className={`w-full flex py-4 justify-center items-center bg-white absolute top-[40%] overflow-hidden transition-all duration-700 ${
+        className={`w-full flex py-4 justify-center items-center bg-white absolute top-[40%] overflow-hidden transition-all duration-700 z-20 ${
           isHovered ? "max-h-12 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <p className="text-2xl font-semibold text-black">{serviceName}</p>
+        <p className="text-2xl font-semibold text-black">{item.serviceName}</p>
       </div>
-      <div className="w-full h-[400px] rounded-[20px]  ">
+
+      <div className="w-full h-[400px] rounded-[20px] overflow-hidden">
         <img
-          className="w-full h-full object-cover rounded-[20px]"
-          src={serviceImage}
-          alt={`${serviceName} sekli`}
+          className="w-full h-full object-cover rounded-[20px] transition-transform duration-300 hover:scale-105"
+          src={item.serviceImage}
+          alt={`${item.serviceName} şəkli`}
         />
       </div>
-      <div className="w-full flex justify-between items-center">
-        <p className="text-base md:text-2xl font-semibold text-black ">{serviceName}</p>
-        <p className="text-base md:text-2xl font-semibold text-black ">{company}</p>
+
+      <div className="w-full flex justify-between items-center px-2">
+        <p className="text-base md:text-2xl font-semibold text-black">
+          {item.serviceName}
+        </p>
       </div>
 
       {isHovered && (
         <div
-          className="absolute w-[100px] h-[100px] bg-white rounded-full flex items-center justify-center pointer-events-none z-30 transition-opacity duration-200"
+          className="absolute w-[100px] h-[100px] bg-white rounded-full flex items-center justify-center pointer-events-none z-30 transition-opacity duration-200 shadow-lg"
           style={{
             left: mousePosition.x - 50,
             top: mousePosition.y - 50,
@@ -69,4 +85,4 @@ const ProtfolioCard: FC<Props> = ({ serviceName, serviceImage, company, serviceI
   );
 };
 
-export default ProtfolioCard;
+export default PortfolioCard;
