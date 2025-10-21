@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Work } from "../types/portfolio";
+import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 
 interface WorkCardProps {
   work: Work;
@@ -7,7 +8,7 @@ interface WorkCardProps {
 
 const WorkCard = ({ work }: WorkCardProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
+  const [, setIsHovered] = useState(false);
 
   const images = work.images || [];
 
@@ -41,29 +42,29 @@ const WorkCard = ({ work }: WorkCardProps) => {
         )}
 
         {/* Hover overlay - şəkillərin sayı */}
-        {isHovered && images.length > 0 && (
+        {/* {isHovered && images.length > 0 && (
           <div className="absolute inset-0 bg-[#000]/30 flex items-center justify-center">
             <span className="text-white font-semibold text-lg">
               {currentImageIndex + 1} / {images.length}
             </span>
           </div>
-        )}
+        )} */}
 
         {/* Slider butonları */}
         {images.length > 1 && (
           <>
             <button
               onClick={handlePrevImage}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white text-black p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 hover:bg-gray-200"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/50 text-black p-3 rounded-[50%] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 hover:bg-gray-200"
             >
-              ←
+              <FaAngleDoubleLeft />
             </button>
 
             <button
               onClick={handleNextImage}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-black p-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 hover:bg-gray-200"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/50 text-black p-3 rounded-[50%] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 hover:bg-gray-200"
             >
-              →
+              <FaAngleDoubleRight />
             </button>
           </>
         )}

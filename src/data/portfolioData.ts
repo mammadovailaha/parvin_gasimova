@@ -4,8 +4,6 @@ import sm from "../assets/images/sosial media.png";
 import motion from "../assets/images/motion.png";
 import print from "../assets/images/cap.png";
 
-import prtf2 from "../assets/protfolio/portofino-02.png";
-import prtf3 from "../assets/protfolio/portofino-03.png";
 
 export const portfolioData: PortfolioItem[] = [
   {
@@ -18,25 +16,25 @@ export const portfolioData: PortfolioItem[] = [
         id: 1,
         name: "Karibu",
         slug: "karibu",
-        images: [prtf2, prtf3, prtf2],
+        images: [],
       },
       {
         id: 2,
         name: "Relax",
         slug: "relax",
-        images: [prtf3, prtf2],
+        images: [],
       },
       {
         id: 3,
         name: "Kəlbəcər",
         slug: "kelbecer",
-        images: [prtf2, prtf3, prtf2, prtf3],
+        images: [],
       },
       {
         id: 4,
         name: "MV",
         slug: "mv",
-        images: [prtf3],
+        images: [],
       },
     ],
   },
@@ -425,7 +423,7 @@ export const portfolioData: PortfolioItem[] = [
         id: 1,
         company: "Çap Şirkəti",
         year: "2025",
-        images: [prtf3],
+        images: [],
       },
     ],
   },
