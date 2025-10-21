@@ -4,7 +4,7 @@ import SecondryBtn from "../SecondryBtn";
 
 const InfoSection = () => {
   return (
-    <div className="w-full h-[50%] flex flex-col md:flex-row justify-around items-center px-10 mt-15 gap-4">
+    <div className="w-full h-[50%] flex flex-col md:flex-row justify-around items-center px-10 mt-15 gap-4 animate-fade-in-up">
       <div className="w-[185px] h-[185px]">
         <img
         className="w-full h-full object-contain animate-slow-spin"

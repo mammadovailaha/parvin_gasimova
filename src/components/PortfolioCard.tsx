@@ -23,19 +23,7 @@ const PortfolioCard: FC<Props> = ({ item }) => {
   };
 
   const handleCardClick = () => {
-    if (item.isBranding) {
-      // Brendingdirse scroll animation ilə detail-ə get
-      const firstBranding = item.brandings?.[0];
-      if (firstBranding) {
-        navigate(`/portfolio/branding/${firstBranding.slug}`);
-      }
-    } else {
-      // Digər kategoriyalar - carousel detail-ə get
-      const firstWork = item.works?.[0];
-      if (firstWork) {
-        navigate(`/portfolio/${item.id}/${firstWork.id}`);
-      }
-    }
+    navigate(`/portfolio/${item.id}`);
   };
 
   return (

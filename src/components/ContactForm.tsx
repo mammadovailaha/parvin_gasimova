@@ -107,7 +107,7 @@ const ContactForm: React.FC = () => {
         )}
       </div>
 
-    <MainButton text={formik.isSubmitting ? "Göndərilir..." : "Göndər"} disabled={formik.isSubmitting} />
+    <MainButton type="submit" text={formik.isSubmitting ? "Göndərilir..." : "Göndər"} disabled={formik.isSubmitting} />
     </form>
   );
 };

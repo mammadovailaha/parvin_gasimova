@@ -31,7 +31,7 @@ const ImagesSection = () => {
   const column3 = images.slice(8, 12);
 
   return (
-    <div className="w-[95%] h-auto flex justify-center items-center gap-5 px-2 rounded-[40px] bg-black overflow-y-srcoll scrollbar-hide  ">
+    <div className="w-[95%] h-auto flex justify-center items-center gap-5 px-2 rounded-[40px] bg-black overflow-y-srcoll scrollbar-hide  animate-slide-in">
       {/* Column 1 */}
     <div className="w-full h-full flex flex-wrap justify-center items-center  gap-3 md:gap-5 overflow-hidden py-2 rounded-[40px]">
           <div

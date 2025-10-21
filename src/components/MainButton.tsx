@@ -5,11 +5,13 @@ interface btnProps {
   onClick?: () => void;
   disabled?: boolean;
   className?: string;
+  type?: "button" | "submit" | "reset";
 }
 
-const MainButton: FC<btnProps> = ({ text, onClick, disabled, className }) => {
+const MainButton: FC<btnProps> = ({ text, onClick, disabled, className, type }) => {
   return (
     <button
+      type={type}
       onClick={onClick}
       disabled={disabled}
       className={`${className} relative inline-block bg-black border-none outline-none rounded-[30px] tracking-normal overflow-hidden group h-12 px-6`}

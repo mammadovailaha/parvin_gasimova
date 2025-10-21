@@ -5,14 +5,17 @@ export interface BrandingWork {
   images: string[];
 }
 
+export interface Post {
+  id: number;
+  images: string[];
+}
+
 export interface Work {
   id: number;
-  type: "carousel" | "video" | "single";
-  ProjectName: string;
+  company: string;
   year: string;
-  about: string;
+  posts?: Post[];
   images?: string[];
-  video?: string;
 }
 
 export interface PortfolioItem {

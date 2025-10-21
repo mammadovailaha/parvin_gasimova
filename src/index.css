@@ -1,9 +1,11 @@
 @import "tailwindcss";
+
 /* Yavaş fırlanma üçün */
 @keyframes slow-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -12,14 +14,17 @@
 .animate-slow-spin {
   animation: slow-spin 7s linear infinite;
 }
+
 /* Yavaş gradient mətn animasiyası */
 @keyframes gradient-move {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -33,102 +38,160 @@
   -webkit-text-fill-color: transparent;
   animation: gradient-move 8s ease infinite;
 }
-        @keyframes fadeInLeft {
-          from {
-            opacity: 0;
-            transform: translateX(-60px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
 
-        @keyframes fadeInRight {
-          from {
-            opacity: 0;
-            transform: translateX(60px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
 
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(40px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-        @keyframes slideIn {
-          from {
-            opacity: 0;
-            transform: translateX(-20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
 
-        @keyframes float {
-          0%, 100% {
-            transform: translateY(0px);
-          }
-          50% {
-            transform: translateY(-20px);
-          }
-        }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-        @keyframes spinSlow {
-          from {
-            transform: rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg);
-          }
-        }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
 
-        .animate-fadeInLeft {
-          animation: fadeInLeft 1s ease-out;
-        }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-        .animate-fadeInRight {
-          animation: fadeInRight 1s ease-out;
-        }
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
 
-        .animate-fadeInUp {
-          animation: fadeInUp 0.8s ease-out;
-        }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-        .animate-slideIn {
-          animation: slideIn 0.6s ease-out forwards;
-          opacity: 0;
-        }
+@keyframes float {
 
-        .animate-float {
-          animation: float 4s ease-in-out infinite;
-        }
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
 
-        .animate-spinSlow {
-          animation: spinSlow 30s linear infinite;
-        }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 
-        .animation-delay-200 {
-          animation-delay: 0.2s;
-        }
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
 
-        .animation-delay-400 {
-          animation-delay: 0.4s;
-        }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
-        .animation-delay-2000 {
-          animation-delay: 2s;
-        }
-  
+.animate-fadeInLeft {
+  animation: fadeInLeft 1s ease-out;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 1s ease-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-spinSlow {
+  animation: spinSlow 30s linear infinite;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out;
+}

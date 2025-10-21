@@ -14,7 +14,7 @@ const data2=[
 ]
 const NameSlide = () => {
   return (
-     <div className="w-full ">
+     <div className="w-full animate-in-fade-up">
       <SliderComponent data={data2}  className='bg-none ' textStyle='text-4xl font-bold text-gray-300 dark:text-white'/>
     <SliderComponent data={data}  className='bg-none ' textStyle='text-4xl font-bold text-black dark:text-white'/>
     </div>

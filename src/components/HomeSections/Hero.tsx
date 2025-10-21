@@ -17,7 +17,7 @@ const services = [
 
 const Hero:FC = () => {
   return (
-    <div className='w-full h-[250px] md:h-screen flex flex-col justify-center items-center relative overflow-hidden gap-10'>
+    <div className='w-full h-[250px] md:h-screen flex flex-col justify-center items-center relative overflow-hidden gap-10 animate-fade-in-up'>
          <style>
         {`
           @keyframes float {
