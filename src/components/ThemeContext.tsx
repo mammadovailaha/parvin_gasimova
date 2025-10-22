@@ -1,34 +1,34 @@
-import { createContext, useState, useEffect } from "react";
-import type { ReactNode } from "react";
+// import { createContext, useState, useEffect } from "react";
+// import type { ReactNode } from "react";
 
-export type ThemeContextType = {
-  dark: boolean;
-  toggleTheme: () => void;
-};
+// export type ThemeContextType = {
+//   dark: boolean;
+//   toggleTheme: () => void;
+// };
 
-// eslint-disable-next-line react-refresh/only-export-components
-export const ThemeContext = createContext<ThemeContextType | undefined>(
-  undefined
-);
+// // eslint-disable-next-line react-refresh/only-export-components
+// export const ThemeContext = createContext<ThemeContextType | undefined>(
+//   undefined
+// );
 
-type ThemeProviderProps = {
-  children: ReactNode;
-};
+// type ThemeProviderProps = {
+//   children: ReactNode;
+// };
 
-export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [dark, setDark] = useState<boolean>(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
+// export const ThemeProvider = ({ children }: ThemeProviderProps) => {
+//   const [dark, setDark] = useState<boolean>(() => {
+//     return localStorage.getItem("theme") === "dark";
+//   });
 
-  const toggleTheme = () => setDark((prev) => !prev);
+//   const toggleTheme = () => setDark((prev) => !prev);
 
-  useEffect(() => {
-    localStorage.setItem("theme", dark ? "dark" : "light");
-  }, [dark]);
+//   useEffect(() => {
+//     localStorage.setItem("theme", dark ? "dark" : "light");
+//   }, [dark]);
 
-  return (
-    <ThemeContext.Provider value={{ dark, toggleTheme }}>
-      <div className={`${dark ? "dark" : ""} overflow-x-hidden`}>{children}</div>
-    </ThemeContext.Provider>
-  );
-};
+//   return (
+//     <ThemeContext.Provider value={{ dark, toggleTheme }}>
+//       <div className={`${dark ? "dark" : ""} overflow-x-hidden`}>{children}</div>
+//     </ThemeContext.Provider>
+//   );
+// };
