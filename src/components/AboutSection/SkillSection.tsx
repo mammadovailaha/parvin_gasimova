@@ -52,7 +52,7 @@ const SkillSection = () => {
     return (
         <div className="w-full flex flex-col gap-8 md:gap-16 items-center mt-5">
             <div className="flex items-center gap-2 w-full justify-center"><HiOutlineLightBulb className="text-4xl text-[#1e1e1e]" />
-                <h2 className="text-xl md:text-2xl font-semibold text-[#1e1e1e]">Yaradıcılıq Bacarıqları</h2></div>
+                <h2 className="text-xl md:text-2xl font-poppins font-semibold text-[#1e1e1e]">Yaradıcılıq Bacarıqları</h2></div>
             <Slider {...settings} className="w-[90%] flex justify-center items-center md:gap-10">
                 {skillLogos.map((logo, index) => (
                     <div key={index} className="flex justify-center items-center gap-2 mb-8 relative">

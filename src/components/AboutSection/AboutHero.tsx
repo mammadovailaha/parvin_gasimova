@@ -7,7 +7,7 @@ const AboutHero = () => {
     <div className="flex flex-col justify-center items-center gap-8 w-full p-10 mt-15 ">
       <div className="flex flex-col-reverse md:flex-row justify-around items-center gap-5">
         <div className="w-full md:[40%] lg:w-[45%] flex flex-col gap-4">
-          <p className="font-semibold text-base md:text-2xl text-[#1E1E1E]">
+          <p className="font-normal font-poppins text-base md:text-2xl text-[#1E1E1E]">
             Salam! Mən Pərvin Qasımova, qrafik dizaynerəm. Artıq 2 ildir bu
             sahədə çalışıram və yalnız qrafik dizaynla məhdudlaşmıram — eyni
             zamanda motion dizayner kimi də fəaliyyət göstərirəm. <br />

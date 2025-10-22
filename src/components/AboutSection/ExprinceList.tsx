@@ -3,6 +3,13 @@ import ExprinceCard from "./ExprinceCard";
 
 const experience = [
   {
+    id: 71,
+    company: "SANAN ASADZADE MMC",
+    position: "Qrafik dizayner",
+    startDate: "May 2025",
+    endDate: "Sentiyabr 2025",
+  },
+  {
     id: 1,
     company: "Saat Store mağazalar şəbəkəsi",
     position: "Qrafik dizayner",
@@ -24,13 +31,6 @@ const experience = [
     endDate: "May 2025",
   },
   {
-    id: 4,
-    company: "Readeng Publishing nəşriyyat evi",
-    position: "Qrafik dizayner",
-    startDate: "Avqust 2024",
-    endDate: "Sentiyabr 2024",
-  },
-  {
     id: 5,
     company: "Aseto Group Reklam Agentliyi",
     position: "Qrafik dizayner / təcrübəçi",
@@ -44,7 +44,7 @@ const ExprinceList = () => {
     <div className="w-[90%] md:w-[50%] flex flex-col gap-4 md:gap-5 mt-5 px-4 md:px-0">
       <div className="flex items-center justify-start gap-2 border-b  border-gray-200 pb-2 md:pb-4 w-[90%] md:w-[80%]">
         <PiStarFourFill className="text-[#1e1e1e] text-xl md:text-2xl" />
-        <h2 className="text-xl md:text-3xl font-semibold text-[#1e1e1e]">
+        <h2 className="text-xl md:text-3xl font-poppins font-semibold text-[#1e1e1e]">
           Təcrübə
         </h2>
       </div>

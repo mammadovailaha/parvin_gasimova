@@ -13,12 +13,12 @@ const sosialLinks = [
 
 const Contact = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20 p-8 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+    <div className="w-full min-h-screen flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20 mt-16 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
       
       {/* Animated Background Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 -left-20 w-96 h-96 bg-[#aeff00] rounded-full opacity-5 animate-pulse"></div>
-        <div className="absolute bottom-20 -right-20 w-96 h-96 bg-gray-400 rounded-full opacity-5 animate-pulse animation-delay-2000"></div>
+        <div className="absolute bottom-20 -right-20 w-96 h-90 bg-gray-400 rounded-full opacity-5 animate-pulse animation-delay-2000"></div>
       </div>
 
       {/* Form Section - Glass Morphism */}

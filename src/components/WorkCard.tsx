@@ -8,12 +8,13 @@ interface WorkCardProps {
 
 const WorkCard = ({ work }: WorkCardProps) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const images = work.images || [];
 
   const handlePrevImage = (e: React.MouseEvent) => {
     e.stopPropagation();
+    if (images.length <= 1) return;
     setCurrentImageIndex((prev) =>
       prev === 0 ? images.length - 1 : prev - 1
     );
@@ -21,10 +22,19 @@ const WorkCard = ({ work }: WorkCardProps) => {
 
   const handleNextImage = (e: React.MouseEvent) => {
     e.stopPropagation();
+    if (images.length <= 1) return;
     setCurrentImageIndex((prev) =>
       prev === images.length - 1 ? 0 : prev + 1
     );
   };
+
+  if (images.length === 0) {
+    return (
+      <div className="relative w-full h-[430px] lg:h-[380px] rounded-lg overflow-hidden bg-gray-200/90 shadow-md flex items-center justify-center">
+        <p className="text-gray-600">Şəkil yoxdur</p>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -32,49 +42,40 @@ const WorkCard = ({ work }: WorkCardProps) => {
       onMouseLeave={() => setIsHovered(false)}
       className="group cursor-pointer w-full flex justify-center"
     >
-      <div className="relative w-[80%] md:w-full h-[380px] rounded-lg overflow-hidden bg-gray-200/90 shadow-md">
-        {images.length > 0 && (
-          <img
-            src={images[currentImageIndex]}
-            alt={`Work ${work.id} - Image ${currentImageIndex + 1}`}
-            className="w-full h-full object-cover transition-all duration-300"
-          />
-        )}
-
-        {/* Hover overlay - şəkillərin sayı */}
-        {/* {isHovered && images.length > 0 && (
-          <div className="absolute inset-0 bg-[#000]/30 flex items-center justify-center">
-            <span className="text-white font-semibold text-lg">
-              {currentImageIndex + 1} / {images.length}
-            </span>
-          </div>
-        )} */}
+      <div className="relative w-[80%] md:w-full h-[430px] lg:h-[380px] rounded-lg overflow-hidden bg-gray-200/90 shadow-md">
+        <img
+          src={images[currentImageIndex]}
+          alt={`Work ${work.id} - Image ${currentImageIndex + 1}`}
+          className="w-full h-full object-cover"
+          key={currentImageIndex}
+        />
 
         {/* Slider butonları */}
         {images.length > 1 && (
           <>
             <button
               onClick={handlePrevImage}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/50 text-black p-3 rounded-[50%] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 hover:bg-gray-200"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 text-black p-1 rounded-full hover:bg-white transition-colors z-10"
             >
-              <FaAngleDoubleLeft />
+              <FaAngleDoubleLeft size={14} />
             </button>
 
             <button
               onClick={handleNextImage}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/50 text-black p-3 rounded-[50%] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 hover:bg-gray-200"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 text-black p-1 rounded-full hover:bg-white transition-colors z-10"
             >
-              <FaAngleDoubleRight />
+              <FaAngleDoubleRight size={14} />
             </button>
+
+            {/* Şəkillərin sayı */}
+            {isHovered && (
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/50 text-white px-2 py-1 rounded-lg text-sm font-semibold">
+                {currentImageIndex + 1} / {images.length}
+              </div>
+            )}
           </>
         )}
       </div>
-
-      {/* Şirkət adı */}
-      {/* <div className="mt-3">
-        <h3 className="text-lg font-semibold text-black">{work.company}</h3>
-        <p className="text-sm text-gray-600">{work.year}</p>
-      </div> */}
     </div>
   );
 };

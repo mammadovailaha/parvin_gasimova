@@ -4,9 +4,10 @@ interface slideProps{
   className:string;
   data:Array<T>;
   textStyle:string;
+  onClick:()=>void;
 }
 
-const SliderComponent:FC<slideProps> = ({className, data, textStyle}) => {
+const SliderComponent:FC<slideProps> = ({className, data, textStyle, onClick}) => {
   return (
     <div className={` w-full h-20 bg-white  dark:bg-gray-900 px-4 py-2 overflow-hidden flex items-center justify-center `}>
       <div className={` ${className} relative w-full max-w-7xl overflow-hidden rounded-[30px] `}>
@@ -16,6 +17,7 @@ const SliderComponent:FC<slideProps> = ({className, data, textStyle}) => {
             <span 
               key={`first-${index}`} 
               className={`${textStyle} whitespace-nowrap `}
+              onClick={onClick}
             >
               {item}
             </span>
@@ -25,6 +27,7 @@ const SliderComponent:FC<slideProps> = ({className, data, textStyle}) => {
             <span 
               key={`second-${index}`} 
               className={`${textStyle} whitespace-nowrap `}
+              onClick={onClick}
             >
               {item}
             </span>

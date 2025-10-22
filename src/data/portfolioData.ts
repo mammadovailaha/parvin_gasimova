@@ -4,7 +4,6 @@ import sm from "../assets/images/sosial media.png";
 import motion from "../assets/images/motion.png";
 import print from "../assets/images/cap.png";
 
-
 export const portfolioData: PortfolioItem[] = [
   {
     id: 1,
@@ -43,99 +42,6 @@ export const portfolioData: PortfolioItem[] = [
     serviceName: "Sosial medya dizayni",
     serviceImage: sm,
     works: [
-      {
-        id: 1,
-        company: "E-sederek",
-        year: "2025",
-        posts: [
-          {
-            id: 1,
-            images: [
-              "https://i.postimg.cc/sXvxbyq1/1.png",
-              "https://i.postimg.cc/mZ1hwL75/2.png",
-              "https://i.postimg.cc/C581L7FZ/3.png",
-              "https://i.postimg.cc/5yz0Ngx0/4.png",
-              "https://i.postimg.cc/QC7txmXj/5.png",
-              "https://i.postimg.cc/ryRzJV5b/6.png",
-              "https://i.postimg.cc/NfhFC3xS/7.png",
-              "https://i.postimg.cc/NfhFC34F/8.png",
-              "https://i.postimg.cc/PrmxgS39/9.png",
-            ],
-          },
-        ],
-      },
-      {
-        id: 2,
-        company: "Relax",
-        year: "2025",
-        posts: [
-          {
-            id: 4567,
-            images: [
-              "https://i.postimg.cc/9Xsb8QKW/1.png",
-              "https://i.postimg.cc/gc1sS2QK/2.png",
-              "https://i.postimg.cc/KcCfq8wQ/3.png",
-              "https://i.postimg.cc/02mfLq1w/4.png",
-            ],
-          },
-          {
-            id: 89,
-            images: [
-              "https://i.postimg.cc/d3ZzbSJ4/1.png",
-              "https://i.postimg.cc/HjGfd4LK/2.png",
-              "https://i.postimg.cc/14xLsczL/3.png",
-              "https://i.postimg.cc/G90ZdJpW/4.png",
-              "https://i.postimg.cc/BtWd4cvR/5.png",
-            ],
-          },
-          {
-            id: 567,
-            images: [
-              "https://i.postimg.cc/J4L8wMBM/1.png",
-              "https://i.postimg.cc/zXrNm8RC/2.png",
-              "https://i.postimg.cc/pXHvNRn8/3.png",
-              "https://i.postimg.cc/SNh40kzc/4.png",
-              "https://i.postimg.cc/kXmCrqtK/5.png",
-            ],
-          },
-          {
-            id: 6789,
-            images: [
-              "https://i.postimg.cc/2S9g5D3x/1.png",
-              "https://i.postimg.cc/pd94h6nZ/2.png",
-              "https://i.postimg.cc/CKZXBQfm/3.png",
-              "https://i.postimg.cc/fb3ptr05/4.png",
-            ],
-          },
-          {
-            id: 234,
-            images: [
-              "https://i.postimg.cc/9FWktM7g/b1.png",
-              "https://i.postimg.cc/3JncLTXP/b2.png",
-              "https://i.postimg.cc/kXfpjmQH/b3.png",
-              "https://i.postimg.cc/pXq60HQM/b4.png",
-              "https://i.postimg.cc/8Pt0ySRn/b5.png",
-              "https://i.postimg.cc/HknPRh3W/b6.png",
-            ],
-          },
-          {
-            id: 7890,
-            images: [
-              "https://i.postimg.cc/G3zKRj4c/1.png",
-              "https://i.postimg.cc/nVT2x1X2/2.jpg",
-              "https://i.postimg.cc/gc4spKxD/3.png",
-            ],
-          },
-          {
-            id: 8909,
-            images: [
-              "https://i.postimg.cc/BQkxZ746/1.png",
-              "https://i.postimg.cc/T3bnKj3q/2.png",
-              "https://i.postimg.cc/nhmqXKh7/3.png",
-            ],
-          },
-        ],
-      },
       {
         id: 1,
         company: "Sanan Asadzade MMC",
@@ -260,6 +166,12 @@ export const portfolioData: PortfolioItem[] = [
             ],
           },
           {
+            id:567,
+            images:[
+              "https://i.postimg.cc/YCxrp4Db/13.png",
+            ]
+          },
+          {
             id: 345678,
             images: [
               "https://i.postimg.cc/V6dcBWHX/zeekr-cover.png",
@@ -268,6 +180,12 @@ export const portfolioData: PortfolioItem[] = [
               "https://i.postimg.cc/FR7QgVn3/Zeekr-007-GT.png",
               "https://i.postimg.cc/tTYHtNmh/ZEEKR-7X.png",
               "https://i.postimg.cc/4dqR8Hr6/ZEEKR-X.png",
+            ],
+          },
+          {
+            id:567,
+            images:[
+              "https://i.postimg.cc/Gphc9c6f/15.png",
             ]
           },
           {
@@ -279,114 +197,112 @@ export const portfolioData: PortfolioItem[] = [
               "https://i.postimg.cc/8PkmyXmm/Group-of-7-assets-toyota-cross.png",
               "https://i.postimg.cc/qMBxmDxw/Group-of-7-assets-toyota-frontlander.png",
               "https://i.postimg.cc/J475TYQm/Group-of-7-assets-toyota-high.png",
-            ]
+            ],
           },
           {
-            id:66678,
-            images:[
+            id: 66678,
+            images: [
               "https://i.postimg.cc/6Qx7PyNW/changan-qiyuan.png",
-              "https://i.postimg.cc/QMZBzHrc/changan-uni-z.png", 
+              "https://i.postimg.cc/QMZBzHrc/changan-uni-z.png",
               "https://i.postimg.cc/QMZBzHrp/honda.png",
               "https://i.postimg.cc/6Qx7PyNr/song-plus.png",
-              "https://i.postimg.cc/pdM9Spt8/standart-suv.png"
-            ]
+              "https://i.postimg.cc/pdM9Spt8/standart-suv.png",
+            ],
           },
           {
-            id:34567890,
-            images:[
+            id: 34567890,
+            images: [
               "https://i.postimg.cc/KvKRvnGn/avatr-06.png",
               "https://i.postimg.cc/J49tyG0Z/bazar.png",
               "https://i.postimg.cc/bNKdGsrS/lynk-co-07.png",
               "https://i.postimg.cc/rFvzdKst/lynk-co-900.png",
-              "https://i.postimg.cc/Kvd4KRjT/zeekr-x.png"
-            ]
+              "https://i.postimg.cc/Kvd4KRjT/zeekr-x.png",
+            ],
           },
           {
-            id:23456789,
-            images:[
-              "https://i.postimg.cc/0yR2kFHx/premium-cov.png",              
+            id: 23456789,
+            images: [
+              "https://i.postimg.cc/0yR2kFHx/premium-cov.png",
               "https://i.postimg.cc/cLy4x25N/lixiang.png",
               "https://i.postimg.cc/GmF3HKZd/lynk-co.png",
               "https://i.postimg.cc/CxGMz7WF/VOYAH-FREE.png",
               "https://i.postimg.cc/GmF3HKZb/ZEEKR.png",
-            ]
+            ],
           },
           {
-            id:23456789,
-            images:[
-              "https://i.postimg.cc/2S7qPCjc/sedan-cov.png",              
+            id: 23456789,
+            images: [
+              "https://i.postimg.cc/2S7qPCjc/sedan-cov.png",
               "https://i.postimg.cc/6pf7DB6Z/avatr-06.png",
               "https://i.postimg.cc/T3JyZT2S/mazda.png",
               "https://i.postimg.cc/s2fBzb1K/sonata.png",
               "https://i.postimg.cc/Ls4qSGhN/zeekr.png",
-            ]
+            ],
           },
           {
-            id:34567890,
-            images:[
-              "https://i.postimg.cc/25X5D6sW/zeekr-cover.png",              
+            id: 34567890,
+            images: [
+              "https://i.postimg.cc/25X5D6sW/zeekr-cover.png",
               "https://i.postimg.cc/3wwwVpcD/ZEEKR-001.png",
               "https://i.postimg.cc/W4f4v3Bd/ZEEKR-007.png",
               "https://i.postimg.cc/q7Z7TRPh/ZEEKR-7X.png",
               "https://i.postimg.cc/pd1dHTwF/ZEEKR-X.png",
-            ]
+            ],
           },
           {
-            id:456789,
-            images:[
-              "https://i.postimg.cc/gkdm18xS/offroad-cover.png",              
+            id: 456789,
+            images: [
+              "https://i.postimg.cc/gkdm18xS/offroad-cover.png",
               "https://i.postimg.cc/xjL9st1p/deepal.png",
               "https://i.postimg.cc/tCyp8Wsf/haval.png",
               "https://i.postimg.cc/c4Z0PwKq/jetour.png",
               "https://i.postimg.cc/J4mMSZsd/leopard.png",
               "https://i.postimg.cc/nckpxr78/rox01.png",
-            ]
+            ],
           },
           {
-            id:234567890,
-            images:[
-              "https://i.postimg.cc/Jh031s2x/cover.png" ,
-              "https://i.postimg.cc/NMr1HWYk/geely.png" ,
-              "https://i.postimg.cc/gjF3qNkS/tesla.png" ,
+            id: 234567890,
+            images: [
+              "https://i.postimg.cc/Jh031s2x/cover.png",
+              "https://i.postimg.cc/NMr1HWYk/geely.png",
+              "https://i.postimg.cc/gjF3qNkS/tesla.png",
               "https://i.postimg.cc/4ykpbBNF/xiaomi.png",
-              "https://i.postimg.cc/ZnbsxbRS/jetour.png",             
-            ]
+              "https://i.postimg.cc/ZnbsxbRS/jetour.png",
+            ],
           },
           {
-            id:34567890,
-            images:[
+            id: 34567890,
+            images: [
               "https://i.postimg.cc/kXDfJhR4/cover1.png",
               "https://i.postimg.cc/qMgjJZ6c/cs55.png",
               "https://i.postimg.cc/sD1wj0G4/eado.png",
               "https://i.postimg.cc/BQtMSwPM/qiyuan.png",
               "https://i.postimg.cc/rFzQVYRg/uniz.png",
-
-            ]
+            ],
           },
           {
-            id:4567890,
-            images:[
+            id: 4567890,
+            images: [
               "https://i.postimg.cc/d0W9c2QW/eclass.png",
               "https://i.postimg.cc/RCJL2JkP/MERCEDES-COVER.png",
               "https://i.postimg.cc/RCJL2Jk7/s-class.png",
               "https://i.postimg.cc/HxqXT3qM/c-class.png",
-
-            ]
+            ],
           },
           {
-            id:3456789,
-            images:[
+            id: 3456789,
+            images: [
               "https://i.postimg.cc/rsqyGrx6/byd.png",
               "https://i.postimg.cc/QCS8fdJx/changan-cs55.png",
               "https://i.postimg.cc/j2vxMS4R/econom-suv.png",
               "https://i.postimg.cc/T1Qdt3JD/geely.png",
               "https://i.postimg.cc/SRVSgxfC/HONDA.png",
               "https://i.postimg.cc/GtzLXmxQ/toyota.png",
-            ]
+            ],
           },
           {
-            id:23456789,
-            images:[
+            id: 23456789,
+            images: [
               "https://i.postimg.cc/ncPZr5d6/accountant.png",
               "https://i.postimg.cc/FsBmzqWR/beyannameci.png",
               "https://i.postimg.cc/pL5vFZ4R/call-center.png",
@@ -399,13 +315,263 @@ export const portfolioData: PortfolioItem[] = [
               "https://i.postimg.cc/P5vHw49P/it-mutex.png",
               "https://i.postimg.cc/W1qVknCD/karguzar.png",
               "https://i.postimg.cc/dVZFyBpk/muhafize.png",
-              "https://i.postimg.cc/Z5vmdc2N/muhasib.png", 
+              "https://i.postimg.cc/Z5vmdc2N/muhasib.png",
               "https://i.postimg.cc/0yKvwfFG/satis.png",
               "https://i.postimg.cc/Cxn0qNXJ/image.png",
-            ]
-          }
+            ],
+          },
         ],
       },
+      {
+        id: 1,
+        company: "E-sederek",
+        year: "2025",
+        posts: [
+          {
+            id: 1,
+            images: ["https://i.postimg.cc/sXvxbyq1/1.png"],
+          },
+          {
+            id: 333,
+            images: ["https://i.postimg.cc/mZ1hwL75/2.png"],
+          },
+          {
+            id: 3353,
+            images: ["https://i.postimg.cc/C581L7FZ/3.png"],
+          },
+          {
+            id: 3353,
+            images: ["https://i.postimg.cc/ryRzJV5b/6.png"],
+          },
+          {
+            id: 4453,
+            images: ["https://i.postimg.cc/NfhFC3xS/7.png"],
+          },
+          {
+            id: 3653,
+            images: ["https://i.postimg.cc/NfhFC34F/8.png"],
+          },
+          {
+            id: 53,
+            images: ["https://i.postimg.cc/PrmxgS39/9.png"],
+          },
+        ],
+      },
+      {
+        id: 2,
+        company: "Relax",
+        year: "2025",
+        posts: [
+          {
+            id: 4567,
+            images: [
+              "https://i.postimg.cc/9Xsb8QKW/1.png",
+              "https://i.postimg.cc/gc1sS2QK/2.png",
+              "https://i.postimg.cc/KcCfq8wQ/3.png",
+              "https://i.postimg.cc/02mfLq1w/4.png",
+            ],
+          },
+          {
+            id: 555,
+            images: ["https://i.postimg.cc/K8jLL2XN/2.jpg"],
+          },
+          {
+            id: 89,
+            images: [
+              "https://i.postimg.cc/d3ZzbSJ4/1.png",
+              "https://i.postimg.cc/HjGfd4LK/2.png",
+              "https://i.postimg.cc/14xLsczL/3.png",
+              "https://i.postimg.cc/G90ZdJpW/4.png",
+              "https://i.postimg.cc/BtWd4cvR/5.png",
+            ],
+          },
+          {
+            id: 777,
+            images: ["https://i.postimg.cc/SxP9fvkS/5.png"],
+          },
+          {
+            id: 567,
+            images: [
+              "https://i.postimg.cc/J4L8wMBM/1.png",
+              "https://i.postimg.cc/zXrNm8RC/2.png",
+              "https://i.postimg.cc/pXHvNRn8/3.png",
+              "https://i.postimg.cc/SNh40kzc/4.png",
+              "https://i.postimg.cc/kXmCrqtK/5.png",
+            ],
+          },
+          {
+            id: 6789,
+            images: [
+              "https://i.postimg.cc/2S9g5D3x/1.png",
+              "https://i.postimg.cc/pd94h6nZ/2.png",
+              "https://i.postimg.cc/CKZXBQfm/3.png",
+              "https://i.postimg.cc/fb3ptr05/4.png",
+            ],
+          },
+          {
+            id: 234,
+            images: [
+              "https://i.postimg.cc/9FWktM7g/b1.png",
+              "https://i.postimg.cc/3JncLTXP/b2.png",
+              "https://i.postimg.cc/kXfpjmQH/b3.png",
+              "https://i.postimg.cc/pXq60HQM/b4.png",
+              "https://i.postimg.cc/8Pt0ySRn/b5.png",
+              "https://i.postimg.cc/HknPRh3W/b6.png",
+            ],
+          },
+          {
+            id: 7890,
+            images: [
+              "https://i.postimg.cc/G3zKRj4c/1.png",
+              "https://i.postimg.cc/nVT2x1X2/2.jpg",
+              "https://i.postimg.cc/gc4spKxD/3.png",
+            ],
+          },
+          {
+            id: 8909,
+            images: [
+              "https://i.postimg.cc/BQkxZ746/1.png",
+              "https://i.postimg.cc/T3bnKj3q/2.png",
+              "https://i.postimg.cc/nhmqXKh7/3.png",
+            ],
+          },
+        ],
+      },
+      {
+        id: 72,
+        company: "Saat store",
+        year: "2025",
+        posts:[
+         {
+          id:999,
+          images:[
+            "https://i.postimg.cc/wvQc2Qws/1.jpg",
+            "https://i.postimg.cc/mkZ351nw/2.jpg",
+            "https://i.postimg.cc/90XPnwkb/3.jpg",
+            "https://i.postimg.cc/sxfPNGL4/4.jpg",
+            "https://i.postimg.cc/BbZ5VPzC/5.jpg",
+            "https://i.postimg.cc/L54kbgWC/6.jpg",
+            
+          ]
+         },
+         {
+          id:909,
+          images:[
+            "https://i.postimg.cc/bJy2ycRz/1.png",
+            "https://i.postimg.cc/gJz6zFKv/2.png",
+            "https://i.postimg.cc/FRrJr5x0/3.png",
+            "https://i.postimg.cc/Qt8W8Gq1/4.png",
+            "https://i.postimg.cc/rmVtVX91/5.png",
+            "https://i.postimg.cc/k4TRD1jF/6.png",
+
+          ]
+         },
+         {
+          id:865,
+          images:[
+            "https://i.postimg.cc/sDkQBZJ0/1.jpg",
+            "https://i.postimg.cc/TYzLyW98/2.jpg",
+            "https://i.postimg.cc/zXsbLRjZ/3.jpg",
+
+          ]
+         },
+         {
+          id:9876,
+          images:[
+            "https://i.postimg.cc/66STSGFr/1.png",
+            "https://i.postimg.cc/WbktP1PW/2.jpg",
+            "https://i.postimg.cc/rFrzLwLH/3.png",
+
+          ]
+         },
+         {
+          id:78,
+          images:[
+            "https://i.postimg.cc/Bt9Sv2Gr/1.jpg",
+            "https://i.postimg.cc/F15rK04X/2.jpg",
+            "https://i.postimg.cc/V5QfNX8c/3.jpg",
+
+          ]
+         },
+         {
+          id:456,
+          images:[
+            "https://i.postimg.cc/zByHbw9h/1.jpg",
+            "https://i.postimg.cc/FRwdjd4K/2.jpg",
+            "https://i.postimg.cc/C19BjBg1/3.jpg",            
+          ]
+         },
+         {
+          id:3456,
+          images:[
+            "https://i.postimg.cc/sDYQhg0W/1.jpg",
+            "https://i.postimg.cc/pXfhFL1f/2.jpg",
+            "https://i.postimg.cc/c4RgnL57/3.jpg",            
+          ]
+         }
+        ]
+      },
+      {
+        id: 172,
+        company: "Tripsee",
+        year: "2025",
+        posts:[
+          {
+            id:987,
+            images:[
+              "https://i.postimg.cc/xdJ9LsTx/1.jpg",
+              "https://i.postimg.cc/ZqBJ6f5k/2.jpg",
+              "https://i.postimg.cc/zfbqTdXs/3.jpg",
+              "https://i.postimg.cc/XvGn927m/4.jpg",
+              "https://i.postimg.cc/VNrzX7LT/5.jpg",              
+            ]
+          },
+          {
+            id:98765,
+            images:[
+              "https://i.postimg.cc/L6xSwdJx/1.png",
+              "https://i.postimg.cc/rFfT36dT/2.png",
+              "https://i.postimg.cc/15vS2xgQ/3.png",
+              "https://i.postimg.cc/3JthVMyM/4.png",
+              "https://i.postimg.cc/CLc0XyZp/5.png",
+              "https://i.postimg.cc/NfdtShys/6.png",
+              "https://i.postimg.cc/nc3xg8sH/7.jpg",
+            ]
+          },
+          {
+            id:8765,
+            images:[
+              "https://i.postimg.cc/Kv8Sn90L/1.png",
+              "https://i.postimg.cc/fTRnxH8H/2.png",
+              "https://i.postimg.cc/vHZFWP0C/3.png",
+              "https://i.postimg.cc/3JfM9gqn/4.png",
+              "https://i.postimg.cc/sDHFKpLH/5.png",
+              "https://i.postimg.cc/WbYRSMyf/6.png",              
+            ]
+          },
+          {
+            id:678,
+            images:[
+              "https://i.postimg.cc/yxrfhTNf/misir-1.png",
+              "https://i.postimg.cc/FznPbxR5/misir-2.png",
+              "https://i.postimg.cc/SQZtpmGx/misir-3.png",
+              "https://i.postimg.cc/mk6d3SDG/misir-4.png",
+              "https://i.postimg.cc/HnPS0tLq/misir-5.png",              
+            ]
+          },
+          {
+            id:876,
+            images:[
+              "https://i.postimg.cc/m2vjbk1S/1.png",
+              "https://i.postimg.cc/FH0Z1v0G/2.png",
+              "https://i.postimg.cc/XY98XW98/3.png",
+              "https://i.postimg.cc/nhqkMxq1/4.png",
+              "https://i.postimg.cc/6pC0TKCc/5.png",
+              "https://i.postimg.cc/VkXR5wXV/6.png",              
+            ]
+          }
+        ]
+      }
     ],
   },
   {

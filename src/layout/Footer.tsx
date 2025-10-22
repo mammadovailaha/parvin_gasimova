@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
     <div className="w-full h-[350px] flex justify-center items-center bg-black">
       <div className='w-[90%] h-[90%] rounded-lg flex flex-col justify-center items-center gap-5'>
         <div className='w-full h-[80%] flex justify-between items-center text-white border-b border-gray-500/40'>
-          <h1 className='text-xl md:text-5xl font-bold text-white mt-4'>
-            Brendləri <span className='text-2xl md:text-5xl text-gray-400'> dizayn</span> vasitəsilə gücləndiririk
+          <h1 className='text-xl md:text-5xl font-poppins font-semibold text-white mt-4'>
+            Brendləri <span className='text-2xl md:text-5xl text-gray-400 font-poppins font-semibold'> dizayn</span> vasitəsilə gücləndiririk
           </h1>
           <div className='flex gap-5'>
             {sosialLinks.map(link => (
@@ -53,18 +53,18 @@ const Footer: React.FC = () => {
           </div>
 
           <div className='flex flex-col gap-2.5'>
-            <h2 className='text-base md:text-3xl text-white'>Ünvan</h2>
-            <span className='text-xs md:text-xl text-gray-400'>Azərbaycan, Bakı</span>
+            <h2 className='text-base md:text-3xl text-white font-poppins font-semibold'>Ünvan</h2>
+            <span className='text-xs md:text-xl text-gray-400 font-poppins font-normal'>Azərbaycan, Bakı</span>
           </div>
           
           <div className='flex flex-col gap-2.5'>
-            <h2 className='text-base md:text-3xl text-white'>Əlaqə</h2>
-            <p className='text-xs md:text-xl text-gray-400'>+994 50 554 75 68</p>
-            <p className='text-xs md:text-xl text-gray-400'>parvin.gasimova@inbox.ru</p>
+            <h2 className='text-base md:text-3xl text-white font-poppins font-semibold'>Əlaqə</h2>
+            <p className='text-xs md:text-xl text-gray-400 font-poppins font-normal'>+994 50 554 75 68</p>
+            <p className='text-xs md:text-xl text-gray-400 font-poppins font-normal'>parvin.gasimova@inbox.ru</p>
           </div>
         </div>
         
-        <div><p className='text-gray-400'>© 2025 Parvin Gasimova</p></div>
+        <div><p className='text-gray-400 font-poppins font-normal'>© 2025 Parvin Gasimova</p></div>
       </div>
     </div>
   )

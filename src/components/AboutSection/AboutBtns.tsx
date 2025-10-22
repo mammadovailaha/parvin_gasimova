@@ -1,8 +1,7 @@
 import { useRef, useEffect, useState } from "react";
-import MainButton from "../MainButton";
-import SecondryBtn from "../SecondryBtn";
 import { HiPencil } from "react-icons/hi";
 import whatsapp from '../../assets/logo/whatsapp-svgrepo-com.svg'
+import { useNavigate } from "react-router-dom";
 
 const services = [
   "Brendinq",
@@ -113,22 +112,22 @@ const AboutBtns = () => {
       }
     };
   }, []);
-
+ const navigate=useNavigate();
   return (
     <div
       ref={containerRef}
       className="w-[95%] md:w-[90%] lg:w-[45%] h-full p-3 md:p-5 relative h-screen flex items-end md:items-start justify-center overflow-hidden"
     >
       <div className="absolute top-5 md:top-10 left-1/2 -translate-x-1/2 text-center z-50">
-       <div className="flex items-center gap-2"><HiPencil  className="text-xl md:text-3xl font-semibold text-[#1e1e1e]"/> <h2 className="text-xl md:text-3xl font-semibold text-black">
+       <div className="flex items-center gap-2"><HiPencil  className="text-xl md:text-3xl font-semibold text-[#1e1e1e]"/> <h2 className="text-xl md:text-3xl font-poppins font-semibold text-black">
           Əlaqə üçün
         </h2></div>
-        <p className="text-sm md:text-base text-gray-500 mt-2 text-left">
+        <p className="text-sm md:text-base text-gray-500 mt-2 text-left font-poppins font-light">
               Əgər işlərim sənin zövqünə uyğundursa, zövqlərimiz üst-üstə
               düşürsə, bu fürsəti birgə dəyərləndirək!
         </p>
-        <p className="text-base md:text-lg text-gray-600 mt-2 text-left font-semibold">parvin.gasimova@inbox.ru </p>
-        <p className="text-sm md:text-base text-gray-600 mt-2 text-left flex gap-2"><img src={whatsapp} alt="WhatsApp" className="w-6 h-6" /> (+994)50 554 75 68</p>
+        <p className="text-base md:text-lg text-gray-600 mt-2 text-left font-poppins font-normal">parvin.gasimova@inbox.ru </p>
+        <p className="text-sm md:text-base text-gray-600 mt-2 text-left flex gap-2 font-poppins font-normal"><img src={whatsapp} alt="WhatsApp" className="w-6 h-6" /> (+994)50 554 75 68</p>
       </div>
       <div className="relative w-full min-h-[635px] md:min-h-[550px] flex items-end justify-center">
         {mainBtnData.map((service, index) => (
@@ -149,7 +148,13 @@ const AboutBtns = () => {
               zIndex: animations[index].zIndex,
             }}
           >
-            <MainButton text={service} onClick={() => ""} className="!w-28  !text-[10px] md:text-sm" />
+            <button
+              onClick={()=>{navigate("/portfolio")}}
+              className="hidden md:block outline-none border-none bg-black dark:bg-gray-800 text-white dark:text-white rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-normal font-poppins cursor-pointer"
+            >
+             {service}
+            </button>
+            {/* <MainButton text={service} onClick={() => ""} className="!w-28  !text-[10px] md:text-sm" /> */}
           </div>
         ))}
         {secondaryBtnData.map((service, index) => {
@@ -172,7 +177,13 @@ const AboutBtns = () => {
                 zIndex: animations[animIndex].zIndex,
               }}
             >
-              <SecondryBtn text={service} onClick={() => ""}   className="!w-28  !text-[10px] md:text-sm"/>
+              {/* <SecondryBtn text={service} onClick={() => ""}   className="!w-28  !text-[10px] md:text-sm"/> */}
+               <button
+              onClick={()=>{navigate("/portfolio")}}
+              className="hidden md:block outline-none border bg-white  text-black rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-normal font-poppins cursor-pointer"
+            >
+             {service}
+            </button>
             </div>
           );
         })}

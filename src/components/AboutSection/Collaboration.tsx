@@ -55,7 +55,7 @@ const Collaboration = () => {
     };
   return (
     <div className="w-full flex flex-col gap-3 md:gap-5 items-center">
-        <h2 className="text-xl md:text-2xl font-semibold text-[#1e1e1e]">İndiyədək edilən əməkdaşlıqlar</h2>
+        <h2 className="text-xl md:text-2xl font-poppins font-semibold text-[#1e1e1e]">İndiyədək edilən əməkdaşlıqlar</h2>
       <Slider {...settings} className="w-[90%] flex justify-center items-center md:gap-10">
         {collaborationLogos.map((logo, index) => (
           <CollaborationCard key={index} img={logo} />

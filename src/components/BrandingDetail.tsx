@@ -95,17 +95,17 @@ const BrandingDetail: FC = () => {
               <p className="text-base text-gray-600">{currentBranding.name}</p>
             </div>
             <div className="flex flex-col gap-2">
-              <h5 className="text-lg font-semibold text-black">Kategoriya</h5>
-              <p className="text-base text-gray-600">Brendbook</p>
+              <h5 className="text-lg text-black font-poppins font-semibold">Kategoriya</h5>
+              <p className="text-base text-gray-600 font-poppins font-normal">Brendbook</p>
             </div>
           </div>
 
           <div className="w-full lg:w-[80%] flex flex-col gap-5 px-10">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2">
-              <p className="text-lg font-semibold text-black">Layihə haqqında</p>
-              <p className="text-base text-gray-600">2025</p>
+              <p className="text-lg text-black font-poppins font-semibold">Layihə haqqında</p>
+              <p className="text-base text-gray-600 font-poppins font-normal">2025</p>
             </div>
-            <p className="text-base text-gray-700 leading-relaxed">
+            <p className="text-base text-gray-700 leading-relaxed font-poppins font-normal">
               {currentBranding.name} brendi üçün hazırlanmış branding kitabı
             </p>
           </div>

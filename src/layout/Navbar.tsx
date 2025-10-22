@@ -67,11 +67,11 @@ const Navbar: React.FC = () => {
                     className="relative inline-block text-black dark:text-white font-medium text-sm lg:text-[17px] tracking-normal overflow-hidden group h-[24px] relative z-50"
                   >
                     {/* Ön tərəf */}
-                    <span className="block transition-all duration-500 group-hover:-translate-y-full">
+                    <span className="block transition-all duration-500 group-hover:-translate-y-full font-poppins font-semibold">
                       {link.label}
                     </span>
                     {/* Arxa tərəf */}
-                    <span className="absolute left-0 top-full block transition-all duration-500 group-hover:top-0">
+                    <span className="absolute left-0 top-full block transition-all duration-500 group-hover:top-0 font-poppins font-semibold">
                       {link.label}
                     </span>
                   </Link>
@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
             </button> */}
             <button
               onClick={handleClickContact}
-              className="hidden md:block outline-none border-none bg-black dark:bg-gray-800 text-white dark:text-white rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-medium cursor-pointer"
+              className="hidden md:block outline-none border-none bg-black dark:bg-gray-800 text-white dark:text-white rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-normal font-poppins cursor-pointer"
             >
               sürətli əlaqə
             </button>

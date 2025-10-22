@@ -68,20 +68,21 @@ const DetailPortfolio = () => {
       <div className="max-w-7xl mx-auto px-4 py-10">
         {portfolio.works && portfolio.works.length === 0 ? (
           <div className="text-center text-gray-500 py-20">
-            <p className="text-xl">Bu kategoriyada hələ işlər yoxdur</p>
+            <p className="text-xl font-poppins font-normal">
+              Bu kategoriyada hələ işlər yoxdur
+            </p>
           </div>
         ) : (
-          <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-16 w-full">
             {portfolio.works?.map((work) => (
               <div key={work.id}>
                 {/* Şirkət başlığı */}
-                <div className="flex justify-between py-2 items-center">
-                  <h1 className="text-2xl font-bold text-black">
+                <div className="w-full flex justify-between items-center py-3">
+                  <h1 className="text-2xl font-poppins font-semibold text-black">
                     {portfolio.serviceName}
                   </h1>
-                  <div className="h-[1px] w-[calc(100vw-49vw)] bg-gray-300"/>
-                  <div className="px-5 py-2 rounded-[30px] bg-[#aeff00] border flex justify-center items-center">
-                    <h2 className="text-2xl font-bold leading-lg text-black">
+                  <div className="px-5 py-2 rounded-[30px] bg-[#aeff00] border flex justify-center items-center whitespace-nowrap">
+                    <h2 className="text-2xl font-poppins font-light leading-lg text-black">
                       {work.company}
                     </h2>
                   </div>

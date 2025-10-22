@@ -52,7 +52,7 @@ const PortfolioCard: FC<Props> = ({ item }) => {
       </div>
 
       <div className="w-full flex justify-between items-center px-2">
-        <p className="text-base md:text-2xl font-semibold text-black">
+        <p className="text-base md:text-2xl font-poppins font-normal text-black">
           {item.serviceName}
         </p>
       </div>
