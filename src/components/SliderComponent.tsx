@@ -4,7 +4,7 @@ interface slideProps{
   className:string;
   data:Array<T>;
   textStyle:string;
-  onClick:()=>void;
+  onClick?:()=>void;
 }
 
 const SliderComponent:FC<slideProps> = ({className, data, textStyle, onClick}) => {
