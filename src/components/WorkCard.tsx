@@ -12,6 +12,14 @@ const WorkCard = ({ work }: WorkCardProps) => {
 
   const images = work.images || [];
 
+  const isVideo = (media: string) => {
+    return (
+      media.endsWith(".mp4") ||
+      media.endsWith(".webm") ||
+      media.endsWith(".mov")
+    );
+  };
+
   const handlePrevImage = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (images.length <= 1) return;
@@ -36,6 +44,9 @@ const WorkCard = ({ work }: WorkCardProps) => {
     );
   }
 
+  const currentMedia = images[currentImageIndex];
+  const isCurrentVideo = isVideo(currentMedia);
+
   return (
     <div
       onMouseEnter={() => setIsHovered(true)}
@@ -43,12 +54,25 @@ const WorkCard = ({ work }: WorkCardProps) => {
       className="group cursor-pointer w-full flex justify-center"
     >
       <div className="relative w-[80%] md:w-full h-[430px] lg:h-[380px] rounded-lg overflow-hidden bg-gray-200/90 shadow-md">
-        <img
-          src={images[currentImageIndex]}
-          alt={`Work ${work.id} - Image ${currentImageIndex + 1}`}
-          className="w-full h-full object-cover"
-          key={currentImageIndex}
-        />
+        {/* Video */}
+        {isCurrentVideo ? (
+          <video
+            src={currentMedia}
+            className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            key={currentImageIndex}
+          />
+        ) : (
+          /* Image */
+          <img
+            src={currentMedia}
+            alt={`Work ${work.id} - Image ${currentImageIndex + 1}`}
+            className="w-full h-full object-cover"
+            key={currentImageIndex}
+          />
+        )}
 
         {/* Slider butonları */}
         {images.length > 1 && (

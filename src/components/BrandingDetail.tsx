@@ -1,6 +1,5 @@
 import { type FC, useEffect, useState, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { portfolioData } from "../data/portfolioData";
 import type { BrandingWork } from "../types/portfolio";
 
 const ImageWithScroll: FC<{ image: string; alt: string }> = ({ image, alt }) => {
@@ -37,22 +36,26 @@ const ImageWithScroll: FC<{ image: string; alt: string }> = ({ image, alt }) => 
   const translateY = (1 - scrollProgress) * 80 - 30;
 
   return (
-    <div ref={imageRef} className="w-full flex justify-center mb-20">
+    <div ref={imageRef} className="w-full flex justify-center mb-20 mt-5">
       <div
-        className="w-[300px] md:w-[500px] lg:w-[1000px] rounded-[45px] py-3 px-8 shadow-lg"
+        className="w-[300px] md:w-[500px] lg:w-[1000px] rounded-lg py-3 px-8"
         style={{
           transform: `translateY(${translateY}px) scale(${scale})`,
           transition: "transform 0.1s ease-out",
           opacity: Math.max(0.4, scrollProgress + 0.2),
         }}
       >
-        <img className="w-full h-auto object-cover rounded-lg" src={image} alt={alt} />
+        <img className="w-full h-auto object-cover rounded-lg shadow-lg" src={image} alt={alt} />
       </div>
     </div>
   );
 };
 
-const BrandingDetail: FC = () => {
+interface BrandingDetailProps {
+  portfolioData: any[];
+}
+
+const BrandingDetail: FC<BrandingDetailProps> = ({portfolioData}) => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const [currentBranding, setCurrentBranding] = useState<BrandingWork | null>(null);
@@ -65,7 +68,7 @@ const BrandingDetail: FC = () => {
 
     const brandingService = portfolioData.find((p) => p.isBranding);
     if (brandingService?.brandings) {
-      const found = brandingService.brandings.find((b) => b.slug === slug);
+      const found = brandingService.brandings.find((b: { slug: string; }) => b.slug === slug);
       if (found) {
         setCurrentBranding(found);
       } else {

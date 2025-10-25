@@ -1,7 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { portfolioData } from "../data/portfolioData";
 import WorkCard from "./WorkCard";
-import BrandingCard from "./BrandingCard";
 import type { Work } from "../types/portfolio";
 
 const DetailPortfolio = () => {
@@ -23,7 +22,7 @@ const DetailPortfolio = () => {
     );
   }
 
-  // Brendbook (Branding) səhifəsi
+  // Əgər branding-dirsə, branding list-i göstər
   if (portfolio.isBranding && portfolio.brandings) {
     return (
       <div className="w-full bg-white mt-20 pb-20">
@@ -35,7 +34,7 @@ const DetailPortfolio = () => {
         </button>
 
         <div className="max-w-7xl mx-auto px-4 py-10">
-          <h1 className="text-4xl font-bold text-black mb-12">
+          <h1 className="text-4xl font-bold text-black mb-12 text-center">
             {portfolio.serviceName}
           </h1>
 
@@ -44,9 +43,28 @@ const DetailPortfolio = () => {
               <p className="text-xl">Brendbook işləri yoxdur</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1  md:grid-cols-2 gap-6">
               {portfolio.brandings.map((branding) => (
-                <BrandingCard key={branding.id} branding={branding} />
+                <div
+                  key={branding.id}
+                  onClick={() => navigate(`/portfolio/branding/${branding.slug}`)}
+                  className="cursor-pointer group rounded-lg overflow-hidden border border-gray-200"
+                >
+                  {branding.images && branding.images.length > 0 && (
+                    <div className="w-[100%] h-[290px] overflow-hidden rounded-tl-lg rounded-tr-lg shadow-lg hover:shadow-xl transition-shadow">
+                      <img
+                        src={branding.images[0]}
+                        alt={branding.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                  )}
+                  <div className="p-4 bg-white">
+                    <h3 className="font-semibold text-lg text-black group-hover:text-gray-700">
+                      {branding.name}
+                    </h3>
+                  </div>
+                </div>
               ))}
             </div>
           )}
@@ -55,15 +73,14 @@ const DetailPortfolio = () => {
     );
   }
 
-  // Digər kategoriyalar (Works)
   return (
     <div className="w-full bg-white mt-20 pb-20">
-      {/* <button
+      <button
         onClick={() => navigate("/portfolio")}
         className="fixed top-4 left-4 bg-black text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-800 transition z-20"
       >
         ← Geri
-      </button> */}
+      </button>
 
       <div className="max-w-7xl mx-auto px-4 py-10">
         {portfolio.works && portfolio.works.length === 0 ? (

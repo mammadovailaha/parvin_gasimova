@@ -118,7 +118,7 @@ const AboutBtns = () => {
       ref={containerRef}
       className="w-[95%] md:w-[90%] lg:w-[45%] h-full p-3 md:p-5 relative h-screen flex items-end md:items-start justify-center overflow-hidden"
     >
-      <div className="absolute top-5 md:top-5 left-1/2 -translate-x-1/2 text-center z-50">
+      <div className="absolute top-5 md:top-5 left-1/2 -translate-x-1/2 text-center z-20">
        <div className="flex items-center gap-2"><HiPencil  className="text-xl md:text-3xl font-semibold text-[#1e1e1e]"/> <h2 className="text-xl md:text-3xl font-poppins font-semibold text-black">
           Əlaqə üçün
         </h2></div>

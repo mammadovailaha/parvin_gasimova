@@ -26,16 +26,23 @@ const experience = [
   {
     id: 3,
     company: "Tripsee.az",
-    position: "Qrafik dizayner",
+    position: "Qrafik dizayner/ freelance",
     startDate: "Avqust 2024",
-    endDate: "May 2025",
+    endDate: "indi",
+  },
+    {
+    id: 33,
+    company: "Relax istirahət mərkəzi/ freelance",
+    position: "Qrafik dizayner/ freelance",
+    startDate: "Avqust 2024",
+    endDate: "indi",
   },
   {
     id: 5,
     company: "Aseto Group Reklam Agentliyi",
     position: "Qrafik dizayner / təcrübəçi",
     startDate: "İyun 2024",
-    endDate: " Avqust 2024",
+    endDate: " Avqust 2024 /(Təcrübə müddəti bitdi)",
   },
 ];
 
