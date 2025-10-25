@@ -58,12 +58,12 @@ const DetailPortfolio = () => {
   // Digər kategoriyalar (Works)
   return (
     <div className="w-full bg-white mt-20 pb-20">
-      <button
+      {/* <button
         onClick={() => navigate("/portfolio")}
         className="fixed top-4 left-4 bg-black text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-800 transition z-20"
       >
         ← Geri
-      </button>
+      </button> */}
 
       <div className="max-w-7xl mx-auto px-4 py-10">
         {portfolio.works && portfolio.works.length === 0 ? (
@@ -78,11 +78,11 @@ const DetailPortfolio = () => {
               <div key={work.id}>
                 {/* Şirkət başlığı */}
                 <div className="w-full flex justify-between items-center py-3">
-                  <h1 className="text-2xl font-poppins font-semibold text-black">
+                  <h1 className="text-2xl font-poppins font-normal text-black">
                     {portfolio.serviceName}
                   </h1>
                   <div className="px-5 py-2 rounded-[30px] bg-[#aeff00] border flex justify-center items-center whitespace-nowrap">
-                    <h2 className="text-2xl font-poppins font-light leading-lg text-black">
+                    <h2 className="text-2xl font-poppins font-semibold leading-lg text-black">
                       {work.company}
                     </h2>
                   </div>

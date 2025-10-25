@@ -118,15 +118,15 @@ const AboutBtns = () => {
       ref={containerRef}
       className="w-[95%] md:w-[90%] lg:w-[45%] h-full p-3 md:p-5 relative h-screen flex items-end md:items-start justify-center overflow-hidden"
     >
-      <div className="absolute top-5 md:top-10 left-1/2 -translate-x-1/2 text-center z-50">
+      <div className="absolute top-5 md:top-5 left-1/2 -translate-x-1/2 text-center z-50">
        <div className="flex items-center gap-2"><HiPencil  className="text-xl md:text-3xl font-semibold text-[#1e1e1e]"/> <h2 className="text-xl md:text-3xl font-poppins font-semibold text-black">
           Əlaqə üçün
         </h2></div>
-        <p className="text-sm md:text-base text-gray-500 mt-2 text-left font-poppins font-light">
+        <p className="text-sm md:text-base text-gray-500 mt-2 text-left font-poppins font-normal">
               Əgər işlərim sənin zövqünə uyğundursa, zövqlərimiz üst-üstə
               düşürsə, bu fürsəti birgə dəyərləndirək!
         </p>
-        <p className="text-base md:text-lg text-gray-600 mt-2 text-left font-poppins font-normal">parvin.gasimova@inbox.ru </p>
+        <p className="text-base md:text-lg text-gray-600 mt-2 text-left font-poppins font-semibold">parvin.gasimova@inbox.ru </p>
         <p className="text-sm md:text-base text-gray-600 mt-2 text-left flex gap-2 font-poppins font-normal"><img src={whatsapp} alt="WhatsApp" className="w-6 h-6" /> (+994)50 554 75 68</p>
       </div>
       <div className="relative w-full min-h-[635px] md:min-h-[550px] flex items-end justify-center">

@@ -7,9 +7,13 @@ import Contact from "../pages/Contact";
 
 import BrandingDetail from "../components/BrandingDetail";
 import DetailPortfolio from "../components/DetailPortfolio";
+import ScrollToTop from "../components/ScrollToTop";
+import ScrollToTopButton from "../components/ScrollToTopBtn";
 
 const AppRouter: React.FC = () => {
   return (
+   <>
+   <ScrollToTop/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
@@ -20,6 +24,8 @@ const AppRouter: React.FC = () => {
       <Route path="/portfolio/:id" element={<DetailPortfolio />} />
       <Route path="/portfolio/branding/:slug" element={<BrandingDetail />} />
     </Routes>
+    <ScrollToTopButton/>
+    </>
   );
 };
 

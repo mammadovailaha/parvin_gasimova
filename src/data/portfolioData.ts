@@ -39,7 +39,7 @@ export const portfolioData: PortfolioItem[] = [
   },
   {
     id: 2,
-    serviceName: "Sosial medya dizayni",
+    serviceName: "Sosial Media Postları",
     serviceImage: sm,
     works: [
       {
@@ -166,10 +166,8 @@ export const portfolioData: PortfolioItem[] = [
             ],
           },
           {
-            id:567,
-            images:[
-              "https://i.postimg.cc/YCxrp4Db/13.png",
-            ]
+            id: 567,
+            images: ["https://i.postimg.cc/YCxrp4Db/13.png"],
           },
           {
             id: 345678,
@@ -183,10 +181,8 @@ export const portfolioData: PortfolioItem[] = [
             ],
           },
           {
-            id:567,
-            images:[
-              "https://i.postimg.cc/Gphc9c6f/15.png",
-            ]
+            id: 567,
+            images: ["https://i.postimg.cc/Gphc9c6f/15.png"],
           },
           {
             id: 23456789,
@@ -323,6 +319,249 @@ export const portfolioData: PortfolioItem[] = [
         ],
       },
       {
+        id: 172,
+        company: "Tripsee",
+        year: "2025",
+        posts: [
+          {
+            id: 987,
+            images: [
+              "https://i.postimg.cc/xdJ9LsTx/1.jpg",
+              "https://i.postimg.cc/ZqBJ6f5k/2.jpg",
+              "https://i.postimg.cc/zfbqTdXs/3.jpg",
+              "https://i.postimg.cc/XvGn927m/4.jpg",
+              "https://i.postimg.cc/VNrzX7LT/5.jpg",
+            ],
+          },
+          {
+            id: 98765,
+            images: [
+              "https://i.postimg.cc/L6xSwdJx/1.png",
+              "https://i.postimg.cc/rFfT36dT/2.png",
+              "https://i.postimg.cc/15vS2xgQ/3.png",
+              "https://i.postimg.cc/3JthVMyM/4.png",
+              "https://i.postimg.cc/CLc0XyZp/5.png",
+              "https://i.postimg.cc/NfdtShys/6.png",
+              "https://i.postimg.cc/nc3xg8sH/7.jpg",
+            ],
+          },
+          {
+            id: 8765,
+            images: [
+              "https://i.postimg.cc/Kv8Sn90L/1.png",
+              "https://i.postimg.cc/fTRnxH8H/2.png",
+              "https://i.postimg.cc/vHZFWP0C/3.png",
+              "https://i.postimg.cc/3JfM9gqn/4.png",
+              "https://i.postimg.cc/sDHFKpLH/5.png",
+              "https://i.postimg.cc/WbYRSMyf/6.png",
+            ],
+          },
+          {
+            id: 678,
+            images: [
+              "https://i.postimg.cc/yxrfhTNf/misir-1.png",
+              "https://i.postimg.cc/FznPbxR5/misir-2.png",
+              "https://i.postimg.cc/SQZtpmGx/misir-3.png",
+              "https://i.postimg.cc/mk6d3SDG/misir-4.png",
+              "https://i.postimg.cc/HnPS0tLq/misir-5.png",
+            ],
+          },
+          {
+            id: 876,
+            images: [
+              "https://i.postimg.cc/m2vjbk1S/1.png",
+              "https://i.postimg.cc/FH0Z1v0G/2.png",
+              "https://i.postimg.cc/XY98XW98/3.png",
+              "https://i.postimg.cc/nhqkMxq1/4.png",
+              "https://i.postimg.cc/6pC0TKCc/5.png",
+              "https://i.postimg.cc/VkXR5wXV/6.png",
+            ],
+          },
+          {
+            id: 778,
+            images: [
+              "https://i.postimg.cc/2SyTrXxb/ismayilli-1.jpg",
+              "https://i.postimg.cc/RZYdFQPf/ismayilli-2.png",
+              "https://i.postimg.cc/YCPR9fXY/ismayilli-3.png",
+              "https://i.postimg.cc/pLSCTY0n/ismayilli-4.png",
+              "https://i.postimg.cc/Bnzp6chP/ismayilli-5.png",
+              "https://i.postimg.cc/cLzhHMDR/ismayilli-6.jpg",
+              "https://i.postimg.cc/Vkhg6B7B/ismayilli-7.jpg",
+            ],
+          },
+          {
+            id: 769,
+            images: [
+              "https://i.postimg.cc/Cx4ZrF8D/afreym-afreym-vendxam.png",
+              "https://i.postimg.cc/QMxFRRks/castle-2.png",
+              "https://i.postimg.cc/BvYjsMM9/riverinn-heftesonu-1.png",
+            ],
+          },
+          {
+            id: 9876,
+            images: [
+              "https://i.postimg.cc/YCF1Lk5S/gurcu1.png",
+              "https://i.postimg.cc/T3br5Gzy/gurcu2.png",
+              "https://i.postimg.cc/pLjD5xwy/gurcu3.png",
+              "https://i.postimg.cc/bwnQS87r/gurcu4.png",
+              "https://i.postimg.cc/TYpjGnQC/gurcu-5.png",
+            ],
+          },
+          {
+            id: 6666,
+            images: [
+              "https://i.postimg.cc/GtcCGcgm/baki-1.png",
+              "https://i.postimg.cc/bYT88tdh/baki-2.png",
+              "https://i.postimg.cc/SQrqqMj2/baki-3.png",
+              "https://i.postimg.cc/ryJccrzV/baki-4.png",
+              "https://i.postimg.cc/DfgFFXmm/baki-5.png",
+              "https://i.postimg.cc/Kv8bY8gk/baki-6.png",
+              "https://i.postimg.cc/TY3xP3WQ/baki-7.png",
+            ],
+          },
+          {
+            id: 789,
+            images: [
+              "https://i.postimg.cc/G2XMgdhY/seki-1.png",
+              "https://i.postimg.cc/VsHGjfVB/seki-2.png",
+              "https://i.postimg.cc/pV1GDW6Q/seki-3.png",
+              "https://i.postimg.cc/qBZb8J5y/seki-4.png",
+              "https://i.postimg.cc/7hcKD9zD/seki-5.png",
+            ],
+          },
+          {
+            id: 54,
+            images: [
+              "https://i.postimg.cc/k5XYQ27m/1.png",
+              "https://i.postimg.cc/43LLBX3c/2.png",
+              "https://i.postimg.cc/261Htgq6/3.png",
+              "https://i.postimg.cc/4dY80jKn/4.png",
+              "https://i.postimg.cc/0NWWc9NM/5.png",
+            ],
+          },
+          {
+            id: 88,
+            images: [
+              "https://i.postimg.cc/Y2gRm6QS/shah1.png",
+              "https://i.postimg.cc/7P79T3S2/shah3.png",
+              "https://i.postimg.cc/3JFZt3SJ/shahdag-2.png",
+            ],
+          },
+          {
+            id: 99,
+            images: [
+              "https://i.postimg.cc/gjnPNMpK/gence-1.png",
+              "https://i.postimg.cc/Zn2zgrKm/gence-2.png",
+              "https://i.postimg.cc/0jF13p2s/gence-3.png",
+              "https://i.postimg.cc/yxtC5FY0/gence-4.png",
+              "https://i.postimg.cc/WzCcKMbq/gence-5.png",
+              "https://i.postimg.cc/wxGz7d5r/gence-6.png",
+              "https://i.postimg.cc/VsVwdcBm/gence-7.png",
+              "https://i.postimg.cc/CMQ0zVHh/gence-8.png",
+            ],
+          },
+          {
+            id: 787,
+            images: [
+              "https://i.postimg.cc/5yY269X0/Lerik-1.png",
+              "https://i.postimg.cc/zvsXWmhh/lerik-2.png",
+              "https://i.postimg.cc/cCgLr1vc/lerik-3.png",
+              "https://i.postimg.cc/5yhNvczL/lerik-4.png",
+              "https://i.postimg.cc/ZnGK3kNc/lerik-5.png",
+              "https://i.postimg.cc/jqmjBf12/lerik-6.png",
+              "https://i.postimg.cc/9XKfs9k4/lerik-7.png",
+            ],
+          },
+          {
+            id: 654,
+            images: [
+              "https://i.postimg.cc/wTY17Jk6/qebele-1.png",
+              "https://i.postimg.cc/fRwkvNph/qebele-10.png",
+              "https://i.postimg.cc/3xKWZTV7/qebele-11.png",
+              "https://i.postimg.cc/CxFd4gXw/qebele-12.png",
+              "https://i.postimg.cc/MpWXYSNW/qebele-13.png",
+              "https://i.postimg.cc/Nf85TMNm/qebele-2.png",
+              "https://i.postimg.cc/4Nvmtd8v/qebele-3.png",
+              "https://i.postimg.cc/L6knfXyt/qebele-4.png",
+              "https://i.postimg.cc/dtRLd1WB/qebele-5.png",
+              "https://i.postimg.cc/SxyjGh5W/qebele-6.png",
+              "https://i.postimg.cc/8z1sbS3b/qebele-7.png",
+              "https://i.postimg.cc/CxFd4gtv/qebele-8.png",
+              "https://i.postimg.cc/T3Rhc6SN/qebele-9.png",
+            ],
+          },
+        ],
+      },
+      {
+        id: 72,
+        company: "Saat store",
+        year: "2025",
+        posts: [
+          {
+            id: 999,
+            images: [
+              "https://i.postimg.cc/wvQc2Qws/1.jpg",
+              "https://i.postimg.cc/mkZ351nw/2.jpg",
+              "https://i.postimg.cc/90XPnwkb/3.jpg",
+              "https://i.postimg.cc/sxfPNGL4/4.jpg",
+              "https://i.postimg.cc/BbZ5VPzC/5.jpg",
+              "https://i.postimg.cc/L54kbgWC/6.jpg",
+            ],
+          },
+          {
+            id: 909,
+            images: [
+              "https://i.postimg.cc/bJy2ycRz/1.png",
+              "https://i.postimg.cc/gJz6zFKv/2.png",
+              "https://i.postimg.cc/FRrJr5x0/3.png",
+              "https://i.postimg.cc/Qt8W8Gq1/4.png",
+              "https://i.postimg.cc/rmVtVX91/5.png",
+              "https://i.postimg.cc/k4TRD1jF/6.png",
+            ],
+          },
+          {
+            id: 865,
+            images: [
+              "https://i.postimg.cc/sDkQBZJ0/1.jpg",
+              "https://i.postimg.cc/TYzLyW98/2.jpg",
+              "https://i.postimg.cc/zXsbLRjZ/3.jpg",
+            ],
+          },
+          {
+            id: 9876,
+            images: [
+              "https://i.postimg.cc/66STSGFr/1.png",
+              "https://i.postimg.cc/WbktP1PW/2.jpg",
+              "https://i.postimg.cc/rFrzLwLH/3.png",
+            ],
+          },
+          {
+            id: 78,
+            images: [
+              "https://i.postimg.cc/Bt9Sv2Gr/1.jpg",
+              "https://i.postimg.cc/F15rK04X/2.jpg",
+              "https://i.postimg.cc/V5QfNX8c/3.jpg",
+            ],
+          },
+          {
+            id: 456,
+            images: [
+              "https://i.postimg.cc/zByHbw9h/1.jpg",
+              "https://i.postimg.cc/FRwdjd4K/2.jpg",
+              "https://i.postimg.cc/C19BjBg1/3.jpg",
+            ],
+          },
+          {
+            id: 3456,
+            images: [
+              "https://i.postimg.cc/sDYQhg0W/1.jpg",
+              "https://i.postimg.cc/pXfhFL1f/2.jpg",
+              "https://i.postimg.cc/c4RgnL57/3.jpg",
+            ],
+          },
+        ],
+      },
+      {
         id: 1,
         company: "E-sederek",
         year: "2025",
@@ -374,6 +613,10 @@ export const portfolioData: PortfolioItem[] = [
           {
             id: 555,
             images: ["https://i.postimg.cc/K8jLL2XN/2.jpg"],
+          },
+          {
+            id:1,
+            images:['https://i.postimg.cc/HsNPwYVx/3.png']
           },
           {
             id: 89,
@@ -437,141 +680,6 @@ export const portfolioData: PortfolioItem[] = [
           },
         ],
       },
-      {
-        id: 72,
-        company: "Saat store",
-        year: "2025",
-        posts:[
-         {
-          id:999,
-          images:[
-            "https://i.postimg.cc/wvQc2Qws/1.jpg",
-            "https://i.postimg.cc/mkZ351nw/2.jpg",
-            "https://i.postimg.cc/90XPnwkb/3.jpg",
-            "https://i.postimg.cc/sxfPNGL4/4.jpg",
-            "https://i.postimg.cc/BbZ5VPzC/5.jpg",
-            "https://i.postimg.cc/L54kbgWC/6.jpg",
-            
-          ]
-         },
-         {
-          id:909,
-          images:[
-            "https://i.postimg.cc/bJy2ycRz/1.png",
-            "https://i.postimg.cc/gJz6zFKv/2.png",
-            "https://i.postimg.cc/FRrJr5x0/3.png",
-            "https://i.postimg.cc/Qt8W8Gq1/4.png",
-            "https://i.postimg.cc/rmVtVX91/5.png",
-            "https://i.postimg.cc/k4TRD1jF/6.png",
-
-          ]
-         },
-         {
-          id:865,
-          images:[
-            "https://i.postimg.cc/sDkQBZJ0/1.jpg",
-            "https://i.postimg.cc/TYzLyW98/2.jpg",
-            "https://i.postimg.cc/zXsbLRjZ/3.jpg",
-
-          ]
-         },
-         {
-          id:9876,
-          images:[
-            "https://i.postimg.cc/66STSGFr/1.png",
-            "https://i.postimg.cc/WbktP1PW/2.jpg",
-            "https://i.postimg.cc/rFrzLwLH/3.png",
-
-          ]
-         },
-         {
-          id:78,
-          images:[
-            "https://i.postimg.cc/Bt9Sv2Gr/1.jpg",
-            "https://i.postimg.cc/F15rK04X/2.jpg",
-            "https://i.postimg.cc/V5QfNX8c/3.jpg",
-
-          ]
-         },
-         {
-          id:456,
-          images:[
-            "https://i.postimg.cc/zByHbw9h/1.jpg",
-            "https://i.postimg.cc/FRwdjd4K/2.jpg",
-            "https://i.postimg.cc/C19BjBg1/3.jpg",            
-          ]
-         },
-         {
-          id:3456,
-          images:[
-            "https://i.postimg.cc/sDYQhg0W/1.jpg",
-            "https://i.postimg.cc/pXfhFL1f/2.jpg",
-            "https://i.postimg.cc/c4RgnL57/3.jpg",            
-          ]
-         }
-        ]
-      },
-      {
-        id: 172,
-        company: "Tripsee",
-        year: "2025",
-        posts:[
-          {
-            id:987,
-            images:[
-              "https://i.postimg.cc/xdJ9LsTx/1.jpg",
-              "https://i.postimg.cc/ZqBJ6f5k/2.jpg",
-              "https://i.postimg.cc/zfbqTdXs/3.jpg",
-              "https://i.postimg.cc/XvGn927m/4.jpg",
-              "https://i.postimg.cc/VNrzX7LT/5.jpg",              
-            ]
-          },
-          {
-            id:98765,
-            images:[
-              "https://i.postimg.cc/L6xSwdJx/1.png",
-              "https://i.postimg.cc/rFfT36dT/2.png",
-              "https://i.postimg.cc/15vS2xgQ/3.png",
-              "https://i.postimg.cc/3JthVMyM/4.png",
-              "https://i.postimg.cc/CLc0XyZp/5.png",
-              "https://i.postimg.cc/NfdtShys/6.png",
-              "https://i.postimg.cc/nc3xg8sH/7.jpg",
-            ]
-          },
-          {
-            id:8765,
-            images:[
-              "https://i.postimg.cc/Kv8Sn90L/1.png",
-              "https://i.postimg.cc/fTRnxH8H/2.png",
-              "https://i.postimg.cc/vHZFWP0C/3.png",
-              "https://i.postimg.cc/3JfM9gqn/4.png",
-              "https://i.postimg.cc/sDHFKpLH/5.png",
-              "https://i.postimg.cc/WbYRSMyf/6.png",              
-            ]
-          },
-          {
-            id:678,
-            images:[
-              "https://i.postimg.cc/yxrfhTNf/misir-1.png",
-              "https://i.postimg.cc/FznPbxR5/misir-2.png",
-              "https://i.postimg.cc/SQZtpmGx/misir-3.png",
-              "https://i.postimg.cc/mk6d3SDG/misir-4.png",
-              "https://i.postimg.cc/HnPS0tLq/misir-5.png",              
-            ]
-          },
-          {
-            id:876,
-            images:[
-              "https://i.postimg.cc/m2vjbk1S/1.png",
-              "https://i.postimg.cc/FH0Z1v0G/2.png",
-              "https://i.postimg.cc/XY98XW98/3.png",
-              "https://i.postimg.cc/nhqkMxq1/4.png",
-              "https://i.postimg.cc/6pC0TKCc/5.png",
-              "https://i.postimg.cc/VkXR5wXV/6.png",              
-            ]
-          }
-        ]
-      }
     ],
   },
   {

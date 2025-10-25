@@ -8,7 +8,7 @@ const AboutHero = () => {
       <div className="flex flex-col-reverse md:flex-row justify-around items-center gap-5">
         <div className="w-full md:[40%] lg:w-[45%] flex flex-col gap-4">
           <p className="font-normal font-poppins text-base md:text-2xl text-[#1E1E1E]">
-            Salam! Mən Pərvin Qasımova, qrafik dizaynerəm. Artıq 2 ildir bu
+            <b className="font-poppins font-semibold">Salam! Mən Pərvin Qasımova, qrafik dizaynerəm. </b>Artıq 2 ildir bu
             sahədə çalışıram və yalnız qrafik dizaynla məhdudlaşmıram — eyni
             zamanda motion dizayner kimi də fəaliyyət göstərirəm. <br />
             Brendlərə fərqli sosial media postları, axıcı motion dizaynlar, çap

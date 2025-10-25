@@ -1,19 +1,16 @@
-import slide from "../../assets/protfolio/sanan-asadzade-mmc/sanan asadzade mmc/1/haval.png";
-import slide1 from "../../assets/protfolio/sanan-asadzade-mmc/sanan asadzade mmc/1/jetour.png";
-import slide2 from "../../assets/protfolio/esederek/3.png";
-import slide3 from "../../assets/protfolio/esederek/4.png";
-import slide4 from "../../assets/protfolio/esederek/9.png";
-import slide5 from "../../assets/protfolio/sanan-asadzade-mmc/sanan asadzade mmc/15.png";
-import slide6 from "../../assets/protfolio/esederek/3.png";
-import slide7 from "../../assets/protfolio/esederek/4.png";
-import slide8 from "../../assets/protfolio/esederek/9.png";
-import slide9 from "../../assets/protfolio/sanan-asadzade-mmc/sanan asadzade mmc/15.png";
-import slide10 from "../../assets/protfolio/sanan-asadzade-mmc/sanan asadzade mmc/1/haval.png";
-import slide11 from "../../assets/protfolio/sanan-asadzade-mmc/sanan asadzade mmc/1/jetour.png";
+import slide1 from "../../assets/protfolio/esederek/1.png";
+import slide2 from "../../assets/protfolio/esederek/2.png";
+import slide3 from "../../assets/protfolio/esederek/3.png";
+import slide4 from "../../assets/protfolio/esederek/4.png";
+import slide5 from "../../assets/protfolio/esederek/5.png";
+import slide6 from "../../assets/protfolio/esederek/6.png";
+import slide7 from "../../assets/protfolio/esederek/7.png";
+import slide8 from "../../assets/protfolio/esederek/8.png";
+import slide9 from "../../assets/protfolio/esederek/9.png";
+
 
 const ImagesSection = () => {
   const images = [
-    slide,
     slide1,
     slide2,
     slide3,
@@ -23,12 +20,10 @@ const ImagesSection = () => {
     slide7,
     slide8,
     slide9,
-    slide10,
-    slide11,
   ];
-  const column1 = images.slice(0, 4);
-  const column2 = images.slice(4, 8);
-  const column3 = images.slice(8, 12);
+  const column1 = images.slice(0, 3);
+  const column2 = images.slice(3, 6);
+  const column3 = images.slice(6, 9);
 
   return (
     <div className="w-[95%] h-auto flex justify-center items-center gap-5 px-2 rounded-[40px] bg-black overflow-y-srcoll scrollbar-hide  animate-slide-in">

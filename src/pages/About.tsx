@@ -6,9 +6,9 @@ import SkillSection from "../components/AboutSection/SkillSection"
 import SliderComponent from "../components/SliderComponent"
 
 const data=[
-  "PƏRVİN QASIMOVA",
-  "PƏRVİN QASIMOVA",
-  "PƏRVİN QASIMOVA"
+  "SƏN DƏ QOŞUL",
+  "SƏN DƏ QOŞUL",
+  "SƏN DƏ QOŞUL"
 ]
 const About = () => {
   const navigate=useNavigate();
@@ -18,7 +18,7 @@ const About = () => {
      <SkillSection/>
      <ExpirenceSection/>
      <Collaboration/>
-     <SliderComponent onClick={()=>{navigate("/about")}} data={data}  className='bg-none ' textStyle='text-4xl font-bold text-gray-400'/>
+     <SliderComponent onClick={()=>{navigate("/about")}} data={data}  className='bg-none ' textStyle='text-3xl font-poppins font-semibold text-gray-400'/>
     </div>
   )
 }

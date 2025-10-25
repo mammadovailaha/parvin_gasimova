@@ -7,7 +7,7 @@ const experience = [
     company: "SANAN ASADZADE MMC",
     position: "Qrafik dizayner",
     startDate: "May 2025",
-    endDate: "Sentiyabr 2025",
+    endDate: "Sentyabr 2025",
   },
   {
     id: 1,

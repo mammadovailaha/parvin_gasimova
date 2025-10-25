@@ -2,7 +2,7 @@ import ContactForm from "../components/ContactForm"
 import { FaBehance, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 import { TbBrandLinkedin } from 'react-icons/tb'
 import { Link } from 'react-router-dom'
-import emoji from "../assets/images/woman-technologist-light-skin-tone_1f469-1f3fb-200d-1f4bb.png"
+import photo from "../assets/images/pp2.png"
 
 const sosialLinks = [
   {id:1, icon:<FaInstagram/>, link:"https://www.instagram.com/", label:"Instagram"},
@@ -108,7 +108,7 @@ const Contact = () => {
           
           {/* Image */}
           <img 
-            src={emoji} 
+            src={photo} 
             alt="Emoji" 
             className="relative w-64 h-full object-cover rounded-full shadow-2xl 
                      transform group-hover:scale-105 transition-all duration-500 cursor-pointer

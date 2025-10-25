@@ -3,11 +3,9 @@ import Hero from '../components/HomeSections/Hero'
 import ImagesSection from '../components/HomeSections/ImagesSection'
 import PortfolioSection from '../components/HomeSections/ProtfolioSection'
 import NameSlide from '../components/HomeSections/NameSlide'
-import { portfolioData } from "../data/portfolioData"
 import InfoSection from '../components/HomeSections/InfoSection'
 
 const Home: React.FC = () => {
-  console.log("Portfolio Data:", portfolioData);
 
   return (
     <div className='bg-white dark:bg-black overflow-x-hidden flex flex-col items-center'>

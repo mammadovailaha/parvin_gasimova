@@ -21,7 +21,7 @@ const InfoSection = () => {
         </p>
         <div className="w-full h-auto flex justify-start items-center gap-4 mt-4">
             <MainButton text="Mənimlə əlaqə" onClick={() => {navigate("/contact")}}/>
-            <SecondryBtn text="Mənim profilim" onClick={() => {navigate("/portfolio")}}/>
+            <SecondryBtn text="Mənim portfoliom" onClick={() => {navigate("/portfolio")}}/>
         </div>
       </div>
     </div>
