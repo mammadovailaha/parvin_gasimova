@@ -51,11 +51,11 @@ const DetailPortfolio = () => {
                   className="cursor-pointer group rounded-lg overflow-hidden border border-gray-200"
                 >
                   {branding.images && branding.images.length > 0 && (
-                    <div className="w-[100%] h-[290px] overflow-hidden rounded-tl-lg rounded-tr-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <div className="w-[100%] h-[320px] overflow-hidden rounded-tl-lg rounded-tr-lg shadow-lg hover:shadow-xl transition-shadow">
                       <img
-                        src={branding.images[0]}
+                        src={branding.cover}
                         alt={branding.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300"
                       />
                     </div>
                   )}

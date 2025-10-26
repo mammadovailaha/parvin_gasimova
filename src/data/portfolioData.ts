@@ -17,6 +17,7 @@ export const portfolioData: PortfolioItem[] = [
         id: 1,
         name: "Karibu",
         slug: "karibu",
+        cover:"https://i.postimg.cc/90gVKj4L/karibu.png",
         images: [
           karibuCover,
           "https://i.postimg.cc/RVs7n5c6/brand-guidline-02.png",
@@ -39,6 +40,7 @@ export const portfolioData: PortfolioItem[] = [
         id: 2,
         name: "Emeyveli",
         slug: "meyveli",
+        cover:"https://i.postimg.cc/HsJCnRcF/emeyveli.png",
         images: [
           "https://i.postimg.cc/nzdHHkD0/emeyveli-bb-15.png",
           "https://i.postimg.cc/T1pThDVk/emeyveli-bb-16.png",
@@ -58,6 +60,7 @@ export const portfolioData: PortfolioItem[] = [
         id: 3,
         name: "Esederek",
         slug: "esederek",
+        cover:"https://i.postimg.cc/CLZV5XB2/esederek.png",
         images: [
           "https://i.postimg.cc/K8YCb2N8/e-sederek-bb-18.png",
           "https://i.postimg.cc/MprNKFPB/e-sederek-bb-19.png",
@@ -79,6 +82,7 @@ export const portfolioData: PortfolioItem[] = [
         id: 4,
         name: "Sanan Asadzade MMC",
         slug: "sananAsadzade",
+        cover:"https://i.postimg.cc/KvKyjwk6/sanan-asadzade.png",
         images: [
           "https://i.postimg.cc/mDVQB0jq/sanan-asadzade-brandbook-14.png",
           "https://i.postimg.cc/gjJ3JNB3/sanan-asadzade-brandbook-15.png",
@@ -96,8 +100,9 @@ export const portfolioData: PortfolioItem[] = [
       },
       {
         id: 5,
-        name: "MV",
-        slug: 'mv',
+        name: "Mystic Vessels",
+        slug: 'mystic-vessels',
+        cover:"https://i.postimg.cc/yYJzxtgX/mystic-vessels.png",
         images: [
           "https://i.postimg.cc/vTZZfm96/MV-Guideline-01.png",
           "https://i.postimg.cc/mkp2wGNN/MV-Guideline-02.png",
@@ -766,7 +771,7 @@ export const portfolioData: PortfolioItem[] = [
   },
   {
     id: 3,
-    serviceName: "",
+    serviceName: "Motion dizayn",
     serviceImage: motion,
     works: [
       {

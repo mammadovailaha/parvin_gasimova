@@ -8,7 +8,7 @@ import InfoSection from '../components/HomeSections/InfoSection'
 const Home: React.FC = () => {
 
   return (
-    <div className='bg-white dark:bg-black overflow-x-hidden flex flex-col items-center'>
+    <div className='bg-white  overflow-x-hidden flex flex-col items-center'>
       <Hero />
       <ImagesSection />
       <InfoSection />

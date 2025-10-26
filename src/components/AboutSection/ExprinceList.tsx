@@ -32,7 +32,7 @@ const experience = [
   },
     {
     id: 33,
-    company: "Relax istirahət mərkəzi/ freelance",
+    company: "Relax istirahət mərkəzi",
     position: "Qrafik dizayner/ freelance",
     startDate: "Avqust 2024",
     endDate: "indi",

@@ -53,10 +53,11 @@ const WorkCard = ({ work }: WorkCardProps) => {
       onMouseLeave={() => setIsHovered(false)}
       className="group cursor-pointer w-full flex justify-center"
     >
-      <div className="relative w-[80%] md:w-full h-[450px] lg:h-[470px] rounded-lg overflow-hidden bg-gray-200/90 shadow-md">
+      <div className="relative w-[80%] md:w-full rounded-lg overflow-hidden bg-gray-200/90 shadow-md">
         {/* Video */}
         {isCurrentVideo ? (
-          <video
+          <div className="w-full h-[450px] lg:h-[470px]">
+             <video
             src={currentMedia}
             className="w-full h-full object-cover"
             autoPlay
@@ -64,14 +65,19 @@ const WorkCard = ({ work }: WorkCardProps) => {
             loop
             key={currentImageIndex}
           />
+          </div>
+         
         ) : (
           /* Image */
-          <img
+          <div className="w-full h-[380px] lg:h-[390px]">
+             <img
             src={currentMedia}
             alt={`Work ${work.id} - Image ${currentImageIndex + 1}`}
             className="w-full h-full object-cover"
             key={currentImageIndex}
           />
+          </div>
+         
         )}
 
         {/* Slider butonları */}

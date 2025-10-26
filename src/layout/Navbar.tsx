@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="w-full h-15 md:h-20 bg-white dark:bg-gray-900 px-4 md:px-8 py-2 fixed top-0 left-0 right-0 z-50 shadow-md">
+      <div className="w-full h-15 md:h-20 bg-white  px-4 md:px-8 py-2 fixed top-0 left-0 right-0 z-50 shadow-md">
         <div className="max-w-[1400px] mx-auto flex justify-between items-center h-full">
           <div className="w-40 h-22 cursor-pointer" onClick={() => navigate("/")}>
             <img
@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className="relative inline-block text-black dark:text-white font-medium text-sm lg:text-[17px] tracking-normal overflow-hidden group h-[24px] relative z-50"
+                    className="relative inline-block text-black font-medium text-sm lg:text-[17px] tracking-normal overflow-hidden group h-[24px] relative z-50"
                   >
                     {/* Ön tərəf */}
                     <span className="block transition-all duration-500 group-hover:-translate-y-full font-poppins font-semibold">
@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
             </button> */}
             <button
               onClick={handleClickContact}
-              className="hidden md:block outline-none border-none bg-black dark:bg-gray-800 text-white dark:text-white rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-normal font-poppins cursor-pointer"
+              className="hidden md:block outline-none border-none bg-black text-white  rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-normal font-poppins cursor-pointer"
             >
               sürətli əlaqə
             </button>
@@ -102,12 +102,12 @@ const Navbar: React.FC = () => {
             <div className="md:hidden flex justify-end items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="outline-none border-none bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white rounded-[30px] px-2 py-2 cursor-pointer relative z-[1001]"
+                className="outline-none border-none bg-gray-200  text-gray-800  rounded-[30px] px-2 py-2 cursor-pointer relative z-[1001]"
               >
                 {isOpen ? (
-                  <IoMdClose size={28} className="text-black dark:text-white" />
+                  <IoMdClose size={28} className="text-black" />
                 ) : (
-                  <RiMenu5Fill className="text-xl text-gray-800 dark:text-white" />
+                  <RiMenu5Fill className="text-xl text-gray-800" />
                 )}
               </button>
             </div>
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Overlay */}
       <div className={`
-        fixed inset-0 bg-white dark:bg-gray-900 z-[1000] 
+        fixed inset-0 bg-white z-[1000] 
         transition-transform duration-300 ease-in-out 
         ${isOpen ? 'translate-x-0' : 'translate-x-full'}
         md:hidden
@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
                 <Link
                   to={link.to}
                   onClick={handleLinkClick}
-                  className="relative inline-block text-black dark:text-white font-medium text-2xl tracking-normal overflow-hidden group h-[32px] relative z-50"
+                  className="relative inline-block text-black font-medium text-2xl tracking-normal overflow-hidden group h-[32px] relative z-50"
                 >
                   {/* Ön tərəf */}
                   <span className="block transition-all duration-500 group-hover:-translate-y-full">
@@ -163,7 +163,7 @@ const Navbar: React.FC = () => {
               handleClickContact();
               setIsOpen(false);
             }}
-            className="mt-12 outline-none border-none bg-black dark:bg-gray-800 text-white rounded-[30px] px-8 py-4 text-lg font-medium cursor-pointer relative z-50"
+            className="mt-12 outline-none border-none bg-black  text-white rounded-[30px] px-8 py-4 text-lg font-medium cursor-pointer relative z-50"
           >
             sürətli əlaqə
           </button>

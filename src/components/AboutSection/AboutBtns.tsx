@@ -150,7 +150,7 @@ const AboutBtns = () => {
           >
             <button
               onClick={()=>{navigate("/portfolio")}}
-              className="hidden md:block outline-none border-none bg-black dark:bg-gray-800 text-white dark:text-white rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-normal font-poppins cursor-pointer"
+              className="hidden md:block outline-none border-none bg-black text-white  rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-normal font-poppins cursor-pointer"
             >
              {service}
             </button>

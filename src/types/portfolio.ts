@@ -3,6 +3,7 @@ export interface BrandingWork {
   name: string;
   slug: string;
   images: string[];
+  cover:string;
 }
 export interface print {
   id: number;
