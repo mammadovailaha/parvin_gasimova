@@ -4,6 +4,12 @@ export interface BrandingWork {
   slug: string;
   images: string[];
 }
+export interface print {
+  id: number;
+  name: string;
+  slug: string;
+  images: string[];
+}
 
 export interface Post {
   id: number;
@@ -23,6 +29,8 @@ export interface PortfolioItem {
   serviceName: string;
   serviceImage: string;
   isBranding?: boolean;
+  isPrint?:boolean;
   brandings?: BrandingWork[];
+  print?:print[];
   works?: Work[];
 }

@@ -4,6 +4,7 @@ import sm from "../assets/images/sosial media.png";
 import motion from "../assets/images/motion.png";
 import print from "../assets/images/cap.png";
 import karibuCover from "../assets/protfolio/karibu-cover.png"
+import print2 from "../assets/protfolio/portofino-08.png"
 
 export const portfolioData: PortfolioItem[] = [
   {
@@ -17,20 +18,20 @@ export const portfolioData: PortfolioItem[] = [
         name: "Karibu",
         slug: "karibu",
         images: [
-              karibuCover,
-             "https://i.postimg.cc/RVs7n5c6/brand-guidline-02.png",
-             "https://i.postimg.cc/P5CmW344/brand-guidline-03.png",
-             "https://i.postimg.cc/X7HfySwK/brand-guidline-04.png",
-             "https://i.postimg.cc/4NL6hkzb/brand-guidline-05.png",
-             "https://i.postimg.cc/FsWyJ5jV/brand-guidline-06.png",
-             "https://i.postimg.cc/vHqr6FWj/brand-guidline-07.png",
-             "https://i.postimg.cc/vZ4Wrqzh/brand-guidline-08.png",
-             "https://i.postimg.cc/wj1hXfVw/brand-guidline-09.png",
-             "https://i.postimg.cc/Gm4kF7Km/brand-guidline-10.png",
-             "https://i.postimg.cc/K81nPqfh/brand-guidline-11.png",
-             "https://i.postimg.cc/fRVxc2Cz/brand-guidline-12.png",
-             "https://i.postimg.cc/Cx9bmGrf/brand-guidline-13.png",
-             "https://i.postimg.cc/qvW2jsDq/brand-guidline-14.png",
+          karibuCover,
+          "https://i.postimg.cc/RVs7n5c6/brand-guidline-02.png",
+          "https://i.postimg.cc/P5CmW344/brand-guidline-03.png",
+          "https://i.postimg.cc/X7HfySwK/brand-guidline-04.png",
+          "https://i.postimg.cc/4NL6hkzb/brand-guidline-05.png",
+          "https://i.postimg.cc/FsWyJ5jV/brand-guidline-06.png",
+          "https://i.postimg.cc/vHqr6FWj/brand-guidline-07.png",
+          "https://i.postimg.cc/vZ4Wrqzh/brand-guidline-08.png",
+          "https://i.postimg.cc/wj1hXfVw/brand-guidline-09.png",
+          "https://i.postimg.cc/Gm4kF7Km/brand-guidline-10.png",
+          "https://i.postimg.cc/K81nPqfh/brand-guidline-11.png",
+          "https://i.postimg.cc/fRVxc2Cz/brand-guidline-12.png",
+          "https://i.postimg.cc/Cx9bmGrf/brand-guidline-13.png",
+          "https://i.postimg.cc/qvW2jsDq/brand-guidline-14.png",
 
         ],
       },
@@ -90,14 +91,14 @@ export const portfolioData: PortfolioItem[] = [
           "https://i.postimg.cc/4ySVhVrh/sanan-asadzade-brandbook-22.png",
           "https://i.postimg.cc/Gt5GsGZD/sanan-asadzade-brandbook-23.png",
           "https://i.postimg.cc/pVGD7Mp8/sanan-asadzade-brandbook-24.png",
-          "https://i.postimg.cc/3JkgQfvS/sanan-asadzade-brandbook-25.png",          
+          "https://i.postimg.cc/3JkgQfvS/sanan-asadzade-brandbook-25.png",
         ],
       },
       {
-        id:5,
-        name:"MV",
-        slug:'mv',
-        images:[
+        id: 5,
+        name: "MV",
+        slug: 'mv',
+        images: [
           "https://i.postimg.cc/vTZZfm96/MV-Guideline-01.png",
           "https://i.postimg.cc/mkp2wGNN/MV-Guideline-02.png",
           "https://i.postimg.cc/mkp2wGNS/MV-Guideline-03.png",
@@ -113,7 +114,7 @@ export const portfolioData: PortfolioItem[] = [
           "https://i.postimg.cc/2SZ84Mqb/MV-Guideline-13.png",
           "https://i.postimg.cc/MpQKyNcj/MV-Guideline-14.png",
           "https://i.postimg.cc/d0cQn6dd/MV-Guideline-15.png",
-          "https://i.postimg.cc/RFMSx0gF/MV-Guideline-16.png",          
+          "https://i.postimg.cc/RFMSx0gF/MV-Guideline-16.png",
         ]
       }
     ],
@@ -696,8 +697,8 @@ export const portfolioData: PortfolioItem[] = [
             images: ["https://i.postimg.cc/K8jLL2XN/2.jpg"],
           },
           {
-            id:1,
-            images:['https://i.postimg.cc/HsNPwYVx/3.png']
+            id: 1,
+            images: ['https://i.postimg.cc/HsNPwYVx/3.png']
           },
           {
             id: 89,
@@ -765,20 +766,162 @@ export const portfolioData: PortfolioItem[] = [
   },
   {
     id: 3,
-    serviceName: "Motion Dizayn",
+    serviceName: "",
     serviceImage: motion,
-    works: [],
+    works: [
+      {
+        id: 3,
+        company: "Motion dizaynlar",
+        year: "",
+        posts: [
+          {
+            id: 995,
+            images: [
+              "https://files.catbox.moe/n1kylw.mp4",
+            ]
+          },
+          {
+            id: 919,
+            images: [
+              "https://files.catbox.moe/w4cqs6.mp4",
+            ],
+          },
+          {
+            id: 929,
+            images: [
+              "https://files.catbox.moe/x1kh5c.mp4",
+            ],
+          },
+          {
+            id: 399,
+            images: [
+              "https://files.catbox.moe/9l8ydp.mp4",
+            ],
+          },
+          {
+            id: 949,
+            images: [
+              "https://files.catbox.moe/lgg0ly.mp4",
+            ],
+          },
+          {
+            id: 959,
+            images: [
+              "https://files.catbox.moe/2sylto.mp4",
+            ],
+          },
+          {
+            id: 9669,
+            images: [
+              "https://files.catbox.moe/gqs25i.mp4",
+            ],
+          },
+          {
+            id: 9769,
+            images: [
+              "https://files.catbox.moe/tinq8o.mp4",
+            ],
+          },
+          {
+            id: 6665,
+            images: [
+              "https://files.catbox.moe/qevgwb.mp4",
+            ],
+          },
+          {
+            id: 9944,
+            images: [
+              "https://files.catbox.moe/q7w1bt.mp4",
+            ],
+          },
+          {
+            id: 9933,
+            images: [
+              "https://files.catbox.moe/q0rhg4.mp4",
+            ],
+          },
+          {
+            id: 9955,
+            images: [
+              "https://files.catbox.moe/ug1p6h.mp4",
+            ],
+          },
+          {
+            id: 9943,
+            images: [
+              "https://files.catbox.moe/o90mqj.mp4",
+            ],
+          },
+          {
+            id: 9941,
+            images: [
+              "https://files.catbox.moe/ip6cb1.mp4",
+            ],
+          },
+          {
+            id: 9911,
+            images: [
+              "https://files.catbox.moe/5h0js0.mp4",
+            ],
+          },
+          {
+            id: 9912,
+            images: [
+              "https://files.catbox.moe/xqdpyp.mp4",
+            ],
+          },
+          {
+            id: 9923,
+            images: [
+              "https://files.catbox.moe/38ir22.mp4",
+            ],
+          },
+          {
+            id: 9945,
+            images: [
+              "https://files.catbox.moe/24qag2.mp4",
+            ],
+          },
+          {
+            id: 9954,
+            images: [
+              "https://files.catbox.moe/ep7m3w.mp4",
+            ],
+          },
+          {
+            id: 9922,
+            images: [
+              "https://files.catbox.moe/uvu0vs.mp4",
+            ],
+          },
+          {
+            id: 9932,
+            images: [
+              "https://files.catbox.moe/oepv92.mp4",
+            ],
+          },
+          {
+            id: 9921,
+            images: [
+              "https://files.catbox.moe/7b2rcm.mp4",
+            ],
+          },
+        ]
+      }
+    ],
+
   },
   {
     id: 4,
     serviceName: "Çap Məhsulları",
     serviceImage: print,
-    works: [
+    isPrint: true,
+    print: [
       {
         id: 1,
-        company: "Çap Şirkəti",
-        year: "2025",
-        images: [],
+        images: [print2],
+        name: "",
+        slug: ""
       },
     ],
   },

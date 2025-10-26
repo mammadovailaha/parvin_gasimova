@@ -53,7 +53,7 @@ const WorkCard = ({ work }: WorkCardProps) => {
       onMouseLeave={() => setIsHovered(false)}
       className="group cursor-pointer w-full flex justify-center"
     >
-      <div className="relative w-[80%] md:w-full h-[430px] lg:h-[380px] rounded-lg overflow-hidden bg-gray-200/90 shadow-md">
+      <div className="relative w-[80%] md:w-full h-[450px] lg:h-[470px] rounded-lg overflow-hidden bg-gray-200/90 shadow-md">
         {/* Video */}
         {isCurrentVideo ? (
           <video

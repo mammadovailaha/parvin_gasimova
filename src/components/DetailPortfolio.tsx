@@ -72,6 +72,19 @@ const DetailPortfolio = () => {
       </div>
     );
   }
+  else if (portfolio.isPrint && portfolio.print){
+    return(
+      <div className="w-full flex flex-col items-center gap-5 mt-10">
+        <div className="w-full">
+          {portfolio.print.map((item)=>(
+            <div className="w-full h-full">
+              <img className="w-full h-full object-contain" src={item.images[0]} alt="çap dizayn" />
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="w-full bg-white mt-20 pb-20">
