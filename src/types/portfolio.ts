@@ -4,6 +4,8 @@ export interface BrandingWork {
   slug: string;
   images: string[];
   cover:string;
+  about?:string;
+  category?:string;
 }
 export interface print {
   id: number;

@@ -3,8 +3,9 @@ import brandbook from "../assets/images/branding.png";
 import sm from "../assets/images/sosial media.png";
 import motion from "../assets/images/motion.png";
 import print from "../assets/images/cap.png";
-import karibuCover from "../assets/protfolio/karibu-cover.png"
-import print2 from "../assets/protfolio/portofino-08.png"
+import karibuCover from "../assets/protfolio/karibu-cover.png";
+import print2 from "../assets/protfolio/portofino-08.png";
+import freeeducation from "../assets/protfolio/Free Education.png";
 
 export const portfolioData: PortfolioItem[] = [
   {
@@ -14,10 +15,40 @@ export const portfolioData: PortfolioItem[] = [
     isBranding: true,
     brandings: [
       {
+        id: 22,
+        name: "Free Education",
+        slug: "free-education",
+        category: "Loqo dizaynı, brendinq, çap məhsulları",
+        about:
+          "Free Education təhsil sahəsinə aid kursdur, sərbəst öyrənmə məqsədinə hazırlanıb. Loqo “F” və “E” hərflərinin kitab formasında birləşməsi ilə həm brend adını, həm də təhsili simvolizə edir. Sadə və balanslı strukturu riyazi dəqiqliklə qurulub, açıq görünüşü isə sərbəst düşüncə tərzini ifadə edir.Layihə minimalist, lakin mənalı dizayn yanaşması ilə öyrənmənin səliqəsini və balansını vizual şəkildə təqdim edir.",
+        cover: freeeducation,
+        images: [
+          "https://i.postimg.cc/CLFjb0Z3/Free-Education-Branding-qirmizi-01.png",
+          "https://i.postimg.cc/vm69GHj9/Free-Education-Branding-qirmizi-02.png",
+          "https://i.postimg.cc/SshXqLc0/Free-Education-Branding-qirmizi-03.png",
+          "https://i.postimg.cc/Y02hLpXR/Free-Education-Branding-qirmizi-04.png",
+          "https://i.postimg.cc/R0f3jpJM/Free-Education-Branding-qirmizi-05.png",
+          "https://i.postimg.cc/L4vqK15M/Free-Education-Branding-qirmizi-06.png",
+          "https://i.postimg.cc/zBFyfLk4/Free-Education-Branding-qirmizi-07.png",
+          "https://i.postimg.cc/13V4q7Hn/Free-Education-Branding-qirmizi-08.png",
+          "https://i.postimg.cc/mrQDdcKT/Free-Education-Branding-qirmizi-09.png",
+          "https://i.postimg.cc/ydsN21zV/Free-Education-Branding-qirmizi-10.png",
+          "https://i.postimg.cc/LXDspcHk/Free-Education-Branding-qirmizi-11.png",
+          "https://i.postimg.cc/pTRd3WtX/Free-Education-Branding-qirmizi-12.png",
+          "https://i.postimg.cc/NfSjB7cc/Free-Education-Branding-qirmizi-13.png",
+          "https://i.postimg.cc/rsYFd5Rf/Free-Education-Branding-qirmizi-14.png",
+          "https://i.postimg.cc/nzFH03vX/Free-Education-Branding-qirmizi-15.png",
+          "https://i.postimg.cc/FRr9DTjz/Free-Education-Branding-qirmizi-16.png",
+        ],
+      },
+      {
         id: 1,
         name: "Karibu",
         slug: "karibu",
-        cover:"https://i.postimg.cc/90gVKj4L/karibu.png",
+        category: "Brendinq, loqo dizaynı , çap məhsulları",
+        about:
+          'Karibu layihəsi qastronomiya və avtomobil dünyasını bir araya gətirən unikal bir məkandır.Burada həm ləzzətli yeməklərdən zövq ala, həm də avtomobil hərraclarında iştirak edə bilərsiniz.Daxili interyerimiz "Morocco Loft" üslubunda dizayn edilib və rahatlıqla lüksü birləşdirərək qonaqlara unudulmaz bir təcrübə təqdim edir.',
+        cover: "https://i.postimg.cc/90gVKj4L/karibu.png",
         images: [
           karibuCover,
           "https://i.postimg.cc/RVs7n5c6/brand-guidline-02.png",
@@ -32,57 +63,16 @@ export const portfolioData: PortfolioItem[] = [
           "https://i.postimg.cc/K81nPqfh/brand-guidline-11.png",
           "https://i.postimg.cc/fRVxc2Cz/brand-guidline-12.png",
           "https://i.postimg.cc/Cx9bmGrf/brand-guidline-13.png",
-          "https://i.postimg.cc/qvW2jsDq/brand-guidline-14.png",
-
-        ],
-      },
-      {
-        id: 2,
-        name: "Emeyveli",
-        slug: "meyveli",
-        cover:"https://i.postimg.cc/HsJCnRcF/emeyveli.png",
-        images: [
-          "https://i.postimg.cc/nzdHHkD0/emeyveli-bb-15.png",
-          "https://i.postimg.cc/T1pThDVk/emeyveli-bb-16.png",
-          "https://i.postimg.cc/5y6fjCBr/emeyveli-bb-17.png",
-          "https://i.postimg.cc/3Nd3WvXb/emeyveli-bb-18.png",
-          "https://i.postimg.cc/XqpnXCfs/emeyveli-bb-19.png",
-          "https://i.postimg.cc/wM793m5T/emeyveli-bb-20.png",
-          "https://i.postimg.cc/gjnGrZy2/emeyveli-bb-21.png",
-          "https://i.postimg.cc/5y6fjC5t/emeyveli-bb-22.png",
-          "https://i.postimg.cc/ZnCJ0dPC/emeyveli-bb-23.png",
-          "https://i.postimg.cc/2yMrWSTj/emeyveli-bb-24.png",
-          "https://i.postimg.cc/Y2spZd75/emeyveli-bb-25.png",
-
-        ],
-      },
-      {
-        id: 3,
-        name: "Esederek",
-        slug: "esederek",
-        cover:"https://i.postimg.cc/CLZV5XB2/esederek.png",
-        images: [
-          "https://i.postimg.cc/K8YCb2N8/e-sederek-bb-18.png",
-          "https://i.postimg.cc/MprNKFPB/e-sederek-bb-19.png",
-          "https://i.postimg.cc/P5F9rR3p/e-sederek-bb-20.png",
-          "https://i.postimg.cc/13Y25jC0/e-sederek-bb-21.png",
-          "https://i.postimg.cc/7ZQdYWsb/e-sederek-bb-22.png",
-          "https://i.postimg.cc/CKBtZsXZ/e-sederek-bb-23.png",
-          "https://i.postimg.cc/zfbMLF6H/e-sederek-bb-24.png",
-          "https://i.postimg.cc/PqpcLQ9D/e-sederek-bb-25.png",
-          "https://i.postimg.cc/tgZf1Nwk/e-sederek-bb-26.png",
-          "https://i.postimg.cc/pdh79J4q/e-sederek-bb-27.png",
-          "https://i.postimg.cc/W4FKDwCW/e-sederek-bb-28.png",
-          "https://i.postimg.cc/W4By0JPd/e-sederek-bb-29.png",
-          "https://i.postimg.cc/6QkPCGN7/e-sederek-bb-30.png",
-
         ],
       },
       {
         id: 4,
         name: "Sanan Asadzade MMC",
         slug: "sananAsadzade",
-        cover:"https://i.postimg.cc/KvKyjwk6/sanan-asadzade.png",
+        category: " Brendinq, çap məhsulları ,sosial media postları",
+        about:
+          "Layihə “ASADZADE SANAN MMC” şirkətinin avtomobil idxalı və satışı sahəsindəki fəaliyyətini əks etdirir. İşin məqsədi şirkətin imicini gücləndirən və fəaliyyətini tanıdan vizual materialların hazırlanmasıdır.",
+        cover: "https://i.postimg.cc/KvKyjwk6/sanan-asadzade.png",
         images: [
           "https://i.postimg.cc/mDVQB0jq/sanan-asadzade-brandbook-14.png",
           "https://i.postimg.cc/gjJ3JNB3/sanan-asadzade-brandbook-15.png",
@@ -99,10 +89,61 @@ export const portfolioData: PortfolioItem[] = [
         ],
       },
       {
+        id: 3,
+        name: "Esederek",
+        slug: "esederek",
+        category:
+          "Brendinq ,loqo dizaynı ,çap məhsulları , sosial media postları",
+        about:
+          "E-Sederek ənənə ilə ticarəti birləşdirir. Azərbaycan evlərindəki ikonik Sədərək alış-veriş təcrübəsindən ilhamlanan platformamız tanışlığı, etibarı və əlçatanlığı onlayn müştəriyə daşıyır. Biz mədəniyyətə,ailəyə və gündəlik həyata bağlı olan praktik müştərilərə xidmət edirik. Dizayndan istifadəçi təcrübəsinə qədər hər detal yerli və sadə hiss etdirməyi hədəfləyir.",
+        cover: "https://i.postimg.cc/CLZV5XB2/esederek.png",
+        images: [
+          "https://i.postimg.cc/K8YCb2N8/e-sederek-bb-18.png",
+          "https://i.postimg.cc/MprNKFPB/e-sederek-bb-19.png",
+          "https://i.postimg.cc/P5F9rR3p/e-sederek-bb-20.png",
+          "https://i.postimg.cc/13Y25jC0/e-sederek-bb-21.png",
+          "https://i.postimg.cc/7ZQdYWsb/e-sederek-bb-22.png",
+          "https://i.postimg.cc/CKBtZsXZ/e-sederek-bb-23.png",
+          "https://i.postimg.cc/zfbMLF6H/e-sederek-bb-24.png",
+          "https://i.postimg.cc/PqpcLQ9D/e-sederek-bb-25.png",
+          "https://i.postimg.cc/tgZf1Nwk/e-sederek-bb-26.png",
+          "https://i.postimg.cc/pdh79J4q/e-sederek-bb-27.png",
+          "https://i.postimg.cc/W4FKDwCW/e-sederek-bb-28.png",
+          "https://i.postimg.cc/W4By0JPd/e-sederek-bb-29.png",
+          "https://i.postimg.cc/6QkPCGN7/e-sederek-bb-30.png",
+        ],
+      },
+      {
+        id: 2,
+        name: "Emeyveli",
+        slug: "meyveli",
+        category: "Brendinq , çap məhsulları",
+        about:
+          "Emeyveli, meyvə və qida məhsullarının topdansatış paylanmasına fokuslanan B2B brendidir. Məqsədimiz restoranlar, marketlər və digər biznes tərəfdaşlarına təzə, yüksək keyfiyyətli məhsulları rəqabətqabiliyyətli qiymətlərlə təqdim etməkdir.",
+        cover: "https://i.postimg.cc/HsJCnRcF/emeyveli.png",
+        images: [
+          "https://i.postimg.cc/nzdHHkD0/emeyveli-bb-15.png",
+          "https://i.postimg.cc/T1pThDVk/emeyveli-bb-16.png",
+          "https://i.postimg.cc/5y6fjCBr/emeyveli-bb-17.png",
+          "https://i.postimg.cc/3Nd3WvXb/emeyveli-bb-18.png",
+          "https://i.postimg.cc/XqpnXCfs/emeyveli-bb-19.png",
+          "https://i.postimg.cc/wM793m5T/emeyveli-bb-20.png",
+          "https://i.postimg.cc/gjnGrZy2/emeyveli-bb-21.png",
+          "https://i.postimg.cc/5y6fjC5t/emeyveli-bb-22.png",
+          "https://i.postimg.cc/ZnCJ0dPC/emeyveli-bb-23.png",
+          "https://i.postimg.cc/2yMrWSTj/emeyveli-bb-24.png",
+          "https://i.postimg.cc/Y2spZd75/emeyveli-bb-25.png",
+        ],
+      },
+      {
         id: 5,
         name: "Mystic Vessels",
-        slug: 'mystic-vessels',
-        cover:"https://i.postimg.cc/yYJzxtgX/mystic-vessels.png",
+        slug: "mystic-vessels",
+        category:
+          "Brendinq, loqo dizaynı, çap məhsulları,sosial media postları",
+        about:
+          "Mystic Vessels layihəsi keramika satışı ilə məşğul olan şəxsi Brendinqdir. Layihənin əsas məqsədi sahibkarın istəyinə uyğun simvol və hərflərdən loqo yığılması və brend kimliyinin qurulmasıdır.",
+        cover: "https://i.postimg.cc/yYJzxtgX/mystic-vessels.png",
         images: [
           "https://i.postimg.cc/vTZZfm96/MV-Guideline-01.png",
           "https://i.postimg.cc/mkp2wGNN/MV-Guideline-02.png",
@@ -120,8 +161,8 @@ export const portfolioData: PortfolioItem[] = [
           "https://i.postimg.cc/MpQKyNcj/MV-Guideline-14.png",
           "https://i.postimg.cc/d0cQn6dd/MV-Guideline-15.png",
           "https://i.postimg.cc/RFMSx0gF/MV-Guideline-16.png",
-        ]
-      }
+        ],
+      },
     ],
   },
   {
@@ -703,7 +744,7 @@ export const portfolioData: PortfolioItem[] = [
           },
           {
             id: 1,
-            images: ['https://i.postimg.cc/HsNPwYVx/3.png']
+            images: ["https://i.postimg.cc/HsNPwYVx/3.png"],
           },
           {
             id: 89,
@@ -781,140 +822,95 @@ export const portfolioData: PortfolioItem[] = [
         posts: [
           {
             id: 995,
-            images: [
-              "https://files.catbox.moe/n1kylw.mp4",
-            ]
+            images: ["https://files.catbox.moe/n1kylw.mp4"],
           },
           {
             id: 919,
-            images: [
-              "https://files.catbox.moe/w4cqs6.mp4",
-            ],
+            images: ["https://files.catbox.moe/w4cqs6.mp4"],
           },
           {
             id: 929,
-            images: [
-              "https://files.catbox.moe/x1kh5c.mp4",
-            ],
+            images: ["https://files.catbox.moe/x1kh5c.mp4"],
           },
           {
             id: 399,
-            images: [
-              "https://files.catbox.moe/9l8ydp.mp4",
-            ],
-          },
-          {
-            id: 949,
-            images: [
-              "https://files.catbox.moe/lgg0ly.mp4",
-            ],
-          },
-          {
-            id: 959,
-            images: [
-              "https://files.catbox.moe/2sylto.mp4",
-            ],
+            images: ["https://files.catbox.moe/9l8ydp.mp4"],
           },
           {
             id: 9669,
-            images: [
-              "https://files.catbox.moe/gqs25i.mp4",
-            ],
+            images: ["https://files.catbox.moe/gqs25i.mp4"],
           },
           {
             id: 9769,
-            images: [
-              "https://files.catbox.moe/tinq8o.mp4",
-            ],
+            images: ["https://files.catbox.moe/tinq8o.mp4"],
           },
           {
             id: 6665,
-            images: [
-              "https://files.catbox.moe/qevgwb.mp4",
-            ],
+            images: ["https://files.catbox.moe/qevgwb.mp4"],
           },
           {
             id: 9944,
-            images: [
-              "https://files.catbox.moe/q7w1bt.mp4",
-            ],
+            images: ["https://files.catbox.moe/q7w1bt.mp4"],
           },
           {
             id: 9933,
-            images: [
-              "https://files.catbox.moe/q0rhg4.mp4",
-            ],
+            images: ["https://files.catbox.moe/q0rhg4.mp4"],
           },
           {
             id: 9955,
-            images: [
-              "https://files.catbox.moe/ug1p6h.mp4",
-            ],
+            images: ["https://files.catbox.moe/tqxge0.mp4"],
           },
           {
             id: 9943,
-            images: [
-              "https://files.catbox.moe/o90mqj.mp4",
-            ],
+            images: ["https://files.catbox.moe/o90mqj.mp4"],
           },
           {
             id: 9941,
-            images: [
-              "https://files.catbox.moe/ip6cb1.mp4",
-            ],
+            images: ["https://files.catbox.moe/ip6cb1.mp4"],
+          },
+            {
+            id: 949,
+            images: ["https://files.catbox.moe/lgg0ly.mp4"],
           },
           {
             id: 9911,
-            images: [
-              "https://files.catbox.moe/5h0js0.mp4",
-            ],
+            images: ["https://files.catbox.moe/5h0js0.mp4"],
           },
           {
             id: 9912,
-            images: [
-              "https://files.catbox.moe/xqdpyp.mp4",
-            ],
+            images: ["https://files.catbox.moe/xqdpyp.mp4"],
           },
           {
             id: 9923,
-            images: [
-              "https://files.catbox.moe/38ir22.mp4",
-            ],
+            images: ["https://files.catbox.moe/38ir22.mp4"],
+          },
+          {
+            id: 959,
+            images: ["https://files.catbox.moe/2sylto.mp4"],
           },
           {
             id: 9945,
-            images: [
-              "https://files.catbox.moe/24qag2.mp4",
-            ],
+            images: ["https://files.catbox.moe/24qag2.mp4"],
           },
           {
             id: 9954,
-            images: [
-              "https://files.catbox.moe/ep7m3w.mp4",
-            ],
+            images: ["https://files.catbox.moe/ep7m3w.mp4"],
           },
           {
             id: 9922,
-            images: [
-              "https://files.catbox.moe/uvu0vs.mp4",
-            ],
+            images: ["https://files.catbox.moe/uvu0vs.mp4"],
           },
           {
             id: 9932,
-            images: [
-              "https://files.catbox.moe/oepv92.mp4",
-            ],
+            images: ["https://files.catbox.moe/oepv92.mp4"],
           },
           {
             id: 9921,
-            images: [
-              "https://files.catbox.moe/7b2rcm.mp4",
-            ],
+            images: ["https://files.catbox.moe/7b2rcm.mp4"],
           },
-        ]
-      }
+        ],
+      },
     ],
-
   },
   {
     id: 4,
@@ -926,7 +922,7 @@ export const portfolioData: PortfolioItem[] = [
         id: 1,
         images: [print2],
         name: "",
-        slug: ""
+        slug: "",
       },
     ],
   },

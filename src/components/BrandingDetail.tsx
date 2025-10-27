@@ -98,8 +98,8 @@ const BrandingDetail: FC<BrandingDetailProps> = ({portfolioData}) => {
               <p className="text-base text-gray-600">{currentBranding.name}</p>
             </div>
             <div className="flex flex-col gap-2">
-              <h5 className="text-lg text-black font-poppins font-semibold">Kategoriya</h5>
-              <p className="text-base text-gray-600 font-poppins font-normal">Brendbook</p>
+              <h5 className="text-lg text-black font-poppins font-semibold">Kateqoriya</h5>
+              <p className="text-base text-gray-600 font-poppins font-normal">{currentBranding.category || ""}</p>
             </div>
           </div>
 
@@ -109,7 +109,7 @@ const BrandingDetail: FC<BrandingDetailProps> = ({portfolioData}) => {
               <p className="text-base text-gray-600 font-poppins font-normal">2025</p>
             </div>
             <p className="text-base text-gray-700 leading-relaxed font-poppins font-normal">
-              {currentBranding.name} brendi üçün hazırlanmış branding kitabı
+             {currentBranding.about || ""}
             </p>
           </div>
         </div>
