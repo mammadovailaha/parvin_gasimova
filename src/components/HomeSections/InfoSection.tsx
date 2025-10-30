@@ -7,7 +7,7 @@ const InfoSection = () => {
   const navigate=useNavigate();
   return (
     <div className="w-full h-[50%] flex flex-col md:flex-row justify-around items-center px-10 mt-15 gap-4 animate-fade-in-up">
-      <div className="w-[185px] h-[185px]">
+      <div className="w-35 md:w-[185px] h-35 md:h-[185px]">
         <img
         className="w-full h-full object-contain animate-slow-spin"
           src={Logo}
@@ -15,7 +15,7 @@ const InfoSection = () => {
         />
       </div>
       <div className="w-[90%] md:w-[50%] h-full flex flex-col justify-center items-start gap-2">
-        <p className="font-poppins font-semibold text-3xl md:text-5xl text-black z-40 relative bg-gradient-to-r from-black to-gray-200 bg-clip-text text-transparent inline-block animate-gradient-text">
+        <p className="font-poppins font-semibold text-2xl md:text-3xl lg:text-5xl text-black z-40 relative bg-gradient-to-r from-black to-gray-200 bg-clip-text text-transparent inline-block animate-gradient-text">
           Brendlərə yaradıcı innovasiya və strateji planlama ilə rəqəmsal
           ustalığa çatmaqda kömək edirəm
         </p>

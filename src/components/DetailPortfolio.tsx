@@ -108,11 +108,11 @@ const DetailPortfolio = () => {
               <div key={work.id}>
                 {/* Şirkət başlığı */}
                 <div className="w-full flex justify-between items-center py-3">
-                  <h1 className="text-2xl font-poppins font-normal text-black">
+                  <h1 className="text-sm md:text-2xl font-poppins font-normal text-black">
                     {portfolio.serviceName}
                   </h1>
                   <div className="px-5 py-2 rounded-[30px] bg-[#aeff00] border flex justify-center items-center whitespace-nowrap">
-                    <h2 className="text-2xl font-poppins font-semibold leading-lg text-black">
+                    <h2 className="text-sm md:text-2xl font-poppins font-semibold leading-lg text-black">
                       {work.company}
                     </h2>
                   </div>

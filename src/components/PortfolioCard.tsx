@@ -33,7 +33,7 @@ const PortfolioCard: FC<Props> = ({ item }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onMouseMove={handleMouseMove}
-      className="w-[80%] lg:w-[40%] h-[200px] md:h-[450px] flex flex-col items-center gap-2.5 rounded-[20px] relative cursor-pointer"
+      className="w-[83%] lg:w-[40%] h-[270px] md:h-[500px] lg:h-[450px] flex flex-col items-center gap-2.5 rounded-[20px] relative cursor-pointer"
     >
       <div
         className={`w-full flex py-4 justify-center items-center bg-white absolute top-[40%] overflow-hidden transition-all duration-700 z-20 ${
@@ -43,7 +43,7 @@ const PortfolioCard: FC<Props> = ({ item }) => {
         <p className="text-2xl font-semibold text-black">{item.serviceName}</p>
       </div>
 
-      <div className="w-full h-[400px] rounded-[20px] overflow-hidden">
+      <div className="w-full h-[320px] md:h-[420px] lg:h-[400px] rounded-[20px] overflow-hidden">
         <img
           className="w-full h-full object-cover rounded-[20px] transition-transform duration-300 hover:scale-105"
           src={item.serviceImage}

@@ -38,10 +38,10 @@ const Collaboration = () => {
             {
                 breakpoint: 768, // ekran <= 760px (planşet və kiçik laptop)
                 settings: {
-                    slidesToShow: 6,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
+                    dots: false,
                 },
             },
             {
@@ -49,19 +49,25 @@ const Collaboration = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
                 },
             },
         ],
     };
   return (
-    <div className="w-full flex flex-col gap-3 md:gap-5 items-center">
-        <h2 className="text-xl md:text-3xl font-poppins font-semibold text-[#1e1e1e]">İndiyədək edilən əməkdaşlıqlar</h2>
-      <Slider {...settings} className="w-[90%] flex justify-center items-center md:gap-10">
-        {collaborationLogos.map((logo, index) => (
-          <CollaborationCard key={index} img={logo} />
-        ))}
-      </Slider>
+   <div className="w-full flex flex-col gap-3 md:gap-5 items-center">
+    <h2 className="text-xl md:text-3xl font-poppins font-semibold text-[#1e1e1e]">
+        İndiyədək edilən əməkdaşlıqlar
+    </h2>
+    <div className="w-[90%]"> {/* Slider-i div içinə alın */}
+        <Slider {...settings} className="">
+            {collaborationLogos.map((logo, index) => (
+                <CollaborationCard key={index} img={logo} />
+            ))}
+        </Slider>
     </div>
+</div>
   )
 }
 

@@ -53,10 +53,10 @@ const WorkCard = ({ work }: WorkCardProps) => {
       onMouseLeave={() => setIsHovered(false)}
       className="group cursor-pointer w-full flex justify-center"
     >
-      <div className="relative w-[80%] md:w-full rounded-lg overflow-hidden bg-gray-200/90 shadow-md">
+      <div className="relative w-[84%] lg:w-full rounded-lg overflow-hidden bg-gray-200/90 shadow-md">
         {/* Video */}
         {isCurrentVideo ? (
-          <div className="w-full h-[450px] lg:h-[470px]">
+          <div className="w-full h-[450px] md:h-[490px] lg:h-[470px]">
              <video
             src={currentMedia}
             className="w-full h-full object-cover"
@@ -69,7 +69,7 @@ const WorkCard = ({ work }: WorkCardProps) => {
          
         ) : (
           /* Image */
-          <div className="w-full h-[380px] lg:h-[390px]">
+          <div className="w-full h-[380px] md:h-[500px] lg:h-[390px]">
              <img
             src={currentMedia}
             alt={`Work ${work.id} - Image ${currentImageIndex + 1}`}

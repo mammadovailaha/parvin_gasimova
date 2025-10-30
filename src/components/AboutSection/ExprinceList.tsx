@@ -48,7 +48,7 @@ const experience = [
 
 const ExprinceList = () => {
   return (
-    <div className="w-[90%] md:w-[50%] flex flex-col gap-4 md:gap-5 mt-5 px-4 md:px-0">
+    <div className="w-full md:w-[50%] flex flex-col gap-4 md:gap-5 mt-5 px-4 md:px-0">
       <div className="flex items-center justify-start gap-2 border-b  border-gray-200 pb-2 md:pb-4 w-[90%] md:w-[80%]">
         <PiStarFourFill className="text-[#1e1e1e] text-xl md:text-2xl" />
         <h2 className="text-xl md:text-3xl font-poppins font-semibold text-[#1e1e1e]">

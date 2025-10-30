@@ -36,9 +36,9 @@ const ImageWithScroll: FC<{ image: string; alt: string }> = ({ image, alt }) => 
   const translateY = (1 - scrollProgress) * 80 - 30;
 
   return (
-    <div ref={imageRef} className="w-full flex justify-center mb-20 mt-5">
+    <div ref={imageRef} className="w-full flex justify-center mb-2 md:mb-20 mt-5">
       <div
-        className="w-[300px] md:w-[500px] lg:w-[1000px] rounded-lg py-3 px-8"
+        className="w-[90%]  md:w-[500px] lg:w-[1000px] rounded-lg py-3 px-8"
         style={{
           transform: `translateY(${translateY}px) scale(${scale})`,
           transition: "transform 0.1s ease-out",
@@ -88,11 +88,11 @@ const BrandingDetail: FC<BrandingDetailProps> = ({portfolioData}) => {
   }
 
   return (
-    <div className="w-full min-h-screen bg-white pt-24">
+    <div className="w-full min-h-screen bg-white pt-18 md:pt-24">
       {/* Info Section */}
       <div className="w-full max-w-6xl mx-auto px-4 py-12">
-        <div className="flex flex-col lg:flex-row justify-start items-start gap-10 mb-12">
-          <div className="flex flex-col gap-10 px-10 lg:px-0">
+        <div className="flex flex-col lg:flex-row justify-start items-start gap-4 md:gap-10 mb-12">
+          <div className="flex flex-col gap-5 md:gap-10 px-10 lg:px-0">
             <div className="flex flex-col gap-2">
               <h5 className="text-lg font-semibold text-black">Layihə</h5>
               <p className="text-base text-gray-600">{currentBranding.name}</p>

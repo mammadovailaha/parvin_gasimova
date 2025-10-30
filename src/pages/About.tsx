@@ -18,7 +18,7 @@ const About = () => {
      <SkillSection/>
      <ExpirenceSection/>
      <Collaboration/>
-     <SliderComponent onClick={()=>{navigate("/about")}} data={data}  className='bg-none ' textStyle='text-3xl font-poppins font-semibold text-gray-400'/>
+     <SliderComponent onClick={()=>{navigate("/about")}} data={data}  className='bg-none ' textStyle='text-xl md:text-3xl font-poppins font-semibold text-gray-400'/>
     </div>
   )
 }
