@@ -6,7 +6,6 @@
 //   toggleTheme: () => void;
 // };
 
-// // eslint-disable-next-line react-refresh/only-export-components
 // export const ThemeContext = createContext<ThemeContextType | undefined>(
 //   undefined
 // );

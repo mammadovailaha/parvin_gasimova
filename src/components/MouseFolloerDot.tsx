@@ -16,7 +16,7 @@ const MouseFollowerDot: React.FC = () => {
       });
     };
 
-    // Mouse move event listener əlavə edirik
+    // Mouse move event listener
     window.addEventListener('mousemove', handleMouseMove);
 
     // Cleanup function

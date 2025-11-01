@@ -11,7 +11,7 @@ const TypingText: React.FC<Props> = ({ text, speed = 100, className = "" }) => {
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
-    setDisplayedText(""); // reset when text changes
+    setDisplayedText("");
     let index = 0;
     let displayText:string=""
     const interval = setInterval(() => {

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ArrowUp } from "lucide-react"; // İstəsən ikon əlavə elə, yoxdursa sadəcə text yaz
+import { ArrowUp } from "lucide-react";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);

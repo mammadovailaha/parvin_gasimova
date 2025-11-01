@@ -32,8 +32,8 @@ const ImagesSection = () => {
           <div
         style={{
           overflowY: "scroll",
-          msOverflowStyle: "none", // IE və Edge üçün
-          scrollbarWidth: "none", // Firefox üçün
+          msOverflowStyle: "none", 
+          scrollbarWidth: "none", 
         }}
         className="w-[340px] h-[730px] overflow-y-scroll   hide-scrollbar flex flex-col justify-center items-center gap-4  md:px-2 md:mt-4 md:pt-28 rounded-[40px]"
       >

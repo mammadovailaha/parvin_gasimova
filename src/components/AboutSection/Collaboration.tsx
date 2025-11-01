@@ -26,17 +26,17 @@ const collaborationLogos = [
 
 const Collaboration = () => {
        const settings = {
-        dots: false,          // alt nöqtələr
-        infinite: true,      // limitsiz dövr etsin
-        speed: 500,          // keçid sürəti (ms)
-        slidesToShow: 5,     // eyni anda neçə element göstərsin
-        slidesToScroll: 1,   // hər dəfə neçə element sürüşsün
-        autoplay: true,      // avtomatik sürüşsün
-        autoplaySpeed: 1300, // avtomatik keçid sürəti
+        dots: false,        
+        infinite: true,    
+        speed: 500,          
+        slidesToShow: 5,     
+        slidesToScroll: 1,   
+        autoplay: true,      
+        autoplaySpeed: 1300, 
 
         responsive: [
             {
-                breakpoint: 768, // ekran <= 760px (planşet və kiçik laptop)
+                breakpoint: 768, 
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -45,7 +45,7 @@ const Collaboration = () => {
                 },
             },
             {
-                breakpoint: 640, // ekran <= 640px (telefon)
+                breakpoint: 640, 
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -60,7 +60,7 @@ const Collaboration = () => {
     <h2 className="text-xl md:text-3xl font-poppins font-semibold text-[#1e1e1e]">
         İndiyədək edilən əməkdaşlıqlar
     </h2>
-    <div className="w-[90%]"> {/* Slider-i div içinə alın */}
+    <div className="w-[90%]"> 
         <Slider {...settings} className="">
             {collaborationLogos.map((logo, index) => (
                 <CollaborationCard key={index} img={logo} />
