@@ -72,6 +72,7 @@ const WorkCard = ({ work }: WorkCardProps) => {
           <div className="w-full h-[380px] md:h-[500px] lg:h-[390px]">
              <img
             src={currentMedia}
+            loading="lazy"
             alt={`Work ${work.id} - Image ${currentImageIndex + 1}`}
             className="w-full h-full object-cover"
             key={currentImageIndex}

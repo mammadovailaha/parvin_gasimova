@@ -11,13 +11,13 @@ import skilpng6 from "../../assets/logo/pngwing.com.png"
 import skilpng7 from "../../assets/logo/vecteezy_capcut-transparent-icon_48759325 (1).png"
 
 const skillLogos = [
-       {icon: <img src={skilpng1} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
-       {icon: <img src={skilpng2} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
-       {icon: <img src={skilpng3} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
-       {icon: <img src={skilpng4} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
-       {icon: <img src={skilpng5} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
-       {icon: <img src={skilpng6} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" />},
-       {icon: <img src={skilpng7} alt="CapCut Logo" className="w-12 md:w-20 h-12 md:h-20" />},
+       {icon: <img src={skilpng1} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" loading="lazy" />},
+       {icon: <img src={skilpng2} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" loading="lazy" />},
+       {icon: <img src={skilpng3} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" loading="lazy" />},
+       {icon: <img src={skilpng4} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" loading="lazy" />},
+       {icon: <img src={skilpng5} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" loading="lazy" />},
+       {icon: <img src={skilpng6} alt="Skill Logo" className="w-12 md:w-20 h-12 md:h-20" loading="lazy" />},
+       {icon: <img src={skilpng7} alt="CapCut Logo" className="w-12 md:w-20 h-12 md:h-20" loading="lazy" />},
 ]
 
 const SkillSection = () => {

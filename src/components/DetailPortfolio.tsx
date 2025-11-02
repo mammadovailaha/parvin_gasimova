@@ -55,6 +55,7 @@ const DetailPortfolio = () => {
                       <img
                         src={branding.cover}
                         alt={branding.name}
+                        loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-300"
                       />
                     </div>
@@ -78,7 +79,10 @@ const DetailPortfolio = () => {
         <div className="w-full">
           {portfolio.print.map((item)=>(
             <div className="w-full h-full">
-              <img className="w-full h-full object-contain" src={item.images[0]} alt="çap dizayn" />
+              <img 
+              className="w-full h-full object-contain" 
+              src={item.images[0]} alt="çap dizayn"
+              loading="lazy" />
             </div>
           ))}
         </div>

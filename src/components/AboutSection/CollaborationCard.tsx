@@ -11,6 +11,7 @@ const CollaborationCard: FC<Props> = ({ img }) => {
         <img
           src={img}
           alt="Əməkdaş"
+          loading="lazy"
           className="w-full h-full object-cover lg:filter lg:grayscale lg:hover:grayscale-0 transition-all duration-300 px-2"
         />
       </div>

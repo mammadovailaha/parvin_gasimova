@@ -47,6 +47,7 @@ const PortfolioCard: FC<Props> = ({ item }) => {
         <img
           className="w-full h-full object-cover rounded-[20px] transition-transform duration-300 hover:scale-105"
           src={item.serviceImage}
+          loading="lazy"
           alt={`${item.serviceName} şəkli`}
         />
       </div>

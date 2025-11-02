@@ -113,6 +113,7 @@ const Contact = () => {
             className="relative w-64 h-full object-cover rounded-full shadow-2xl 
                      transform group-hover:scale-105 transition-all duration-500 cursor-pointer
                      border-8 border-white animate-float" 
+            loading="lazy"
           />
           
           {/* Decorative Dots */}

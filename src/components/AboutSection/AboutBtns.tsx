@@ -125,7 +125,12 @@ const AboutBtns = () => {
               düşürsə, bu fürsəti birgə dəyərləndirək!
         </p>
         <p className="text-base md:text-lg text-gray-600 mt-2 text-left font-poppins font-semibold">parvin.gasimova@inbox.ru </p>
-        <p className="text-sm md:text-base text-gray-600 mt-2 text-left flex gap-2 font-poppins font-normal"><img src={whatsapp} alt="WhatsApp" className="w-6 h-6" /> (+994)50 554 75 68</p>
+        <p className="text-sm md:text-base text-gray-600 mt-2 text-left flex gap-2 font-poppins font-normal">
+          <img 
+          src={whatsapp} 
+          alt="WhatsApp" 
+          loading="lazy"
+          className="w-6 h-6" /> (+994)50 554 75 68</p>
       </div>
       <div className="relative w-full min-h-[200px] d-none lg:d-block md:min-h-[550px] flex items-end justify-center">
         {mainBtnData.map((service, index) => (

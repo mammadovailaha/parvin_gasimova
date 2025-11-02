@@ -21,6 +21,7 @@ const BrandingCard = ({ branding }: BrandingCardProps) => {
         <img
           src={branding.images[0]}
           alt={branding.name}
+          loading="lazy"
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
 

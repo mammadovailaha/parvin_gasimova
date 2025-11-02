@@ -42,6 +42,7 @@ const ImagesSection = () => {
             <img
               className="w-full h-full object-cover rounded-[20px]"
               src={imgSrc}
+              loading="lazy"
               alt={`Image ${index + 1}`}
             />
           </div>
@@ -62,6 +63,7 @@ const ImagesSection = () => {
             <img
               className="w-full h-full object-cover rounded-[20px]"
               src={imgSrc}
+              loading="lazy"
               alt={`Image ${index + 4}`}
             />
           </div>
@@ -83,6 +85,7 @@ const ImagesSection = () => {
               className="w-full h-full object-cover rounded-[20px]"
               src={imgSrc}
               alt={`Image ${index + 7}`}
+              loading="lazy"
             />
           </div>
         ))}

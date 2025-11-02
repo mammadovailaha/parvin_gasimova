@@ -32,8 +32,8 @@ const Hero:FC = () => {
           }
         `}
       </style>
-      <div className="w-full h-[50%] absolute top-0 left-0 z-0 float"><img className="object-cover w-full h-full" src={heroBg2} alt="" /></div>
-      <div className="w-full h-[50%] absolute bottom-0 left-0 z-0 float"><img className="object-cover w-full h-full" src={heroBg1} alt="" /></div>
+      <div className="w-full h-[50%] absolute top-0 left-0 z-0 float"><img className="object-cover w-full h-full" src={heroBg2} alt="" loading="lazy"/></div>
+      <div className="w-full h-[50%] absolute bottom-0 left-0 z-0 float"><img className="object-cover w-full h-full" src={heroBg1} alt="" loading="lazy"/></div>
      <TypingText text="Qrafik & Motion dizayner" className="font-poppins font-semibold text-3xl md:text-4xl lg:text-6xl text-black z-40 relative bg-gradient-to-r from-black to-gray-400 bg-clip-text text-transparent inline-block" />
     <ServicesSlider onClick={()=>{navigate("/portfolio")}} className="bg-[#f8f8f8]" textStyle="text-lg font-poppins font-regular text-black" data={services} />
     </div>

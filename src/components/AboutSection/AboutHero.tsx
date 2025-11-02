@@ -19,6 +19,7 @@ const AboutHero = () => {
           <img
             className="w-full h-full object-cover rounded-lg"
             src={mainPhoto}
+            loading="lazy"
             alt="Peşəkar Qrafik Dizayner"
           />
         </div>

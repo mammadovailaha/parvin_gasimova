@@ -45,7 +45,11 @@ const ImageWithScroll: FC<{ image: string; alt: string }> = ({ image, alt }) => 
           opacity: Math.max(0.4, scrollProgress + 0.2),
         }}
       >
-        <img className="w-full h-auto object-cover rounded-lg shadow-lg" src={image} alt={alt} />
+        <img
+         className="w-full h-auto object-cover rounded-lg shadow-lg"
+        src={image}
+        alt={alt}
+        loading="lazy"/>
       </div>
     </div>
   );

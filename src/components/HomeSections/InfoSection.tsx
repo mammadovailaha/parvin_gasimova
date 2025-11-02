@@ -12,6 +12,7 @@ const InfoSection = () => {
         className="w-full h-full object-contain animate-slow-spin"
           src={Logo}
           alt="loqo"
+          loading="lazy"
         />
       </div>
       <div className="w-[90%] md:w-[50%] h-full flex flex-col justify-center items-start gap-2">
