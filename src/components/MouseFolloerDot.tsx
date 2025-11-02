@@ -29,7 +29,7 @@ const MouseFollowerDot: React.FC = () => {
     <div className="">
       {/* Animasiyalı nöqtə */}
       <div
-        className="fixed w-4 h-4 bg-[#aeff00] rounded-full pointer-events-none z-50 "
+        className="fixed w-4 h-4 bg-[#aeff00] rounded-full pointer-events-none z-50 lg:block hidden"
         style={{
           left: `${position.x - 8}px`, // Nöqtəni mərkəzləşdirmək üçün yarısını çıxırıq
           top: `${position.y - 8}px`,

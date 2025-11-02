@@ -8,11 +8,10 @@ import InfoSection from '../components/HomeSections/InfoSection'
 const Home: React.FC = () => {
 
   return (
-    <div className='bg-white  overflow-x-hidden flex flex-col items-center'>
+    <div className='bg-white  overflow-hidden flex flex-col items-center'>
       <Hero />
       <ImagesSection />
       <InfoSection />
-      {/* Prop-ları sildin, komponenti düzəlt */}
       <PortfolioSection />
       <NameSlide />
     </div>
