@@ -169,7 +169,7 @@ const Navbar: React.FC = () => {
             }}
             className="mt-12 outline-none border-none bg-black  text-white rounded-[30px] px-8 py-4 text-lg font-medium cursor-pointer relative z-50"
           >
-            sürətli əlaqə
+            Sürətli əlaqə
           </button>
         </div>
       </div>

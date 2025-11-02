@@ -5,6 +5,7 @@ import Navbar from "./layout/Navbar";
 import AppRouter from "./router/AppRouter";
 
 function App() {
+  
   return (
     <div className="overflow-hidden">
         <Navbar />
