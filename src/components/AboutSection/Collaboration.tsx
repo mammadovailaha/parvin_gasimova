@@ -60,15 +60,7 @@ const settings = {
         className="w-[90%] flex justify-center items-center gap-5 md:gap-10"
       >
         {collaborationLogos.map((logo, index) => (
-          <div className="" key={index}>
-            <div className="w-[140px] md:w-[180px] h-[100px] md:h-[120px] flex justify-center items-center rounded-lg p-3 transition-shadow duration-300">
-              <img
-                src={logo}
-                alt="Əməkdaş"
-                className="w-full h-full object-cover lg:filter lg:grayscale lg:hover:grayscale-0 transition-all duration-300 px-2"
-              />
-            </div>
-          </div>
+          <CollaborationCard key={index} img={logo} />
         ))}
       </Slider>
     </div>
