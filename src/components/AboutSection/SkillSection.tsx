@@ -22,17 +22,17 @@ const skillLogos = [
 
 const SkillSection = () => {
     const settings = {
-        dots: false,          // alt nöqtələr
-        infinite: true,      // limitsiz dövr etsin
-        speed: 500,          // keçid sürəti (ms)
-        slidesToShow: 5,     // eyni anda neçə element göstərsin
-        slidesToScroll: 1,   // hər dəfə neçə element sürüşsün
-        autoplay: true,      // avtomatik sürüşsün
-        autoplaySpeed: 1300, // avtomatik keçid sürəti
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1300,
 
         responsive: [
             {
-                breakpoint: 768, // ekran <= 760px (planşet və kiçik laptop)
+                breakpoint: 768, 
                 settings: {
                     slidesToShow: 6,
                     slidesToScroll: 1,
@@ -41,7 +41,7 @@ const SkillSection = () => {
                 },
             },
             {
-                breakpoint: 640, // ekran <= 640px (telefon)
+                breakpoint: 640,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,

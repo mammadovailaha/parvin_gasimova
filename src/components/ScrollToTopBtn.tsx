@@ -4,7 +4,6 @@ import { ArrowUp } from "lucide-react";
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Scroll-u izləyir, müəyyən məsafədən sonra button görünür
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 300) {
@@ -18,11 +17,10 @@ const ScrollToTopButton = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  // Yuxarı qayıtma funksiyası
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // animasiyalı qayıtma
+      behavior: "smooth",
     });
   };
 

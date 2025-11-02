@@ -80,7 +80,7 @@ const WorkCard = ({ work }: WorkCardProps) => {
          
         )}
 
-        {/* Slider butonları */}
+        {/* Slider buttons */}
         {images.length > 1 && (
           <>
             <button
@@ -97,7 +97,7 @@ const WorkCard = ({ work }: WorkCardProps) => {
               <FaAngleDoubleRight size={14} />
             </button>
 
-            {/* Şəkillərin sayı */}
+            {/* Image counter */}
             {isHovered && (
               <div className="absolute bottom-3 left-1/2 -translate-x-1/2 bg-black/50 text-white px-2 py-1 rounded-lg text-sm font-semibold">
                 {currentImageIndex + 1} / {images.length}

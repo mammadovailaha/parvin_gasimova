@@ -1,6 +1,4 @@
-// import { FaLocationDot } from "react-icons/fa6";
 import mainPhoto from "../../assets/images/pp about.png";
-// import SecondryBtn from "../SecondryBtn";
 
 const AboutHero = () => {
   return (
@@ -25,16 +23,6 @@ const AboutHero = () => {
           />
         </div>
       </div>
-      {/* <div className="flex justify-center items-center w-full gap-10">
-        <SecondryBtn text="Mənimlə əlaqə" onClick={() => {}} />
-        <div className="h-[1px] w-[65%] bg-gray-200 hidden md:block" />
-        <div className="flex justify-center items-center gap-2">
-          <FaLocationDot />
-          <p className="text-[#1E1E1E] text-md md:text-lg font-regular">
-            Bakı, Azərbaycan
-          </p>
-        </div>
-      </div> */}
     </div>
   );
 };

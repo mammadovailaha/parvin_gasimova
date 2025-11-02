@@ -1,8 +1,6 @@
 
 import SliderComponent from '../SliderComponent';
 
-// CSS importları
-// import "swiper/css";
 const data=[
   "PƏRVİN QASIMOVA",
   "PƏRVİN QASIMOVA"

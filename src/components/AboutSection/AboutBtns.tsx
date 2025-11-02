@@ -20,7 +20,6 @@ const AboutBtns = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Ekran ölçüsünü yoxla
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -32,7 +31,7 @@ const AboutBtns = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  // Desktop pozisiyalar
+  // Desktop positions
   const desktopPositions = [
     { x: -110, y: 95, rotation: -20 },
     { x: -100, y: 244, rotation: 0 },
@@ -43,7 +42,7 @@ const AboutBtns = () => {
     { x: 0, y: 140, rotation: -3 },
   ];
 
-  // Mobile pozisiyalar (daha kiçik və sıx)
+  // Mobile positions
   const mobilePositions = [
     { x: -20, y: 12, rotation: -15 },
     { x: -20, y: 30, rotation: 0 },
@@ -83,7 +82,6 @@ const AboutBtns = () => {
     services.map((_, index) => getRandomAnimation(index))
   );
 
-  // Ekran ölçüsü dəyişəndə animasiyaları yenilə
   useEffect(() => {
     if (isVisible) {
       setAnimations(services.map((_, index) => getRandomAnimation(index)));
