@@ -29,12 +29,12 @@ const MouseFollowerDot: React.FC = () => {
     <div className="">
       {/* Animasiyalı nöqtə */}
       <div
-        className="fixed w-4 h-4 bg-[#aeff00] rounded-full pointer-events-none z-50 lg:block hidden"
+        className="fixed w-4 h-4 bg-[#aeff00] rounded-full pointer-events-none z-50 lg:opacity-100 opacity-0"
         style={{
-          left: `${position.x - 8}px`, // Nöqtəni mərkəzləşdirmək üçün yarısını çıxırıq
+          left: `${position.x - 8}px`, 
           top: `${position.y - 8}px`,
-          transition: 'all 0.3 ease-out', // Yumşaq animasiya
-          // boxShadow: '0 0 20px rgba(59, 130, 246, 0.6)', // Glow effekti
+          transition: 'all 0.3 ease-out', 
+
         }}
       />
 
@@ -44,7 +44,7 @@ const MouseFollowerDot: React.FC = () => {
         style={{
           left: `${position.x - 6}px`,
           top: `${position.y - 6}px`,
-          transition: 'all 0.4s ease-out', // Daha yavaş animasiya
+          transition: 'all 0.4s ease-out', 
         }}
       />
       <div
@@ -52,7 +52,7 @@ const MouseFollowerDot: React.FC = () => {
         style={{
           left: `${position.x - 4}px`,
           top: `${position.y - 4}px`,
-          transition: 'all 0.9s ease-out', // Ən yavaş animasiya
+          transition: 'all 0.9s ease-out', 
         }}
       /> */}
     </div>

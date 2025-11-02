@@ -7,8 +7,8 @@ import logoBlack from ".././assets/logo/parvixel.png";
 // import logoWhite from ".././assets/logo/logo parvixel white.png";
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
-import heroBg1 from "../assets/images/hero-bg-1.svg"
-import heroBg2 from "../assets/images/hero-bg-2.svg"
+import heroBg1 from "../assets/images/hero-bg-1.svg";
+import heroBg2 from "../assets/images/hero-bg-2.svg";
 
 const navLinks = [
   { to: "/", label: "Ana səhifə" },
@@ -22,25 +22,17 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
-  const handleClickContact = () => {
-    navigate("/contact");
-  };
-
-  // Body overflow-ni idarə etmək üçün
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
-
-    // Component unmount olanda overflow-u sıfırla
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isOpen]);
 
-  // Link-ə click edəndə menu-nu bağla
   const handleLinkClick = () => {
     setIsOpen(false);
   };
@@ -49,7 +41,10 @@ const Navbar: React.FC = () => {
     <>
       <div className="w-full h-15 md:h-20 bg-white  px-4 md:px-8 py-2 fixed top-0 left-0 right-0 z-50 shadow-md">
         <div className="max-w-[1400px] mx-auto flex justify-between items-center h-full">
-          <div className="w-40 h-22 cursor-pointer" onClick={() => navigate("/")}>
+          <div
+            className="w-40 h-22 cursor-pointer"
+            onClick={() => navigate("/")}
+          >
             <img
               src={logoBlack}
               alt="Logo"
@@ -92,12 +87,15 @@ const Navbar: React.FC = () => {
               )}
             </button> */}
             <button
-              onClick={handleClickContact}
+              onClick={() => {
+                setIsOpen(false);
+                window.open("https://wa.me/994505547568", "_blank");
+              }}
               className="hidden md:block outline-none border-none bg-black text-white  rounded-[30px] px-6 h-[40px] md:px-4 md:py-2 text-xs md:text-base font-normal font-poppins cursor-pointer"
             >
-              sürətli əlaqə
+              Sürətli əlaqə
             </button>
-            
+
             {/* Mobile Menu Button */}
             <div className="md:hidden flex justify-end items-center">
               <button
@@ -116,15 +114,17 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Mobile Navigation Overlay */}
-      <div className={`
+      <div
+        className={`
         fixed inset-0 bg-white z-[1000] 
         transition-transform duration-300 ease-in-out 
-        ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+        ${isOpen ? "translate-x-0" : "translate-x-full"}
         md:hidden
-      `}>
+      `}
+      >
         <div className="flex flex-col items-center justify-center h-full pt-20 overflow-y-auto relative">
-           <style>
-        {`
+          <style>
+            {`
           @keyframes float {
             0% { transform: translateX(0px); }
             50% { transform: translateX(-50px); }
@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
             animation: float 4s ease-in-out infinite;
           }
         `}
-      </style>
+          </style>
           <ul className="flex flex-col items-center space-y-8 relative z-50">
             {navLinks.map((link) => (
               <li key={link.to}>
@@ -155,13 +155,17 @@ const Navbar: React.FC = () => {
               </li>
             ))}
           </ul>
-          <div className="w-full h-[50%] absolute top-0 left-0 z-0 float md:hidden"><img className="object-cover w-full h-full" src={heroBg2} alt="" /></div>
-          <div className="w-full h-[50%] absolute bottom-0 left-0 z-0 float md:hidden"><img className="object-cover w-full h-full" src={heroBg1} alt="" /></div>
+          <div className="w-full h-[50%] absolute top-0 left-0 z-0 float md:hidden">
+            <img className="object-cover w-full h-full" src={heroBg2} alt="" />
+          </div>
+          <div className="w-full h-[50%] absolute bottom-0 left-0 z-0 float md:hidden">
+            <img className="object-cover w-full h-full" src={heroBg1} alt="" />
+          </div>
           {/* Mobile Contact Button */}
           <button
             onClick={() => {
-              handleClickContact();
               setIsOpen(false);
+              window.open("https://wa.me/994505547568", "_blank");
             }}
             className="mt-12 outline-none border-none bg-black  text-white rounded-[30px] px-8 py-4 text-lg font-medium cursor-pointer relative z-50"
           >

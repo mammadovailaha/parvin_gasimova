@@ -14,10 +14,10 @@ const MainButton: FC<btnProps> = ({ text, onClick, disabled, className, type }) 
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`${className} relative inline-block bg-black border-none outline-none rounded-[30px] tracking-normal overflow-hidden group h-12 px-6`}
+      className={`${className} relative inline-block bg-black border-none outline-none rounded-[30px] tracking-normal  group h-12 px-4 md:px-6`}
     >
-      {/* Ön tərəf */}
-      <span className="block font-poppins  font-normal transition-all duration-500 group-hover:-translate-y-full text-white text-sm md:text-base font-normal leading-[48px] text-center w-full">
+ 
+      <span  className="block transition-all duration-500 group-hover:-translate-y-full text-white text-xs lg:text-base font-normal lg:leading-12">
         {text}
       </span>
       {/* Arxa tərəf */}
