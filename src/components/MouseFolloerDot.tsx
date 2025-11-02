@@ -6,24 +6,34 @@ interface Position {
 }
 
 const MouseFollowerDot: React.FC = () => {
-  const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
+   const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
+  const [isVisible, setIsVisible] = useState<boolean>(window.innerWidth >= 1024);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsVisible(window.innerWidth >= 1024);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
       setPosition({
         x: event.clientX,
-        y: event.clientY
+        y: event.clientY,
       });
     };
 
-    // Mouse move event listener
-    window.addEventListener('mousemove', handleMouseMove);
+    if (isVisible) {
+      window.addEventListener("mousemove", handleMouseMove);
+    }
 
-    // Cleanup function
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, [isVisible]);
+
+  if (!isVisible) return null;
 
   return (
     <div className="">
