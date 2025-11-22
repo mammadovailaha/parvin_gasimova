@@ -6,6 +6,27 @@ import print from "../assets/images/cap.png";
 import karibuCover from "../assets/protfolio/karibu-cover.png";
 import print2 from "../assets/protfolio/portofino-08.png";
 import freeeducation from "../assets/protfolio/Free Education.png";
+import motion0 from "../assets/protfolio/moo/1.mp4"
+import motion1 from "../assets/protfolio/moo/2.mp4"
+import motion2 from "../assets/protfolio/moo/3.mp4"
+import motion3 from "../assets/protfolio/moo/4.mp4"
+import motion4 from "../assets/protfolio/moo/5.mp4"
+import motion5 from "../assets/protfolio/moo/6.mp4"
+import motion6 from "../assets/protfolio/moo/7.mp4"
+import motion7 from "../assets/protfolio/moo/8.mp4"
+import motion8 from "../assets/protfolio/moo/9.mp4"
+import motion9 from "../assets/protfolio/moo/10.mp4"
+import motion10 from "../assets/protfolio/moo/11.mp4"
+import motion11 from "../assets/protfolio/moo/12.mp4"
+import motion12 from "../assets/protfolio/moo/13.mp4"
+import motion13 from "../assets/protfolio/moo/14.mp4"
+import motion14 from "../assets/protfolio/moo/15.mp4"
+import motion15 from "../assets/protfolio/moo/16.mp4"
+import motion16 from "../assets/protfolio/moo/17.mp4"
+import motion17 from "../assets/protfolio/moo/18.mp4"
+import motion18 from "../assets/protfolio/moo/19.mp4"
+import motion19 from "../assets/protfolio/moo/20.mp4"
+import motion20 from "../assets/protfolio/moo/21.mp4"
 
 export const portfolioData: PortfolioItem[] = [
   {
@@ -822,91 +843,87 @@ export const portfolioData: PortfolioItem[] = [
         posts: [
           {
             id: 995,
-            images: ["https://files.catbox.moe/n1kylw.mp4"],
+            images: [motion0],
           },
           {
             id: 919,
-            images: ["https://files.catbox.moe/w4cqs6.mp4"],
+            images: [motion1],
           },
           {
             id: 929,
-            images: ["https://files.catbox.moe/x1kh5c.mp4"],
+            images: [motion2],
           },
           {
             id: 399,
-            images: ["https://files.catbox.moe/9l8ydp.mp4"],
+            images: [motion3],
           },
           {
             id: 9669,
-            images: ["https://files.catbox.moe/gqs25i.mp4"],
+            images: [motion4],
           },
           {
             id: 9769,
-            images: ["https://files.catbox.moe/tinq8o.mp4"],
+            images: [motion5],
           },
           {
             id: 6665,
-            images: ["https://files.catbox.moe/qevgwb.mp4"],
+            images: [motion6],
           },
           {
             id: 9944,
-            images: ["https://files.catbox.moe/q7w1bt.mp4"],
+            images: [motion7],
           },
           {
             id: 9933,
-            images: ["https://files.catbox.moe/q0rhg4.mp4"],
+            images: [motion8],
           },
           {
             id: 9955,
-            images: ["https://files.catbox.moe/tqxge0.mp4"],
+            images: [motion9],
           },
           {
             id: 9943,
-            images: ["https://files.catbox.moe/o90mqj.mp4"],
+            images: [motion10],
           },
           {
             id: 9941,
-            images: ["https://files.catbox.moe/ip6cb1.mp4"],
+            images: [motion11],
           },
             {
             id: 949,
-            images: ["https://files.catbox.moe/lgg0ly.mp4"],
+            images: [motion12],
           },
           {
             id: 9911,
-            images: ["https://files.catbox.moe/5h0js0.mp4"],
+            images: [motion13],
           },
           {
             id: 9912,
-            images: ["https://files.catbox.moe/xqdpyp.mp4"],
+            images: [motion14],
           },
           {
             id: 9923,
-            images: ["https://files.catbox.moe/38ir22.mp4"],
+            images: [motion15],
           },
           {
             id: 959,
-            images: ["https://files.catbox.moe/2sylto.mp4"],
+            images: [motion16],
           },
           {
             id: 9945,
-            images: ["https://files.catbox.moe/24qag2.mp4"],
+            images: [motion17],
           },
           {
             id: 9954,
-            images: ["https://files.catbox.moe/ep7m3w.mp4"],
+            images: [motion18],
           },
           {
             id: 9922,
-            images: ["https://files.catbox.moe/uvu0vs.mp4"],
+            images: [motion19],
           },
           {
             id: 9932,
-            images: ["https://files.catbox.moe/oepv92.mp4"],
-          },
-          {
-            id: 9921,
-            images: ["https://files.catbox.moe/7b2rcm.mp4"],
+            images: [motion20],
           },
         ],
       },
