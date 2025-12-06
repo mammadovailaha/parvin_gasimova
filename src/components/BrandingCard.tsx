@@ -37,4 +37,6 @@ const BrandingCard = ({ branding }: BrandingCardProps) => {
   );
 };
 
+
+
 export default BrandingCard;

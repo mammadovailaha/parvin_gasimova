@@ -88,7 +88,7 @@ const ContactForm: React.FC = () => {
           type="email"
           name="user_email"
           placeholder="Email"
-          className="border border-gray-300 py-3 px-4 rounded-[30px] w-full focus:outline-none focus:border-[#aeff00]"
+          className={`border py-3 px-4 rounded-[30px] w-full focus:outline-none focus:border-[#aeff00] ${formik.errors ? " border-red-500" : "border-gray-300"}`}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.user_email}
