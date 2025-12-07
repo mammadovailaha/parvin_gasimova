@@ -27,6 +27,10 @@ import motion17 from "../assets/protfolio/moo/18.mp4"
 import motion18 from "../assets/protfolio/moo/19.mp4"
 import motion19 from "../assets/protfolio/moo/20.mp4"
 import motion20 from "../assets/protfolio/moo/21.mp4"
+import motion21 from "../assets/protfolio/moo/tz1.mp4"
+import motion22 from "../assets/protfolio/moo/tz2.mp4"
+
+
 
 export const portfolioData: PortfolioItem[] = [
   {
@@ -924,6 +928,14 @@ export const portfolioData: PortfolioItem[] = [
           {
             id: 9932,
             images: [motion20],
+          },
+          {
+            id: 9885,
+            images: [motion21],
+          },
+           {
+            id: 91885,
+            images: [motion22],
           },
         ],
       },
