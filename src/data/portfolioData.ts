@@ -295,8 +295,8 @@ export const portfolioData: PortfolioItem[] = [
           {
             id: 34567,
             images: [
-              "https://i.postimg.cc/WzCmF5Lb/4.png",
               "https://i.postimg.cc/8c9dJZQJ/muqayise.png",
+              "https://i.postimg.cc/WzCmF5Lb/4.png",
             ],
           },
           {
