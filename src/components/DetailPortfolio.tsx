@@ -33,7 +33,7 @@ const DetailPortfolio = () => {
           ← Geri
         </button>
 
-        <div className="max-w-7xl mx-auto px-4 py-10">
+        <div className="max-w-7xl mx-auto px-4 md:py-10">
           <h1 className="text-4xl font-bold text-black mb-12 text-center">
             {portfolio.serviceName}
           </h1>
@@ -99,7 +99,7 @@ const DetailPortfolio = () => {
         ← Geri
       </button>
 
-      <div className="max-w-7xl mx-auto px-4 py-10">
+      <div className="max-w-7xl mx-auto px-4 md:py-10">
         {portfolio.works && portfolio.works.length === 0 ? (
           <div className="text-center text-gray-500 py-20">
             <p className="text-xl font-poppins font-normal">
